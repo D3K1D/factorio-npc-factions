@@ -1,11 +1,10 @@
 # NPC Factions
 
-A Factorio 2.1 + Space Age mod where NPC engineers play the game alongside you.
-Each engineer has its own body, faction and personality, and has to walk, mine,
-craft and build everything itself. Their goal is the first orbital platform
-above Nauvis.
+A Factorio 2.1 + Space Age mod where NPC engineers play the game with other players.
+Each engineer is apart of a faction and has unique personality traits, and plays the game similar to a player (with a few exceptions). 
+Their goal is the first orbital platform above Nauvis (for now).
 
-Engineers play the way strong players do:
+Engineers play the way above average players do:
 
 - **Opening:** burner drills and a coal loop, stone from rocks, steam power,
   the first lab, then electric mining and red science by machine.
@@ -24,9 +23,10 @@ Engineers play the way strong players do:
   science.
 
 **Team play:** several engineers and the players share one team: shared
-research (players' queue items are never moved), radio chat, help when a base is
-attacked. **Faction play:** engineers start at peace with you, trade, offer
-alliances, and go to war if you hurt them.
+research (players' queue items are never moved), can communicate in game chat, help when a base is
+attacked. 
+**Faction play:** engineers start at peace with you, trade, offer
+alliances, and go to war if you attack them or their factory.
 
 An LLM strategist decides what each engineer does when something happens and
 answers chat in character. It runs through the Codex CLI on a ChatGPT plan by
