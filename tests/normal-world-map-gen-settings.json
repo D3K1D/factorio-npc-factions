@@ -1,0 +1,56 @@
+{
+  "seed": 5150,
+  "starting_area": 1,
+  "peaceful_mode": false,
+  "no_enemies_mode": false,
+  "autoplace_controls": {
+    "enemy-base": {
+      "frequency": 1,
+      "size": 1,
+      "richness": 1
+    },
+    "iron-ore": {
+      "frequency": 2,
+      "size": 1.5,
+      "richness": 1.5
+    },
+    "copper-ore": {
+      "frequency": 2,
+      "size": 1.5,
+      "richness": 1.5
+    },
+    "coal": {
+      "frequency": 2,
+      "size": 1.5,
+      "richness": 1.5
+    },
+    "stone": {
+      "frequency": 1.5,
+      "size": 1.5,
+      "richness": 1.5
+    },
+    "uranium-ore": {
+      "frequency": 2,
+      "size": 1,
+      "richness": 1
+    },
+    "crude-oil": {
+      "frequency": 2,
+      "size": 1.5,
+      "richness": 1
+    },
+    "water": {
+      "frequency": 2,
+      "size": 0.75
+    },
+    "trees": {
+      "frequency": 1,
+      "size": 1
+    }
+  },
+  "cliff_settings": {
+    "name": "cliff",
+    "control": "nauvis_cliff",
+    "richness": 0
+  }
+}

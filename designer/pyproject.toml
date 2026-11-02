@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "factorio-designer-llm"
+version = "0.1.0"
+description = "LLM layout designer for the NPC factions companion (OpenAI Responses API), with offline validation"
+requires-python = ">=3.12"
+dependencies = ["Pillow>=11,<13"]
+
+[tool.setuptools.packages.find]
+include = ["designer_llm*"]

@@ -1,0 +1,147 @@
+{
+  "schema": "designer-proposal-v1",
+  "snapshot_sha256": "e6e70e8fd72eacbc68011670359dc7858c93c4b2d543940f04c80b5f709d3be2",
+  "game_version": "2.0.77",
+  "source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "world_id": "fixture-world",
+  "force_id": "fixture-force",
+  "observed_tick": 12000,
+  "quality": "normal",
+  "plan_id": "iron-expansion",
+  "entities": [
+    {
+      "id": "first-drill",
+      "prototype": "burner-mining-drill",
+      "position": {
+        "x": 10,
+        "y": 10
+      },
+      "direction": 4
+    },
+    {
+      "id": "first-furnace",
+      "prototype": "stone-furnace",
+      "position": {
+        "x": 13,
+        "y": 10
+      },
+      "direction": 0,
+      "recipe": "iron-plate"
+    },
+    {
+      "id": "second-drill",
+      "prototype": "burner-mining-drill",
+      "position": {
+        "x": 22,
+        "y": 10
+      },
+      "direction": 4
+    },
+    {
+      "id": "second-furnace",
+      "prototype": "stone-furnace",
+      "position": {
+        "x": 25,
+        "y": 10
+      },
+      "direction": 0,
+      "recipe": "iron-plate"
+    }
+  ],
+  "stages": [
+    {
+      "id": "first-pair",
+      "depends_on": [],
+      "entity_ids": [
+        "first-drill",
+        "first-furnace"
+      ],
+      "planned_bill": {
+        "burner-mining-drill": 1,
+        "stone-furnace": 1
+      },
+      "witnesses": [
+        {
+          "kind": "entity_built",
+          "entity_id": "first-drill"
+        },
+        {
+          "kind": "entity_built",
+          "entity_id": "first-furnace"
+        },
+        {
+          "kind": "resource_extraction_delta",
+          "entity_id": "first-drill",
+          "item": "iron-ore",
+          "min_delta": 1
+        },
+        {
+          "kind": "product_counter_delta",
+          "entity_id": "first-furnace",
+          "item": "iron-plate",
+          "min_delta": 1
+        }
+      ],
+      "manual_supplies": [
+        {
+          "entity_id": "first-drill",
+          "item": "coal",
+          "slot": "fuel"
+        },
+        {
+          "entity_id": "first-furnace",
+          "item": "coal",
+          "slot": "fuel"
+        }
+      ]
+    },
+    {
+      "id": "second-pair",
+      "depends_on": [
+        "first-pair"
+      ],
+      "entity_ids": [
+        "second-drill",
+        "second-furnace"
+      ],
+      "planned_bill": {
+        "burner-mining-drill": 1,
+        "stone-furnace": 1
+      },
+      "witnesses": [
+        {
+          "kind": "entity_built",
+          "entity_id": "second-drill"
+        },
+        {
+          "kind": "entity_built",
+          "entity_id": "second-furnace"
+        },
+        {
+          "kind": "resource_extraction_delta",
+          "entity_id": "second-drill",
+          "item": "iron-ore",
+          "min_delta": 1
+        },
+        {
+          "kind": "product_counter_delta",
+          "entity_id": "second-furnace",
+          "item": "iron-plate",
+          "min_delta": 1
+        }
+      ],
+      "manual_supplies": [
+        {
+          "entity_id": "second-drill",
+          "item": "coal",
+          "slot": "fuel"
+        },
+        {
+          "entity_id": "second-furnace",
+          "item": "coal",
+          "slot": "fuel"
+        }
+      ]
+    }
+  ]
+}

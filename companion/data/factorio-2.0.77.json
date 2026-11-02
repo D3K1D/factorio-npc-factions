@@ -1,0 +1,4807 @@
+{
+"base": {
+"belts": {
+"express-transport-belt": {
+"items_per_second": 45
+},
+"fast-transport-belt": {
+"items_per_second": 30
+},
+"transport-belt": {
+"items_per_second": 15
+}
+},
+"drills": {
+"burner-mining-drill": {
+"categories": [
+"basic-solid"
+],
+"radius": 0.99,
+"speed": 0.25,
+"w": 2
+},
+"electric-mining-drill": {
+"categories": [
+"basic-solid"
+],
+"radius": 2.49,
+"speed": 0.5,
+"w": 3
+},
+"pumpjack": {
+"categories": [
+"basic-fluid"
+],
+"radius": 0.49000000000000005,
+"speed": 1,
+"w": 3
+}
+},
+"machines": {
+"assembling-machine-1": {
+"categories": [
+"advanced-crafting",
+"basic-crafting",
+"crafting",
+"parameters"
+],
+"h": 3,
+"speed": 0.5,
+"type": "assembling-machine",
+"w": 3
+},
+"assembling-machine-2": {
+"categories": [
+"advanced-crafting",
+"basic-crafting",
+"crafting",
+"crafting-with-fluid",
+"parameters"
+],
+"h": 3,
+"speed": 0.75,
+"type": "assembling-machine",
+"w": 3
+},
+"assembling-machine-3": {
+"categories": [
+"advanced-crafting",
+"basic-crafting",
+"crafting",
+"crafting-with-fluid",
+"parameters"
+],
+"h": 3,
+"speed": 1.25,
+"type": "assembling-machine",
+"w": 3
+},
+"centrifuge": {
+"categories": [
+"centrifuging",
+"parameters"
+],
+"h": 3,
+"speed": 1,
+"type": "assembling-machine",
+"w": 3
+},
+"chemical-plant": {
+"categories": [
+"chemistry",
+"parameters"
+],
+"h": 3,
+"speed": 1,
+"type": "assembling-machine",
+"w": 3
+},
+"electric-furnace": {
+"categories": [
+"smelting"
+],
+"h": 3,
+"speed": 2,
+"type": "furnace",
+"w": 3
+},
+"oil-refinery": {
+"categories": [
+"oil-processing",
+"parameters"
+],
+"h": 5,
+"speed": 1,
+"type": "assembling-machine",
+"w": 5
+},
+"steel-furnace": {
+"categories": [
+"smelting"
+],
+"h": 2,
+"speed": 2,
+"type": "furnace",
+"w": 2
+},
+"stone-furnace": {
+"categories": [
+"smelting"
+],
+"h": 2,
+"speed": 1,
+"type": "furnace",
+"w": 2
+}
+},
+"recipes": {
+"accumulator": {
+"category": "crafting",
+"energy": 10,
+"ingredients": [
+{
+"amount": 2,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "battery",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "accumulator",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"advanced-circuit": {
+"category": "crafting",
+"energy": 6,
+"ingredients": [
+{
+"amount": 2,
+"name": "plastic-bar",
+"type": "item"
+},
+{
+"amount": 4,
+"name": "copper-cable",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "electronic-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "advanced-circuit",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"advanced-oil-processing": {
+"category": "oil-processing",
+"energy": 5,
+"ingredients": [
+{
+"amount": 50,
+"name": "water",
+"type": "fluid"
+},
+{
+"amount": 100,
+"name": "crude-oil",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 25,
+"name": "heavy-oil",
+"probability": 1,
+"type": "fluid"
+},
+{
+"amount": 45,
+"name": "light-oil",
+"probability": 1,
+"type": "fluid"
+},
+{
+"amount": 55,
+"name": "petroleum-gas",
+"probability": 1,
+"type": "fluid"
+}
+]
+},
+"assembling-machine-1": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 9,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 3,
+"name": "electronic-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "assembling-machine-1",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"assembling-machine-2": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 3,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "assembling-machine-1",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "assembling-machine-2",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"automation-science-pack": {
+"category": "crafting",
+"energy": 5,
+"ingredients": [
+{
+"amount": 1,
+"name": "copper-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "iron-gear-wheel",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "automation-science-pack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"basic-oil-processing": {
+"category": "oil-processing",
+"energy": 5,
+"ingredients": [
+{
+"amount": 100,
+"name": "crude-oil",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 45,
+"name": "petroleum-gas",
+"probability": 1,
+"type": "fluid"
+}
+]
+},
+"battery": {
+"category": "chemistry",
+"energy": 4,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "copper-plate",
+"type": "item"
+},
+{
+"amount": 20,
+"name": "sulfuric-acid",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "battery",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"big-electric-pole": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 5,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 8,
+"name": "iron-stick",
+"type": "item"
+},
+{
+"amount": 4,
+"name": "copper-cable",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "big-electric-pole",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"boiler": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 4,
+"name": "pipe",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "stone-furnace",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "boiler",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"burner-inserter": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "iron-gear-wheel",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "burner-inserter",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"chemical-plant": {
+"category": "crafting",
+"energy": 5,
+"ingredients": [
+{
+"amount": 5,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "pipe",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "chemical-plant",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"chemical-science-pack": {
+"category": "crafting",
+"energy": 24,
+"ingredients": [
+{
+"amount": 1,
+"name": "sulfur",
+"type": "item"
+},
+{
+"amount": 3,
+"name": "advanced-circuit",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "engine-unit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "chemical-science-pack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"concrete": {
+"category": "crafting-with-fluid",
+"energy": 10,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-ore",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "stone-brick",
+"type": "item"
+},
+{
+"amount": 100,
+"name": "water",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 10,
+"name": "concrete",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"construction-robot": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "flying-robot-frame",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "construction-robot",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"copper-cable": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "copper-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "copper-cable",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"copper-plate": {
+"category": "smelting",
+"energy": 3.2,
+"ingredients": [
+{
+"amount": 1,
+"name": "copper-ore",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "copper-plate",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"electric-engine-unit": {
+"category": "crafting-with-fluid",
+"energy": 10,
+"ingredients": [
+{
+"amount": 2,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "engine-unit",
+"type": "item"
+},
+{
+"amount": 15,
+"name": "lubricant",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "electric-engine-unit",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"electric-furnace": {
+"category": "crafting",
+"energy": 5,
+"ingredients": [
+{
+"amount": 10,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "advanced-circuit",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "stone-brick",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "electric-furnace",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"electric-mining-drill": {
+"category": "crafting",
+"energy": 2,
+"ingredients": [
+{
+"amount": 10,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 3,
+"name": "electronic-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "electric-mining-drill",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"electronic-circuit": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 3,
+"name": "copper-cable",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "electronic-circuit",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"engine-unit": {
+"category": "advanced-crafting",
+"energy": 10,
+"ingredients": [
+{
+"amount": 1,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "pipe",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "engine-unit",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"fast-inserter": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "inserter",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "fast-inserter",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"fast-splitter": {
+"category": "crafting",
+"energy": 2,
+"ingredients": [
+{
+"amount": 10,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "splitter",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "fast-splitter",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"fast-transport-belt": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 5,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "transport-belt",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "fast-transport-belt",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"fast-underground-belt": {
+"category": "crafting",
+"energy": 2,
+"ingredients": [
+{
+"amount": 40,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "underground-belt",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "fast-underground-belt",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"firearm-magazine": {
+"category": "crafting",
+"energy": 1,
+"ingredients": [
+{
+"amount": 4,
+"name": "iron-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "firearm-magazine",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"flying-robot-frame": {
+"category": "crafting",
+"energy": 20,
+"ingredients": [
+{
+"amount": 1,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "battery",
+"type": "item"
+},
+{
+"amount": 3,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "electric-engine-unit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "flying-robot-frame",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"grenade": {
+"category": "crafting",
+"energy": 8,
+"ingredients": [
+{
+"amount": 10,
+"name": "coal",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "iron-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "grenade",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"gun-turret": {
+"category": "crafting",
+"energy": 8,
+"ingredients": [
+{
+"amount": 20,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "copper-plate",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "iron-gear-wheel",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "gun-turret",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"heavy-oil-cracking": {
+"category": "chemistry",
+"energy": 2,
+"ingredients": [
+{
+"amount": 30,
+"name": "water",
+"type": "fluid"
+},
+{
+"amount": 40,
+"name": "heavy-oil",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 30,
+"name": "light-oil",
+"probability": 1,
+"type": "fluid"
+}
+]
+},
+"inserter": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "electronic-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "inserter",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"iron-chest": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 8,
+"name": "iron-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "iron-chest",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"iron-gear-wheel": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "iron-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "iron-gear-wheel",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"iron-plate": {
+"category": "smelting",
+"energy": 3.2,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-ore",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "iron-plate",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"iron-stick": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "iron-stick",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"lab": {
+"category": "crafting",
+"energy": 2,
+"ingredients": [
+{
+"amount": 10,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 4,
+"name": "transport-belt",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "lab",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"light-oil-cracking": {
+"category": "chemistry",
+"energy": 2,
+"ingredients": [
+{
+"amount": 30,
+"name": "water",
+"type": "fluid"
+},
+{
+"amount": 30,
+"name": "light-oil",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 20,
+"name": "petroleum-gas",
+"probability": 1,
+"type": "fluid"
+}
+]
+},
+"logistic-robot": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "advanced-circuit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "flying-robot-frame",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "logistic-robot",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"logistic-science-pack": {
+"category": "crafting",
+"energy": 6,
+"ingredients": [
+{
+"amount": 1,
+"name": "transport-belt",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "inserter",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "logistic-science-pack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"long-handed-inserter": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "inserter",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "long-handed-inserter",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"low-density-structure": {
+"category": "crafting",
+"energy": 15,
+"ingredients": [
+{
+"amount": 20,
+"name": "copper-plate",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "plastic-bar",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "low-density-structure",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"lubricant": {
+"category": "chemistry",
+"energy": 1,
+"ingredients": [
+{
+"amount": 10,
+"name": "heavy-oil",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 10,
+"name": "lubricant",
+"probability": 1,
+"type": "fluid"
+}
+]
+},
+"medium-electric-pole": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 4,
+"name": "iron-stick",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "copper-cable",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "medium-electric-pole",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"military-science-pack": {
+"category": "crafting",
+"energy": 10,
+"ingredients": [
+{
+"amount": 1,
+"name": "piercing-rounds-magazine",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "grenade",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "stone-wall",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "military-science-pack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"offshore-pump": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 3,
+"name": "pipe",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "offshore-pump",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"oil-refinery": {
+"category": "crafting",
+"energy": 8,
+"ingredients": [
+{
+"amount": 15,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "pipe",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "stone-brick",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "oil-refinery",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"piercing-rounds-magazine": {
+"category": "crafting",
+"energy": 6,
+"ingredients": [
+{
+"amount": 2,
+"name": "copper-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "firearm-magazine",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "piercing-rounds-magazine",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"pipe": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "pipe",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"plastic-bar": {
+"category": "chemistry",
+"energy": 1,
+"ingredients": [
+{
+"amount": 1,
+"name": "coal",
+"type": "item"
+},
+{
+"amount": 20,
+"name": "petroleum-gas",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "plastic-bar",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"processing-unit": {
+"category": "crafting-with-fluid",
+"energy": 10,
+"ingredients": [
+{
+"amount": 20,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "advanced-circuit",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "sulfuric-acid",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "processing-unit",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"production-science-pack": {
+"category": "crafting",
+"energy": 21,
+"ingredients": [
+{
+"amount": 30,
+"name": "rail",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "electric-furnace",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "productivity-module",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 3,
+"name": "production-science-pack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"productivity-module": {
+"category": "crafting",
+"energy": 15,
+"ingredients": [
+{
+"amount": 5,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "advanced-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "productivity-module",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"pump": {
+"category": "crafting",
+"energy": 2,
+"ingredients": [
+{
+"amount": 1,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "engine-unit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "pipe",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "pump",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"pumpjack": {
+"category": "crafting",
+"energy": 5,
+"ingredients": [
+{
+"amount": 5,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "pipe",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "pumpjack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"radar": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 10,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "electronic-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "radar",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"rail": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "stone",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "iron-stick",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "rail",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"repair-pack": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "electronic-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "repair-pack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"roboport": {
+"category": "crafting",
+"energy": 5,
+"ingredients": [
+{
+"amount": 45,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 45,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 45,
+"name": "advanced-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "roboport",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"rocket-fuel": {
+"category": "crafting-with-fluid",
+"energy": 15,
+"ingredients": [
+{
+"amount": 10,
+"name": "solid-fuel",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "light-oil",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "rocket-fuel",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"rocket-part": {
+"category": "rocket-building",
+"energy": 3,
+"ingredients": [
+{
+"amount": 10,
+"name": "processing-unit",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "low-density-structure",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "rocket-fuel",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "rocket-part",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"small-electric-pole": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "wood",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "copper-cable",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "small-electric-pole",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"solar-panel": {
+"category": "crafting",
+"energy": 10,
+"ingredients": [
+{
+"amount": 5,
+"name": "copper-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 15,
+"name": "electronic-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "solar-panel",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"solid-fuel-from-light-oil": {
+"category": "chemistry",
+"energy": 1,
+"ingredients": [
+{
+"amount": 10,
+"name": "light-oil",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "solid-fuel",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"solid-fuel-from-petroleum-gas": {
+"category": "chemistry",
+"energy": 1,
+"ingredients": [
+{
+"amount": 20,
+"name": "petroleum-gas",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "solid-fuel",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"speed-module": {
+"category": "crafting",
+"energy": 15,
+"ingredients": [
+{
+"amount": 5,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "advanced-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "speed-module",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"splitter": {
+"category": "crafting",
+"energy": 1,
+"ingredients": [
+{
+"amount": 5,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 4,
+"name": "transport-belt",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "splitter",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"steam-engine": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 10,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 8,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "pipe",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "steam-engine",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"steel-chest": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 8,
+"name": "steel-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "steel-chest",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"steel-furnace": {
+"category": "crafting",
+"energy": 3,
+"ingredients": [
+{
+"amount": 6,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "stone-brick",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "steel-furnace",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"steel-plate": {
+"category": "smelting",
+"energy": 16,
+"ingredients": [
+{
+"amount": 5,
+"name": "iron-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "steel-plate",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"stone-brick": {
+"category": "smelting",
+"energy": 3.2,
+"ingredients": [
+{
+"amount": 2,
+"name": "stone",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "stone-brick",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"stone-furnace": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 5,
+"name": "stone",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "stone-furnace",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"stone-wall": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 5,
+"name": "stone-brick",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "stone-wall",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"storage-tank": {
+"category": "crafting",
+"energy": 3,
+"ingredients": [
+{
+"amount": 20,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "steel-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "storage-tank",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"sulfur": {
+"category": "chemistry",
+"energy": 1,
+"ingredients": [
+{
+"amount": 30,
+"name": "water",
+"type": "fluid"
+},
+{
+"amount": 30,
+"name": "petroleum-gas",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "sulfur",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"sulfuric-acid": {
+"category": "chemistry",
+"energy": 1,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "sulfur",
+"type": "item"
+},
+{
+"amount": 100,
+"name": "water",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 50,
+"name": "sulfuric-acid",
+"probability": 1,
+"type": "fluid"
+}
+]
+},
+"transport-belt": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "iron-gear-wheel",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "transport-belt",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"underground-belt": {
+"category": "crafting",
+"energy": 1,
+"ingredients": [
+{
+"amount": 10,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "transport-belt",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "underground-belt",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"utility-science-pack": {
+"category": "crafting",
+"energy": 21,
+"ingredients": [
+{
+"amount": 2,
+"name": "processing-unit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "flying-robot-frame",
+"type": "item"
+},
+{
+"amount": 3,
+"name": "low-density-structure",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 3,
+"name": "utility-science-pack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"wooden-chest": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "wood",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "wooden-chest",
+"probability": 1,
+"type": "item"
+}
+]
+}
+},
+"space_age": false,
+"version": "2.0.77"
+},
+"source": "Factorio 2.0.77 prototypes, read from the game (base, and with Space Age)",
+"space_age": {
+"belts": {
+"express-transport-belt": {
+"items_per_second": 45
+},
+"fast-transport-belt": {
+"items_per_second": 30
+},
+"transport-belt": {
+"items_per_second": 15
+},
+"turbo-transport-belt": {
+"items_per_second": 60
+}
+},
+"drills": {
+"big-mining-drill": {
+"categories": [
+"basic-solid",
+"hard-solid"
+],
+"radius": 6.49,
+"speed": 2.5,
+"w": 5
+},
+"burner-mining-drill": {
+"categories": [
+"basic-solid"
+],
+"radius": 0.99,
+"speed": 0.25,
+"w": 2
+},
+"electric-mining-drill": {
+"categories": [
+"basic-solid"
+],
+"radius": 2.49,
+"speed": 0.5,
+"w": 3
+},
+"pumpjack": {
+"categories": [
+"basic-fluid"
+],
+"radius": 0.49000000000000005,
+"speed": 1,
+"w": 3
+}
+},
+"machines": {
+"assembling-machine-1": {
+"categories": [
+"advanced-crafting",
+"basic-crafting",
+"crafting",
+"electronics",
+"parameters",
+"pressing"
+],
+"h": 3,
+"speed": 0.5,
+"type": "assembling-machine",
+"w": 3
+},
+"assembling-machine-2": {
+"categories": [
+"advanced-crafting",
+"basic-crafting",
+"crafting",
+"crafting-with-fluid",
+"crafting-with-fluid-or-metallurgy",
+"cryogenics-or-assembling",
+"electronics",
+"electronics-or-assembling",
+"electronics-with-fluid",
+"metallurgy-or-assembling",
+"organic-or-assembling",
+"organic-or-hand-crafting",
+"parameters",
+"pressing"
+],
+"h": 3,
+"speed": 0.75,
+"type": "assembling-machine",
+"w": 3
+},
+"assembling-machine-3": {
+"categories": [
+"advanced-crafting",
+"basic-crafting",
+"crafting",
+"crafting-with-fluid",
+"crafting-with-fluid-or-metallurgy",
+"cryogenics-or-assembling",
+"electronics",
+"electronics-or-assembling",
+"electronics-with-fluid",
+"metallurgy-or-assembling",
+"organic-or-assembling",
+"organic-or-hand-crafting",
+"parameters",
+"pressing"
+],
+"h": 3,
+"speed": 1.25,
+"type": "assembling-machine",
+"w": 3
+},
+"biochamber": {
+"categories": [
+"organic",
+"organic-or-assembling",
+"organic-or-chemistry",
+"organic-or-hand-crafting",
+"parameters"
+],
+"h": 3,
+"speed": 2,
+"type": "assembling-machine",
+"w": 3
+},
+"captive-biter-spawner": {
+"categories": [
+"captive-spawner-process",
+"parameters"
+],
+"h": 5,
+"speed": 1,
+"type": "assembling-machine",
+"w": 5
+},
+"centrifuge": {
+"categories": [
+"centrifuging",
+"parameters"
+],
+"h": 3,
+"speed": 1,
+"type": "assembling-machine",
+"w": 3
+},
+"chemical-plant": {
+"categories": [
+"chemistry",
+"chemistry-or-cryogenics",
+"organic-or-chemistry",
+"parameters"
+],
+"h": 3,
+"speed": 1,
+"type": "assembling-machine",
+"w": 3
+},
+"crusher": {
+"categories": [
+"crushing",
+"parameters"
+],
+"h": 3,
+"speed": 1,
+"type": "assembling-machine",
+"w": 2
+},
+"cryogenic-plant": {
+"categories": [
+"chemistry-or-cryogenics",
+"cryogenics",
+"cryogenics-or-assembling",
+"parameters"
+],
+"h": 5,
+"speed": 2,
+"type": "assembling-machine",
+"w": 5
+},
+"electric-furnace": {
+"categories": [
+"smelting"
+],
+"h": 3,
+"speed": 2,
+"type": "furnace",
+"w": 3
+},
+"electromagnetic-plant": {
+"categories": [
+"electromagnetics",
+"electronics",
+"electronics-or-assembling",
+"electronics-with-fluid",
+"parameters"
+],
+"h": 4,
+"speed": 2,
+"type": "assembling-machine",
+"w": 4
+},
+"foundry": {
+"categories": [
+"crafting-with-fluid-or-metallurgy",
+"metallurgy",
+"metallurgy-or-assembling",
+"parameters",
+"pressing"
+],
+"h": 5,
+"speed": 4,
+"type": "assembling-machine",
+"w": 5
+},
+"oil-refinery": {
+"categories": [
+"oil-processing",
+"parameters"
+],
+"h": 5,
+"speed": 1,
+"type": "assembling-machine",
+"w": 5
+},
+"recycler": {
+"categories": [
+"recycling",
+"recycling-or-hand-crafting"
+],
+"h": 4,
+"speed": 0.5,
+"type": "furnace",
+"w": 2
+},
+"rocket-silo": {
+"categories": [
+"rocket-building"
+],
+"h": 9,
+"parts": 50,
+"speed": 1,
+"type": "rocket-silo",
+"w": 9
+},
+"steel-furnace": {
+"categories": [
+"smelting"
+],
+"h": 2,
+"speed": 2,
+"type": "furnace",
+"w": 2
+},
+"stone-furnace": {
+"categories": [
+"smelting"
+],
+"h": 2,
+"speed": 1,
+"type": "furnace",
+"w": 2
+}
+},
+"recipes": {
+"accumulator": {
+"category": "electronics",
+"energy": 10,
+"ingredients": [
+{
+"amount": 2,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "battery",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "accumulator",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"advanced-circuit": {
+"category": "electronics",
+"energy": 6,
+"ingredients": [
+{
+"amount": 2,
+"name": "plastic-bar",
+"type": "item"
+},
+{
+"amount": 4,
+"name": "copper-cable",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "electronic-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "advanced-circuit",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"advanced-oil-processing": {
+"category": "oil-processing",
+"energy": 5,
+"ingredients": [
+{
+"amount": 50,
+"name": "water",
+"type": "fluid"
+},
+{
+"amount": 100,
+"name": "crude-oil",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 25,
+"name": "heavy-oil",
+"probability": 1,
+"type": "fluid"
+},
+{
+"amount": 45,
+"name": "light-oil",
+"probability": 1,
+"type": "fluid"
+},
+{
+"amount": 55,
+"name": "petroleum-gas",
+"probability": 1,
+"type": "fluid"
+}
+]
+},
+"assembling-machine-1": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 9,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 3,
+"name": "electronic-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "assembling-machine-1",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"assembling-machine-2": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 3,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "assembling-machine-1",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "assembling-machine-2",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"asteroid-collector": {
+"category": "crafting",
+"energy": 10,
+"ingredients": [
+{
+"amount": 5,
+"name": "processing-unit",
+"type": "item"
+},
+{
+"amount": 8,
+"name": "electric-engine-unit",
+"type": "item"
+},
+{
+"amount": 20,
+"name": "low-density-structure",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "asteroid-collector",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"automation-science-pack": {
+"category": "crafting",
+"energy": 5,
+"ingredients": [
+{
+"amount": 1,
+"name": "copper-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "iron-gear-wheel",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "automation-science-pack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"basic-oil-processing": {
+"category": "oil-processing",
+"energy": 5,
+"ingredients": [
+{
+"amount": 100,
+"name": "crude-oil",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 45,
+"name": "petroleum-gas",
+"probability": 1,
+"type": "fluid"
+}
+]
+},
+"battery": {
+"category": "chemistry-or-cryogenics",
+"energy": 4,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "copper-plate",
+"type": "item"
+},
+{
+"amount": 20,
+"name": "sulfuric-acid",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "battery",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"big-electric-pole": {
+"category": "electronics",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 5,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 8,
+"name": "iron-stick",
+"type": "item"
+},
+{
+"amount": 4,
+"name": "copper-cable",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "big-electric-pole",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"boiler": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 4,
+"name": "pipe",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "stone-furnace",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "boiler",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"burner-inserter": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "iron-gear-wheel",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "burner-inserter",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"cargo-bay": {
+"category": "crafting",
+"energy": 10,
+"ingredients": [
+{
+"amount": 20,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "processing-unit",
+"type": "item"
+},
+{
+"amount": 20,
+"name": "low-density-structure",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "cargo-bay",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"cargo-landing-pad": {
+"category": "crafting",
+"energy": 30,
+"ingredients": [
+{
+"amount": 25,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "processing-unit",
+"type": "item"
+},
+{
+"amount": 200,
+"name": "concrete",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "cargo-landing-pad",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"chemical-plant": {
+"category": "crafting",
+"energy": 5,
+"ingredients": [
+{
+"amount": 5,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "pipe",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "chemical-plant",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"chemical-science-pack": {
+"category": "crafting",
+"energy": 24,
+"ingredients": [
+{
+"amount": 1,
+"name": "sulfur",
+"type": "item"
+},
+{
+"amount": 3,
+"name": "advanced-circuit",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "engine-unit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "chemical-science-pack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"concrete": {
+"category": "crafting-with-fluid",
+"energy": 10,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-ore",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "stone-brick",
+"type": "item"
+},
+{
+"amount": 100,
+"name": "water",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 10,
+"name": "concrete",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"construction-robot": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "flying-robot-frame",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "construction-robot",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"copper-cable": {
+"category": "electronics",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "copper-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "copper-cable",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"copper-plate": {
+"category": "smelting",
+"energy": 3.2,
+"ingredients": [
+{
+"amount": 1,
+"name": "copper-ore",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "copper-plate",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"crusher": {
+"category": "crafting",
+"energy": 10,
+"ingredients": [
+{
+"amount": 10,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "electric-engine-unit",
+"type": "item"
+},
+{
+"amount": 20,
+"name": "low-density-structure",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "crusher",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"electric-engine-unit": {
+"category": "crafting-with-fluid",
+"energy": 10,
+"ingredients": [
+{
+"amount": 2,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "engine-unit",
+"type": "item"
+},
+{
+"amount": 15,
+"name": "lubricant",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "electric-engine-unit",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"electric-furnace": {
+"category": "crafting",
+"energy": 5,
+"ingredients": [
+{
+"amount": 10,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "advanced-circuit",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "stone-brick",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "electric-furnace",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"electric-mining-drill": {
+"category": "crafting",
+"energy": 2,
+"ingredients": [
+{
+"amount": 10,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 3,
+"name": "electronic-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "electric-mining-drill",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"electronic-circuit": {
+"category": "electronics",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 3,
+"name": "copper-cable",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "electronic-circuit",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"engine-unit": {
+"category": "advanced-crafting",
+"energy": 10,
+"ingredients": [
+{
+"amount": 1,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "pipe",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "engine-unit",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"fast-inserter": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "inserter",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "fast-inserter",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"fast-splitter": {
+"category": "pressing",
+"energy": 2,
+"ingredients": [
+{
+"amount": 10,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "splitter",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "fast-splitter",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"fast-transport-belt": {
+"category": "pressing",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 5,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "transport-belt",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "fast-transport-belt",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"fast-underground-belt": {
+"category": "pressing",
+"energy": 2,
+"ingredients": [
+{
+"amount": 40,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "underground-belt",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "fast-underground-belt",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"firearm-magazine": {
+"category": "crafting",
+"energy": 1,
+"ingredients": [
+{
+"amount": 4,
+"name": "iron-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "firearm-magazine",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"flying-robot-frame": {
+"category": "crafting",
+"energy": 20,
+"ingredients": [
+{
+"amount": 1,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "battery",
+"type": "item"
+},
+{
+"amount": 3,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "electric-engine-unit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "flying-robot-frame",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"grenade": {
+"category": "crafting",
+"energy": 8,
+"ingredients": [
+{
+"amount": 10,
+"name": "coal",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "iron-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "grenade",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"gun-turret": {
+"category": "crafting",
+"energy": 8,
+"ingredients": [
+{
+"amount": 20,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "copper-plate",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "iron-gear-wheel",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "gun-turret",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"heavy-oil-cracking": {
+"category": "organic-or-chemistry",
+"energy": 2,
+"ingredients": [
+{
+"amount": 30,
+"name": "water",
+"type": "fluid"
+},
+{
+"amount": 40,
+"name": "heavy-oil",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 30,
+"name": "light-oil",
+"probability": 1,
+"type": "fluid"
+}
+]
+},
+"inserter": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "electronic-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "inserter",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"iron-chest": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 8,
+"name": "iron-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "iron-chest",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"iron-gear-wheel": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "iron-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "iron-gear-wheel",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"iron-plate": {
+"category": "smelting",
+"energy": 3.2,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-ore",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "iron-plate",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"iron-stick": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "iron-stick",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"lab": {
+"category": "crafting",
+"energy": 2,
+"ingredients": [
+{
+"amount": 10,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 4,
+"name": "transport-belt",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "lab",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"light-oil-cracking": {
+"category": "organic-or-chemistry",
+"energy": 2,
+"ingredients": [
+{
+"amount": 30,
+"name": "water",
+"type": "fluid"
+},
+{
+"amount": 30,
+"name": "light-oil",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 20,
+"name": "petroleum-gas",
+"probability": 1,
+"type": "fluid"
+}
+]
+},
+"logistic-robot": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "advanced-circuit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "flying-robot-frame",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "logistic-robot",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"logistic-science-pack": {
+"category": "crafting",
+"energy": 6,
+"ingredients": [
+{
+"amount": 1,
+"name": "transport-belt",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "inserter",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "logistic-science-pack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"long-handed-inserter": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "inserter",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "long-handed-inserter",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"low-density-structure": {
+"category": "crafting",
+"energy": 15,
+"ingredients": [
+{
+"amount": 20,
+"name": "copper-plate",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "plastic-bar",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "low-density-structure",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"lubricant": {
+"category": "chemistry",
+"energy": 1,
+"ingredients": [
+{
+"amount": 10,
+"name": "heavy-oil",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 10,
+"name": "lubricant",
+"probability": 1,
+"type": "fluid"
+}
+]
+},
+"medium-electric-pole": {
+"category": "electronics",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 4,
+"name": "iron-stick",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "copper-cable",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "medium-electric-pole",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"military-science-pack": {
+"category": "crafting",
+"energy": 10,
+"ingredients": [
+{
+"amount": 1,
+"name": "piercing-rounds-magazine",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "grenade",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "stone-wall",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "military-science-pack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"offshore-pump": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 3,
+"name": "pipe",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "offshore-pump",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"oil-refinery": {
+"category": "crafting",
+"energy": 8,
+"ingredients": [
+{
+"amount": 15,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "pipe",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "stone-brick",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "oil-refinery",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"piercing-rounds-magazine": {
+"category": "crafting",
+"energy": 6,
+"ingredients": [
+{
+"amount": 2,
+"name": "copper-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "firearm-magazine",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "piercing-rounds-magazine",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"pipe": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "pipe",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"plastic-bar": {
+"category": "chemistry-or-cryogenics",
+"energy": 1,
+"ingredients": [
+{
+"amount": 1,
+"name": "coal",
+"type": "item"
+},
+{
+"amount": 20,
+"name": "petroleum-gas",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "plastic-bar",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"processing-unit": {
+"category": "electronics-with-fluid",
+"energy": 10,
+"ingredients": [
+{
+"amount": 20,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "advanced-circuit",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "sulfuric-acid",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "processing-unit",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"production-science-pack": {
+"category": "crafting",
+"energy": 21,
+"ingredients": [
+{
+"amount": 30,
+"name": "rail",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "electric-furnace",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "productivity-module",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 3,
+"name": "production-science-pack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"productivity-module": {
+"category": "electronics",
+"energy": 15,
+"ingredients": [
+{
+"amount": 5,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "advanced-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "productivity-module",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"pump": {
+"category": "crafting",
+"energy": 2,
+"ingredients": [
+{
+"amount": 1,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "engine-unit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "pipe",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "pump",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"pumpjack": {
+"category": "crafting",
+"energy": 5,
+"ingredients": [
+{
+"amount": 5,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "pipe",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "pumpjack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"radar": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 10,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "electronic-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "radar",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"rail": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "stone",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "iron-stick",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "rail",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"repair-pack": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "electronic-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "repair-pack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"roboport": {
+"category": "crafting",
+"energy": 5,
+"ingredients": [
+{
+"amount": 45,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 45,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 45,
+"name": "advanced-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "roboport",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"rocket-fuel": {
+"category": "organic-or-assembling",
+"energy": 15,
+"ingredients": [
+{
+"amount": 10,
+"name": "solid-fuel",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "light-oil",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "rocket-fuel",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"rocket-part": {
+"category": "rocket-building",
+"energy": 3,
+"ingredients": [
+{
+"amount": 1,
+"name": "processing-unit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "low-density-structure",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "rocket-fuel",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "rocket-part",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"rocket-silo": {
+"category": "crafting",
+"energy": 30,
+"ingredients": [
+{
+"amount": 1000,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 200,
+"name": "processing-unit",
+"type": "item"
+},
+{
+"amount": 200,
+"name": "electric-engine-unit",
+"type": "item"
+},
+{
+"amount": 100,
+"name": "pipe",
+"type": "item"
+},
+{
+"amount": 1000,
+"name": "concrete",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "rocket-silo",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"small-electric-pole": {
+"category": "electronics",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "wood",
+"type": "item"
+},
+{
+"amount": 2,
+"name": "copper-cable",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "small-electric-pole",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"solar-panel": {
+"category": "electronics",
+"energy": 10,
+"ingredients": [
+{
+"amount": 5,
+"name": "copper-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 15,
+"name": "electronic-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "solar-panel",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"solid-fuel-from-light-oil": {
+"category": "chemistry",
+"energy": 1,
+"ingredients": [
+{
+"amount": 10,
+"name": "light-oil",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "solid-fuel",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"solid-fuel-from-petroleum-gas": {
+"category": "chemistry",
+"energy": 1,
+"ingredients": [
+{
+"amount": 20,
+"name": "petroleum-gas",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "solid-fuel",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"space-platform-foundation": {
+"category": "crafting",
+"energy": 10,
+"ingredients": [
+{
+"amount": 20,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 20,
+"name": "copper-cable",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "space-platform-foundation",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"space-platform-starter-pack": {
+"category": "crafting",
+"energy": 60,
+"ingredients": [
+{
+"amount": 20,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 20,
+"name": "processing-unit",
+"type": "item"
+},
+{
+"amount": 60,
+"name": "space-platform-foundation",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "space-platform-starter-pack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"speed-module": {
+"category": "electronics",
+"energy": 15,
+"ingredients": [
+{
+"amount": 5,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "advanced-circuit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "speed-module",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"splitter": {
+"category": "pressing",
+"energy": 1,
+"ingredients": [
+{
+"amount": 5,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "electronic-circuit",
+"type": "item"
+},
+{
+"amount": 4,
+"name": "transport-belt",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "splitter",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"steam-engine": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 10,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 8,
+"name": "iron-gear-wheel",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "pipe",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "steam-engine",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"steel-chest": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 8,
+"name": "steel-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "steel-chest",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"steel-furnace": {
+"category": "crafting",
+"energy": 3,
+"ingredients": [
+{
+"amount": 6,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "stone-brick",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "steel-furnace",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"steel-plate": {
+"category": "smelting",
+"energy": 16,
+"ingredients": [
+{
+"amount": 5,
+"name": "iron-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "steel-plate",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"stone-brick": {
+"category": "smelting",
+"energy": 3.2,
+"ingredients": [
+{
+"amount": 2,
+"name": "stone",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "stone-brick",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"stone-furnace": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 5,
+"name": "stone",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "stone-furnace",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"stone-wall": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 5,
+"name": "stone-brick",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "stone-wall",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"storage-tank": {
+"category": "crafting",
+"energy": 3,
+"ingredients": [
+{
+"amount": 20,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "steel-plate",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "storage-tank",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"sulfur": {
+"category": "chemistry-or-cryogenics",
+"energy": 1,
+"ingredients": [
+{
+"amount": 30,
+"name": "water",
+"type": "fluid"
+},
+{
+"amount": 30,
+"name": "petroleum-gas",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "sulfur",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"sulfuric-acid": {
+"category": "chemistry-or-cryogenics",
+"energy": 1,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "sulfur",
+"type": "item"
+},
+{
+"amount": 100,
+"name": "water",
+"type": "fluid"
+}
+],
+"products": [
+{
+"amount": 50,
+"name": "sulfuric-acid",
+"probability": 1,
+"type": "fluid"
+}
+]
+},
+"thruster": {
+"category": "crafting",
+"energy": 10,
+"ingredients": [
+{
+"amount": 10,
+"name": "steel-plate",
+"type": "item"
+},
+{
+"amount": 10,
+"name": "processing-unit",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "electric-engine-unit",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "thruster",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"transport-belt": {
+"category": "pressing",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 1,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "iron-gear-wheel",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "transport-belt",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"underground-belt": {
+"category": "pressing",
+"energy": 1,
+"ingredients": [
+{
+"amount": 10,
+"name": "iron-plate",
+"type": "item"
+},
+{
+"amount": 5,
+"name": "transport-belt",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 2,
+"name": "underground-belt",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"utility-science-pack": {
+"category": "crafting",
+"energy": 21,
+"ingredients": [
+{
+"amount": 2,
+"name": "processing-unit",
+"type": "item"
+},
+{
+"amount": 1,
+"name": "flying-robot-frame",
+"type": "item"
+},
+{
+"amount": 3,
+"name": "low-density-structure",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 3,
+"name": "utility-science-pack",
+"probability": 1,
+"type": "item"
+}
+]
+},
+"wooden-chest": {
+"category": "crafting",
+"energy": 0.5,
+"ingredients": [
+{
+"amount": 2,
+"name": "wood",
+"type": "item"
+}
+],
+"products": [
+{
+"amount": 1,
+"name": "wooden-chest",
+"probability": 1,
+"type": "item"
+}
+]
+}
+},
+"space_age": true,
+"version": "2.0.77"
+}
+}

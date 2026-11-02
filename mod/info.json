@@ -1,0 +1,12 @@
+{
+  "name": "npc-factions",
+  "version": "0.12.0",
+  "title": "NPC Factions",
+  "author": "andre and contributors",
+  "factorio_version": "2.1",
+  "dependencies": [
+    "base >= 2.1.0",
+    "? space-age >= 2.1.0"
+  ],
+  "description": "NPC engineers who play alongside you: each walks, mines, crafts and pays for everything it builds, plans a main bus toward a rocket and a first space platform, and has its own personality. They start at peace with you, trade, ally, and go to war when provoked. Needs the Python companion (LLM strategist and planners). Early development."
+}

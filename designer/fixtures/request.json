@@ -1,0 +1,41 @@
+{
+  "schema": "designer-request-v1",
+  "request_id": "request-iron",
+  "identity": {
+    "world_id": "fixture-world",
+    "force_id": "fixture-force",
+    "surface_id": "nauvis",
+    "actor_id": "fixture-npc",
+    "life_id": "fixture-life-1",
+    "session_epoch": 3,
+    "game_version": "2.0.77",
+    "source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "prototype_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "observed_tick": 12000,
+    "revision": 7
+  },
+  "context_sha256": "7fbcd63b9204b517416a58753ebfa0a140072c54102dc15c0854633fff9050c7",
+  "snapshot_sha256": "e6e70e8fd72eacbc68011670359dc7858c93c4b2d543940f04c80b5f709d3be2",
+  "goal": "Expand iron output with one useful pair at a time. Inspect known local machinery and current carried stock; treat force-wide cumulative iron production as historical production, not available inventory. Coordinates and proposed machine pairs in this test fixture are synthetic and not native verified.",
+  "demand": [
+    {
+      "item": "iron-plate",
+      "metric": "rate_items_per_second",
+      "amount": 4.0,
+      "window_ticks": 3600
+    },
+    {
+      "item": "iron-plate",
+      "metric": "stock",
+      "amount": 200,
+      "window_ticks": null
+    }
+  ],
+  "constraints": {
+    "max_entities": 4,
+    "max_stages": 2,
+    "normal_quality_only": true
+  },
+  "revision": 1,
+  "parent_design_hash": null
+}

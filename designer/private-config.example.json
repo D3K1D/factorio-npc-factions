@@ -1,0 +1,12 @@
+{
+  "model": "<set-an-explicit-model-id-supported-by-your-account>",
+  "endpoint": "https://api.openai.com/v1/responses",
+  "allow_custom_endpoint": false,
+  "schema_name": "factorio_design_proposal",
+  "timeout_s": 30,
+  "total_deadline_s": 45,
+  "max_output_tokens": 4096,
+  "max_retries": 0,
+  "max_request_bytes": 262144,
+  "max_response_bytes": 524288
+}

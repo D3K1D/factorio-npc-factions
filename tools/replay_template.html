@@ -1,0 +1,948 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NPC Run Replay</title>
+<style>
+:root {
+  --bg: #121418; --panel: #1a1d22; --panel2: #22262d; --line: #2e333b; --text: #e4e6ea; --muted: #959ca7;
+  --accent: #f0a030; --good: #5cc06a; --bad: #e5534b; --info: #5aa0e6; --chip: #2a2f37; --ground: #2b3326;
+  --mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #eeece6; --panel: #fbfaf7; --panel2: #f1efe9; --line: #d9d5cc; --text: #1f2328; --muted: #646b75;
+    --chip: #e7e3da; --ground: #2b3326;
+  }
+}
+:root[data-theme="light"] {
+  --bg: #eeece6; --panel: #fbfaf7; --panel2: #f1efe9; --line: #d9d5cc; --text: #1f2328; --muted: #646b75; --chip: #e7e3da;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { background: var(--bg); color: var(--text); font: 13px/1.45 system-ui, "Segoe UI", sans-serif;
+  display: grid; grid-template-rows: auto 1fr auto; overflow: hidden; }
+header { display: flex; gap: 14px; align-items: center; padding: 8px 14px; border-bottom: 1px solid var(--line);
+  background: var(--panel); min-width: 0; }
+header h1 { font-size: 15px; margin: 0; white-space: nowrap; }
+header .purpose { color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; min-width: 0; }
+.chip { display: inline-flex; align-items: center; gap: 5px; padding: 2px 8px; border-radius: 999px; background: var(--chip);
+  white-space: nowrap; font-size: 12px; }
+.chip.good { background: color-mix(in srgb, var(--good) 22%, var(--chip)); }
+.chip.bad { background: color-mix(in srgb, var(--bad) 25%, var(--chip)); }
+.chip.off { color: var(--muted); }
+.dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; flex: none; }
+main { display: grid; grid-template-columns: 1fr 400px; min-height: 0; }
+#mapwrap { position: relative; min-width: 0; min-height: 0; background: var(--ground); }
+#map { width: 100%; height: 100%; display: block; cursor: grab; }
+#map.dragging { cursor: grabbing; }
+#mapbar { position: absolute; top: 8px; left: 8px; right: 8px; display: flex; flex-wrap: wrap; gap: 6px; pointer-events: none; }
+#mapbar > * { pointer-events: auto; }
+.btn, select, input[type=search] { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 6px;
+  padding: 3px 8px; font: inherit; }
+.btn { cursor: pointer; }
+.btn:hover { border-color: var(--muted); }
+.btn.on { background: var(--panel2); border-color: var(--accent); }
+#hud { position: absolute; left: 8px; bottom: 8px; background: color-mix(in srgb, var(--panel) 85%, transparent);
+  border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; font-family: var(--mono); font-size: 12px; }
+#legend { position: absolute; right: 8px; bottom: 8px; background: color-mix(in srgb, var(--panel) 85%, transparent);
+  border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; font-size: 11px; display: grid;
+  grid-template-columns: repeat(2, auto); gap: 2px 10px; }
+#legend span { display: inline-flex; align-items: center; gap: 5px; }
+#legend i { width: 10px; height: 10px; display: inline-block; border-radius: 2px; }
+aside { display: grid; grid-template-rows: auto 1fr; min-height: 0; border-left: 1px solid var(--line); background: var(--panel); }
+nav { display: flex; gap: 2px; padding: 6px 6px 0; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+nav button { background: none; border: none; color: var(--muted); padding: 6px 10px; cursor: pointer; font: inherit;
+  border-bottom: 2px solid transparent; }
+nav button.on { color: var(--text); border-bottom-color: var(--accent); }
+#panel { overflow: auto; padding: 12px 14px 24px; min-height: 0; }
+h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 18px 0 6px; font-weight: 600; }
+h2:first-child { margin-top: 0; }
+.big { font-size: 15px; margin: 0 0 4px; }
+table { border-collapse: collapse; width: 100%; }
+td, th { padding: 3px 6px 3px 0; vertical-align: top; text-align: left; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 500; white-space: nowrap; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.kv td:first-child { color: var(--muted); width: 40%; word-break: break-word; }
+.mono { font-family: var(--mono); font-size: 12px; word-break: break-all; }
+.muted { color: var(--muted); }
+.pass { color: var(--good); } .fail { color: var(--bad); }
+.card { background: var(--panel2); border: 1px solid var(--line); border-radius: 8px; padding: 10px; margin-bottom: 10px; }
+.card .head { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.card .head b { font-size: 14px; }
+.card .head .btn { margin-left: auto; font-size: 12px; padding: 1px 8px; }
+.bar { height: 6px; background: var(--chip); border-radius: 3px; overflow: hidden; }
+.bar > div { height: 100%; background: var(--good); }
+.events { list-style: none; margin: 0; padding: 0; }
+.events li { padding: 4px 6px; border-left: 3px solid var(--line); margin-bottom: 2px; cursor: pointer; border-radius: 0 4px 4px 0; }
+.events li:hover { background: var(--panel2); }
+.events li.future { opacity: .45; }
+.events li.now { background: color-mix(in srgb, var(--accent) 14%, transparent); }
+.events li .t { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-right: 6px; }
+.events li.bad { color: color-mix(in srgb, var(--bad) 70%, var(--text)); }
+.events li.good { color: color-mix(in srgb, var(--good) 70%, var(--text)); }
+.filters { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
+.filters .btn { font-size: 12px; padding: 1px 8px; display: inline-flex; gap: 5px; align-items: center; }
+.log { font-family: var(--mono); font-size: 11.5px; white-space: pre-wrap; word-break: break-word; }
+.log div { padding: 1px 4px; border-radius: 3px; }
+.log div.future { opacity: .45; }
+.log div.now { background: color-mix(in srgb, var(--accent) 16%, transparent); }
+canvas.chart { width: 100%; height: 150px; display: block; background: var(--panel2); border-radius: 6px; border: 1px solid var(--line); }
+footer { display: grid; grid-template-columns: auto auto auto 1fr; gap: 10px; align-items: center; padding: 8px 14px;
+  border-top: 1px solid var(--line); background: var(--panel); }
+#play { width: 38px; height: 30px; font-size: 15px; }
+#clock { font-family: var(--mono); font-size: 12px; white-space: nowrap; min-width: 170px; }
+#timeline { width: 100%; height: 54px; display: block; cursor: pointer; border-radius: 6px; background: var(--panel2);
+  border: 1px solid var(--line); }
+#tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); border-radius: 6px;
+  padding: 4px 8px; max-width: 420px; font-size: 12px; display: none; z-index: 10; box-shadow: 0 4px 14px rgba(0,0,0,.3); }
+.empty { padding: 40px; text-align: center; color: var(--muted); }
+details summary { cursor: pointer; color: var(--muted); }
+.vid { margin-top: 8px; }
+.vid video { width: 100%; aspect-ratio: 16 / 9; display: block; border-radius: 6px; background: #000; cursor: zoom-in; }
+.vid.early video { opacity: .35; }
+.vid .cap { display: flex; justify-content: space-between; gap: 8px; font-size: 11.5px; color: var(--muted); margin-top: 3px; }
+.vid .cap a { color: var(--muted); }
+#bigvideo { position: absolute; inset: 0; background: #000; display: none; z-index: 4; }
+#bigvideo video { width: 100%; height: 100%; object-fit: contain; display: block; cursor: zoom-out; }
+#bigvideo.early video { opacity: .35; }
+#bigvideo .cap { position: absolute; left: 8px; top: 8px; background: color-mix(in srgb, var(--panel) 85%, transparent);
+  border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; font-size: 12px; }
+#bigvideo .btn { position: absolute; right: 8px; top: 8px; }
+.chip.link { cursor: pointer; }
+@media (max-width: 900px) {
+  html, body { height: auto; }
+  body { overflow: auto; display: block; }
+  main { display: block; }
+  #mapwrap { height: 60vh; min-height: 280px; }
+  aside { display: block; border-left: none; border-top: 1px solid var(--line); }
+  #panel { overflow: visible; padding: 12px 16px 24px; }
+  footer { position: sticky; bottom: 0; z-index: 5; grid-template-columns: auto auto 1fr; padding: 8px 16px; }
+  #clock { grid-column: 1 / -1; order: 5; }
+  #timeline { grid-column: 1 / -1; }
+  header { flex-wrap: wrap; padding: 8px 16px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="title">Run replay</h1>
+  <span class="purpose" id="purpose"></span>
+  <span id="chips" style="display:flex;gap:6px"></span>
+</header>
+<main>
+  <section id="mapwrap">
+    <canvas id="map"></canvas>
+    <div id="mapbar"></div>
+    <div id="hud"></div>
+    <div id="legend"></div>
+    <div id="bigvideo" data-vbox><video muted playsinline preload="auto"></video>
+      <span class="cap"><span id="bigname"></span> <span class="when"></span></span>
+      <button class="btn" id="bigclose" title="Back to the map (Esc)">✕ Map</button></div>
+  </section>
+  <aside>
+    <nav id="tabs"></nav>
+    <div id="panel"></div>
+  </aside>
+</main>
+<footer>
+  <button class="btn" id="play" title="Play / pause (space)">▶</button>
+  <select id="speed" title="Game time per second of replay"></select>
+  <span id="clock"></span>
+  <canvas id="timeline"></canvas>
+</footer>
+<div id="tip"></div>
+<script id="replay-data" type="application/json">/*REPLAY_DATA*/null</script>
+<script>
+"use strict";
+const D = (() => { try { return JSON.parse(document.getElementById("replay-data").textContent); } catch (e) { return null; } })();
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+if (!D) {
+  document.body.innerHTML = '<p class="empty">No replay data in this page. Build it with: python tools/replay.py &lt;run dir&gt;</p>';
+  throw new Error("no data");
+}
+const TPS = 60;
+const M = D.meta || {};
+const t0 = D.t0, t1 = Math.max(D.t1, D.t0 + 1);
+
+// ---------- helpers ----------
+function clock(t) {
+  const s = Math.max(0, Math.floor(t / TPS));
+  const h = Math.floor(s / 3600), m = Math.floor(s / 60) % 60, sec = s % 60;
+  return `${h}:${String(m).padStart(2, "0")}:${String(sec).padStart(2, "0")}`;
+}
+function since(t) { return "+" + clock(t - t0); }
+function money(v, digits) { return v == null ? "—" : "$" + Number(v).toFixed(digits ?? (v < 0.1 ? 4 : 2)); }
+function num(v) { return v == null ? "—" : Number(v).toLocaleString(); }
+function rgb(c, a) {
+  if (!c) return `rgba(200,200,200,${a ?? 1})`;
+  return `rgba(${Math.round(c[0] * 255)},${Math.round(c[1] * 255)},${Math.round(c[2] * 255)},${a ?? 1})`;
+}
+function bisect(arr, t) {   // index of the last element <= t, or -1
+  let lo = 0, hi = arr.length - 1, ans = -1;
+  while (lo <= hi) { const mid = (lo + hi) >> 1; if (arr[mid] <= t) { ans = mid; lo = mid + 1; } else hi = mid - 1; }
+  return ans;
+}
+function seconds(s) {
+  if (s == null) return "—";
+  s = Math.round(s);
+  return s >= 3600 ? `${Math.floor(s / 3600)} h ${Math.floor(s / 60) % 60} min` : s >= 60 ? `${Math.floor(s / 60)} min ${s % 60} s` : `${s} s`;
+}
+
+// ---------- data prep ----------
+const NPCS = D.npcs || [];
+const npcById = Object.fromEntries(NPCS.map(n => [n.id, n]));
+const TRACKS = D.tracks || {};
+const PLAYERS = D.players || {};
+const ENEMY_T = (D.enemies || []).map(e => e[0]);
+const STATES = D.states || {};
+const STATE_T = Object.fromEntries(Object.entries(STATES).map(([id, rows]) => [id, rows.map(r => r[0])]));
+const STATS = D.stats || [];
+const STATS_T = STATS.map(s => s[0]);
+const EVENTS = D.events || [];
+const EVENT_T = EVENTS.map(e => e.t);
+const LOG = D.log || [];
+const LOG_T = LOG.map(l => l[0]);
+const LLM = (D.llm || []).slice().sort((a, b) => a.t - b.t);
+const forceByName = Object.fromEntries((D.forces || []).map((f, i) => [f.name, i + 1]));
+const enemyForce = forceByName.enemy || -1;
+// Real graphics (tools/video.py): one MP4 per engineer and view, frame k drawn at game tick ticks[k].
+const VIDEO = (D.video && D.video.videos) || [];
+const VFPS = (D.video && D.video.fps) || 6;
+const VIEW_LABEL = {engineer: "Engineer", base: "Home"};
+
+const GROUND = [43, 51, 38], TREE = [24, 66, 30];
+// Ore is drawn half way to the ground colour, so buildings on it stand out.
+const ORE = Object.fromEntries(Object.entries({i: "#6a86a8", c: "#c8763e", k: "#0c0c0c", s: "#b49c70", o: "#8a3aa6",
+  u: "#5ac446", x: "#888888", w: "#264e84"}).map(([k, hex]) => [k, k === "w" ? hex : "#" + [1, 3, 5].map((at, j) =>
+  Math.round(parseInt(hex.slice(at, at + 2), 16) * 0.6 + GROUND[j] * 0.4).toString(16).padStart(2, "0")).join("")]));
+const TYPE_COLOR = {
+  "transport-belt": "#d6b228", "underground-belt": "#be961e", "splitter": "#e6c83c", "loader": "#d6b228",
+  "inserter": "#cdc45a", "assembling-machine": "#687e96", "furnace": "#966842", "mining-drill": "#7a6e60",
+  "lab": "#b288de", "electric-pole": "#8a5e34", "pipe": "#6492a6", "pipe-to-ground": "#507e92", "boiler": "#aa583a",
+  "generator": "#4e98a0", "offshore-pump": "#3c78ae", "container": "#8c623a", "logistic-container": "#966e46",
+  "ammo-turret": "#ba3a3a", "electric-turret": "#c84a6a", "fluid-turret": "#c86a3a", "wall": "#969696", "gate": "#a0a0a0",
+  "storage-tank": "#5a788c", "pump": "#5a8c96", "radar": "#8282a0", "solar-panel": "#323c5a", "accumulator": "#5a5a78",
+  "rocket-silo": "#c8c8d2", "unit-spawner": "#7a1e1e", "turret": "#9a2a2a", "straight-rail": "#7a7a7a",
+  "curved-rail-a": "#7a7a7a", "curved-rail-b": "#7a7a7a", "half-diagonal-rail": "#7a7a7a", "rail-signal": "#c0c060",
+  "beacon": "#5a64a0", "roboport": "#6a7a8a", "land-mine": "#6a5a3a", "simple-entity-with-owner": "#777",
+  "reactor": "#4a9a5a", "heat-pipe": "#a06a4a", "car": "#c0c0c0"};
+const NAME_COLOR = {"oil-refinery": "#8c58a0", "chemical-plant": "#70a074", "pumpjack": "#403c42",
+  "long-handed-inserter": "#ce5050", "fast-inserter": "#508cd2", "burner-inserter": "#96785a", "steam-engine": "#4e98a0",
+  "stone-furnace": "#8a6a52", "burner-mining-drill": "#6a5444"};
+const SMALL = {"inserter": 0.55, "transport-belt": 0.8, "underground-belt": 0.8, "electric-pole": 0.5, "pipe": 0.6,
+  "pipe-to-ground": 0.6, "land-mine": 0.5, "rail-signal": 0.5};
+
+const PROTOS = (D.protos || []).map(([name, type, w, h]) => ({name, type, w: w || 1, h: h || 1,
+  color: NAME_COLOR[name] || TYPE_COLOR[type] || "#8a8a8a", shrink: SMALL[type] || 1}));
+const B = D.buildings || {p: [], x: [], y: [], d: [], f: [], t0: [], t1: []};
+const NB = B.p.length;
+// Draw order grouped by colour (one fillStyle change per colour).
+const colorIndex = {}; const colors = [];
+const bColor = new Int32Array(NB);
+for (let i = 0; i < NB; i++) {
+  const c = (PROTOS[B.p[i] - 1] || {}).color || "#8a8a8a";
+  if (!(c in colorIndex)) { colorIndex[c] = colors.length; colors.push(c); }
+  bColor[i] = colorIndex[c];
+}
+const order = Array.from({length: NB}, (_, i) => i).sort((a, b) => bColor[a] - bColor[b]);
+const BX = Float32Array.from(B.x), BY = Float32Array.from(B.y), BT0 = Int32Array.from(B.t0), BT1 = Int32Array.from(B.t1);
+const BW = new Float32Array(NB), BH = new Float32Array(NB), BS = new Float32Array(NB);
+for (let i = 0; i < NB; i++) {
+  const p = PROTOS[B.p[i] - 1] || {w: 1, h: 1, shrink: 1};
+  const sideways = B.d[i] === 4 || B.d[i] === 12;
+  BW[i] = sideways ? p.h : p.w; BH[i] = sideways ? p.w : p.h; BS[i] = p.shrink;
+}
+
+// ---------- event categories ----------
+const CATS = {
+  talk: {label: "Talk", color: "#6fb7ff", kinds: ["say", "chat"]},
+  tasks: {label: "Strategist tools", color: "#b48cff", kinds: ["task"]},
+  war: {label: "Fights & deaths", color: "#e5534b", kinds: ["war", "died", "lost"]},
+  progress: {label: "Research", color: "#5cc06a", kinds: ["research"]},
+  plans: {label: "Plans", color: "#f0a030", kinds: ["plan", "npc"]},
+  social: {label: "Diplomacy", color: "#e0c060", kinds: ["social"]},
+  runner: {label: "Runner", color: "#8a93a0", kinds: ["runner"]},
+  system: {label: "System", color: "#6a717c", kinds: ["system"]},
+};
+const catOf = {}; for (const [c, v] of Object.entries(CATS)) for (const k of v.kinds) catOf[k] = c;
+const shownCats = Object.fromEntries(Object.keys(CATS).map(c => [c, c !== "runner"]));
+
+// ---------- state ----------
+let T = t0, playing = false;
+const SPEEDS = [1, 2, 5, 10, 20, 30, 60, 120, 300, 600, 1200, 3600];
+let speed = SPEEDS.reduce((best, s) => Math.abs(Math.log(s) - Math.log((t1 - t0) / TPS / 90)) <
+  Math.abs(Math.log(best) - Math.log((t1 - t0) / TPS / 90)) ? s : best, 60);
+const view = {cx: 0, cy: 0, scale: 2};
+let follow = "all";
+const show = {terrain: true, buildings: true, trails: true, biters: true, labels: true, pings: true, legend: innerWidth > 900};
+
+// ---------- header ----------
+(function header() {
+  $("title").textContent = M.run_name || "Run replay";
+  document.title = (M.run_name ? M.run_name + " · " : "") + "NPC Run Replay";
+  $("purpose").textContent = M.purpose || "";
+  $("purpose").title = M.purpose || "";
+  const chips = [];
+  const o = M.outcome || {};
+  if (o.passed === true) chips.push('<span class="chip good">PASS</span>');
+  else if (o.passed === false) chips.push('<span class="chip bad">FAIL</span>');
+  chips.push(`<span class="chip" title="Game time recorded">⏱ ${clock(t1 - t0)} game</span>`);
+  const total = (M.llm || {}).total;
+  if (total && total.calls) chips.push(`<span class="chip" title="LLM spend in this run">${money(total.cost)} · ${total.calls} LLM calls</span>`);
+  else chips.push('<span class="chip off">no paid LLM calls</span>');
+  if (VIDEO.length) chips.push(`<span class="chip link" id="videochip" title="Real game graphics of this run">🎞 ${VIDEO.length} videos</span>`);
+  $("chips").innerHTML = chips.join("");
+})();
+
+// ---------- terrain ----------
+const BLOCK = D.block || 64, CELL = D.cell || 2, TREE_CELL = D.tree_cell || 8;
+const terrain = (D.terrain || []).map(([bx, by, g, tr]) => {
+  const n = BLOCK / CELL, m = BLOCK / TREE_CELL;
+  const cv = document.createElement("canvas"); cv.width = n; cv.height = n;
+  const cx = cv.getContext("2d"); const img = cx.createImageData(n, n);
+  for (let i = 0; i < n * n; i++) {
+    const ch = g[i] || ".";
+    let r, gg, b;
+    if (ch !== ".") {
+      const hex = ORE[ch] || "#888";
+      r = parseInt(hex.slice(1, 3), 16); gg = parseInt(hex.slice(3, 5), 16); b = parseInt(hex.slice(5, 7), 16);
+    } else {
+      const cxl = i % n, cyl = Math.floor(i / n);
+      const ti = Math.floor(cyl * CELL / TREE_CELL) * m + Math.floor(cxl * CELL / TREE_CELL);
+      const dens = (tr && tr[ti] ? parseInt(tr[ti], 10) : 0) / 9 * 0.85;
+      r = GROUND[0] + (TREE[0] - GROUND[0]) * dens; gg = GROUND[1] + (TREE[1] - GROUND[1]) * dens; b = GROUND[2] + (TREE[2] - GROUND[2]) * dens;
+    }
+    img.data[i * 4] = r; img.data[i * 4 + 1] = gg; img.data[i * 4 + 2] = b; img.data[i * 4 + 3] = 255;
+  }
+  cx.putImageData(img, 0, 0);
+  return {x: bx * BLOCK, y: by * BLOCK, cv};
+});
+
+// ---------- positions ----------
+function actorAt(id, t) {
+  const tr = TRACKS[id];
+  if (!tr || !tr.t.length) return null;
+  const i = bisect(tr.t, t);
+  if (i < 0) return null;
+  let x = tr.x[i], y = tr.y[i];
+  const gap = (D.every || 60) * 3;
+  if (i + 1 < tr.t.length && tr.t[i + 1] - tr.t[i] <= gap) {
+    const f = (t - tr.t[i]) / (tr.t[i + 1] - tr.t[i]);
+    x += (tr.x[i + 1] - x) * f; y += (tr.y[i + 1] - y) * f;
+  }
+  const last = tr.t[tr.t.length - 1];
+  return {x, y, hp: tr.hp[i], v: tr.v[i] ? (D.vehicles || [])[tr.v[i] - 1] : null, stale: t - last > gap, i};
+}
+function stateAt(id, t) {
+  const rows = STATES[id]; if (!rows) return null;
+  const i = bisect(STATE_T[id], t);
+  return i < 0 ? null : {t: rows[i][0], phase: rows[i][1], doing: rows[i][2], plan: rows[i][3], foe: rows[i][4]};
+}
+function statsAt(t) { const i = bisect(STATS_T, t); return i < 0 ? null : STATS[i]; }
+function extent(t) {
+  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+  const add = (x, y) => { x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y); };
+  for (const n of NPCS) { const a = actorAt(n.id, t); if (a) add(a.x, a.y); if (n.home) add(n.home.x, n.home.y); }
+  for (const name in PLAYERS) { const p = PLAYERS[name]; const i = bisect(p.t, t); if (i >= 0) add(p.x[i], p.y[i]); }
+  if (x0 === Infinity) for (const b of terrain) { add(b.x, b.y); add(b.x + BLOCK, b.y + BLOCK); }
+  if (x0 === Infinity) return {x0: -64, y0: -64, x1: 64, y1: 64};
+  return {x0, y0, x1, y1};
+}
+
+// ---------- map ----------
+const map = $("map"), ctx = map.getContext("2d");
+let W = 0, H = 0, DPR = 1;
+function resize() {
+  DPR = window.devicePixelRatio || 1;
+  W = map.clientWidth; H = map.clientHeight;
+  map.width = Math.max(1, W * DPR); map.height = Math.max(1, H * DPR);
+  drawTimelineBase(); draw();
+}
+function fit(t) {
+  const e = extent(t);
+  const pad = 40;
+  view.cx = (e.x0 + e.x1) / 2; view.cy = (e.y0 + e.y1) / 2;
+  view.scale = Math.max(0.05, Math.min(16, Math.min((W - 2 * pad) / Math.max(48, e.x1 - e.x0), (H - 2 * pad) / Math.max(48, e.y1 - e.y0))));
+}
+const sx = x => (x - view.cx) * view.scale + W / 2;
+const sy = y => (y - view.cy) * view.scale + H / 2;
+
+function draw() {
+  if (!W) return;
+  if (follow !== "all" && follow !== "free") {
+    const a = actorAt(follow, T); if (a) { view.cx = a.x; view.cy = a.y; }
+  } else if (follow === "all") fit(T);
+  const s = view.scale;
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  ctx.fillStyle = `rgb(${GROUND.join(",")})`; ctx.fillRect(0, 0, W, H);
+  const wx0 = view.cx - W / 2 / s - 8, wx1 = view.cx + W / 2 / s + 8, wy0 = view.cy - H / 2 / s - 8, wy1 = view.cy + H / 2 / s + 8;
+  if (show.terrain) {
+    ctx.imageSmoothingEnabled = false;
+    for (const b of terrain) {
+      if (b.x > wx1 || b.x + BLOCK < wx0 || b.y > wy1 || b.y + BLOCK < wy0) continue;
+      ctx.drawImage(b.cv, sx(b.x), sy(b.y), BLOCK * s + 0.5, BLOCK * s + 0.5);
+    }
+  }
+  if (show.buildings) {
+    const gap = s >= 6 ? 1 : 0;
+    let current = -1;
+    for (let k = 0; k < NB; k++) {
+      const i = order[k];
+      if (BT0[i] > T || (BT1[i] >= 0 && BT1[i] <= T)) continue;
+      const x = BX[i], y = BY[i];
+      if (x < wx0 || x > wx1 || y < wy0 || y > wy1) continue;
+      if (bColor[i] !== current) { current = bColor[i]; ctx.fillStyle = colors[current]; }
+      const w = Math.max(1, BW[i] * BS[i] * s - gap), h = Math.max(1, BH[i] * BS[i] * s - gap);
+      ctx.fillRect(sx(x) - w / 2, sy(y) - h / 2, w, h);
+    }
+  }
+  if (show.biters) {
+    const i = bisect(ENEMY_T, T);
+    if (i >= 0 && T - ENEMY_T[i] <= (D.every || 60) * 2) {
+      const flat = D.enemies[i][1];
+      ctx.fillStyle = "#ff4a3a";
+      const r = Math.max(1.5, Math.min(4, s * 0.6));
+      for (let j = 0; j < flat.length; j += 2) { ctx.beginPath(); ctx.arc(sx(flat[j]), sy(flat[j + 1]), r, 0, 7); ctx.fill(); }
+    }
+  }
+  if (show.labels) {   // homes
+    ctx.font = "11px system-ui, sans-serif"; ctx.textAlign = "center";
+    for (const n of NPCS) {
+      if (!n.home) continue;
+      const x = sx(n.home.x), y = sy(n.home.y);
+      ctx.strokeStyle = rgb(n.color, .8); ctx.lineWidth = 1.5; ctx.setLineDash([4, 3]);
+      ctx.beginPath(); ctx.arc(x, y, 10, 0, 7); ctx.stroke(); ctx.setLineDash([]);
+      if (s < 3) { ctx.fillStyle = rgb(n.color, .9); ctx.fillText(n.name + "'s home", x, y - 14); }
+    }
+  }
+  if (show.trails) {
+    const span = 3 * 60 * TPS;
+    for (const n of NPCS) {
+      const tr = TRACKS[n.id]; if (!tr) continue;
+      const i1 = bisect(tr.t, T); if (i1 < 1) continue;
+      let i0 = Math.max(0, bisect(tr.t, T - span));
+      ctx.lineWidth = 2; ctx.lineCap = "round";
+      for (let i = i0 + 1; i <= i1; i++) {
+        if (tr.t[i] - tr.t[i - 1] > (D.every || 60) * 3) continue;
+        ctx.strokeStyle = rgb(n.color, 0.15 + 0.7 * (tr.t[i] - (T - span)) / span);
+        ctx.beginPath(); ctx.moveTo(sx(tr.x[i - 1]), sy(tr.y[i - 1])); ctx.lineTo(sx(tr.x[i]), sy(tr.y[i])); ctx.stroke();
+      }
+    }
+  }
+  if (show.pings) {
+    const fade = 20 * TPS;
+    const i1 = bisect(EVENT_T, T);
+    for (let i = i1; i >= 0 && EVENTS[i].t > T - fade; i--) {
+      const e = EVENTS[i];
+      if (e.x == null || !shownCats[catOf[e.k]]) continue;
+      const age = (T - e.t) / fade;
+      ctx.strokeStyle = e.tone === "bad" ? `rgba(229,83,75,${1 - age})` : e.tone === "good" ? `rgba(92,192,106,${1 - age})` :
+        `rgba(240,200,120,${(1 - age) * 0.8})`;
+      ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.arc(sx(e.x), sy(e.y), 6 + age * 26, 0, 7); ctx.stroke();
+    }
+  }
+  ctx.font = "12px system-ui, sans-serif"; ctx.textAlign = "center";
+  for (const name in PLAYERS) {
+    const p = PLAYERS[name]; const i = bisect(p.t, T);
+    if (i < 0 || T - p.t[i] > (D.every || 60) * 3) continue;
+    const x = sx(p.x[i]), y = sy(p.y[i]);
+    ctx.fillStyle = "#fff"; ctx.strokeStyle = "#000"; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(x, y - 7); ctx.lineTo(x + 6, y); ctx.lineTo(x, y + 7); ctx.lineTo(x - 6, y); ctx.closePath(); ctx.fill(); ctx.stroke();
+    if (show.labels) { ctx.fillStyle = "#fff"; ctx.fillText(name, x, y - 11); }
+  }
+  for (const n of NPCS) {
+    const a = actorAt(n.id, T); if (!a) continue;
+    const x = sx(a.x), y = sy(a.y);
+    const dead = a.stale;
+    ctx.globalAlpha = dead ? 0.35 : 1;
+    ctx.fillStyle = rgb(n.color); ctx.strokeStyle = "#111"; ctx.lineWidth = 2;
+    if (a.v) { ctx.beginPath(); ctx.rect(x - 7, y - 7, 14, 14); ctx.fill(); ctx.stroke(); }
+    else { ctx.beginPath(); ctx.arc(x, y, 6.5, 0, 7); ctx.fill(); ctx.stroke(); }
+    if (!dead && a.hp < 0.999) {
+      ctx.fillStyle = "#300"; ctx.fillRect(x - 10, y + 10, 20, 3);
+      ctx.fillStyle = a.hp > 0.5 ? "#5cc06a" : a.hp > 0.25 ? "#f0a030" : "#e5534b"; ctx.fillRect(x - 10, y + 10, 20 * a.hp, 3);
+    }
+    if (show.labels) {
+      ctx.fillStyle = "#fff"; ctx.strokeStyle = "rgba(0,0,0,.7)"; ctx.lineWidth = 3;
+      const label = n.name + (a.v ? ` (${a.v})` : "") + (dead ? " †" : "");
+      ctx.strokeText(label, x, y - 11); ctx.fillText(label, x, y - 11);
+    }
+    ctx.globalAlpha = 1;
+  }
+  $("hud").textContent = `${(s >= 1 ? s.toFixed(1) : s.toFixed(2))} px/tile · ${Math.round(view.cx)}, ${Math.round(view.cy)}`;
+}
+
+// pan & zoom
+let drag = null;
+map.addEventListener("pointerdown", e => { drag = {x: e.clientX, y: e.clientY, cx: view.cx, cy: view.cy}; map.setPointerCapture(e.pointerId); map.classList.add("dragging"); });
+map.addEventListener("pointermove", e => {
+  if (!drag) return;
+  const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+  if (Math.abs(dx) + Math.abs(dy) > 3 && follow !== "free") setFollow("free");
+  view.cx = drag.cx - dx / view.scale; view.cy = drag.cy - dy / view.scale; draw();
+});
+map.addEventListener("pointerup", () => { drag = null; map.classList.remove("dragging"); });
+map.addEventListener("wheel", e => {
+  e.preventDefault();
+  const r = map.getBoundingClientRect();
+  const mx = e.clientX - r.left, my = e.clientY - r.top;
+  const wx = (mx - W / 2) / view.scale + view.cx, wy = (my - H / 2) / view.scale + view.cy;
+  view.scale = Math.max(0.05, Math.min(40, view.scale * Math.exp(-e.deltaY * 0.0015)));
+  if (follow === "all") setFollow("free");
+  if (follow === "free") { view.cx = wx - (mx - W / 2) / view.scale; view.cy = wy - (my - H / 2) / view.scale; }
+  draw();
+}, {passive: false});
+
+// map bar
+function setFollow(v) {
+  follow = v;
+  const sel = $("follow"); if (sel) sel.value = typeof v === "number" ? String(v) : v;
+  draw();
+}
+(function mapbar() {
+  const opts = ['<option value="all">Fit everyone</option>', '<option value="free">Free camera</option>']
+    .concat(NPCS.map(n => `<option value="${n.id}">Follow ${esc(n.name)}</option>`));
+  const toggles = Object.keys(show).map(k => `<button class="btn${show[k] ? " on" : ""}" data-show="${k}">${k}</button>`);
+  $("mapbar").innerHTML = `<select id="follow">${opts.join("")}</select>` + toggles.join("");
+  $("follow").addEventListener("change", e => setFollow(e.target.value === "all" || e.target.value === "free" ? e.target.value : Number(e.target.value)));
+  $("mapbar").querySelectorAll("[data-show]").forEach(b => b.addEventListener("click", () => {
+    show[b.dataset.show] = !show[b.dataset.show]; b.classList.toggle("on", show[b.dataset.show]);
+    $("legend").style.display = show.legend ? "" : "none"; draw();
+  }));
+  $("legend").style.display = show.legend ? "" : "none";
+  const legend = [["belt", TYPE_COLOR["transport-belt"]], ["inserter", TYPE_COLOR.inserter], ["assembler", TYPE_COLOR["assembling-machine"]],
+    ["furnace", TYPE_COLOR.furnace], ["drill", TYPE_COLOR["mining-drill"]], ["power", TYPE_COLOR.generator],
+    ["lab", TYPE_COLOR.lab], ["turret / wall", TYPE_COLOR["ammo-turret"]], ["nest / worm", TYPE_COLOR["unit-spawner"]],
+    ["biters", "#ff4a3a"], ["iron / copper", ORE.i], ["coal / stone", ORE.k], ["water", ORE.w]];
+  $("legend").innerHTML = legend.map(([n, c]) => `<span><i style="background:${c}"></i>${n}</span>`).join("");
+})();
+
+// ---------- timeline ----------
+const tl = $("timeline"), tctx = tl.getContext("2d");
+let tlBase = null, TW = 0, TH = 0;
+const tx = t => 6 + (t - t0) / (t1 - t0) * (TW - 12);
+const tAt = px => t0 + Math.max(0, Math.min(1, (px - 6) / (TW - 12))) * (t1 - t0);
+function drawTimelineBase() {
+  TW = tl.clientWidth; TH = tl.clientHeight;
+  if (!TW) return;
+  tl.width = TW * DPR; tl.height = TH * DPR;
+  tlBase = document.createElement("canvas"); tlBase.width = tl.width; tlBase.height = tl.height;
+  const c = tlBase.getContext("2d"); c.setTransform(DPR, 0, 0, DPR, 0, 0);
+  const lanes = ["war", "talk", "tasks", "progress", "plans", "social", "runner"];
+  const laneH = (TH - 14) / (lanes.length + 1);
+  c.font = "9px system-ui"; c.fillStyle = "rgba(150,156,167,.7)";
+  // hour/minute ticks
+  const dur = (t1 - t0) / TPS;
+  const step = [60, 300, 600, 1800, 3600, 7200, 14400].find(s => dur / s < 12) || 28800;
+  for (let s = Math.ceil(t0 / TPS / step) * step; s * TPS <= t1; s += step) {
+    const x = tx(s * TPS), h = Math.floor(s / 3600), m = Math.floor(s / 60) % 60;
+    c.fillRect(x, TH - 12, 1, 4); c.fillText(h ? `${h}h${m ? String(m).padStart(2, "0") : ""}` : `${m}m`, x + 2, TH - 2);
+  }
+  lanes.forEach((cat, li) => {
+    c.fillStyle = CATS[cat].color;
+    const y = 3 + li * laneH;
+    for (const e of EVENTS) if (catOf[e.k] === cat) c.fillRect(tx(e.t), y, e.tone === "bad" ? 2 : 1, laneH - 1);
+  });
+  c.fillStyle = "#c58cff";
+  const y = 3 + lanes.length * laneH;
+  for (const call of LLM) c.fillRect(tx(call.t), y, 1.5, laneH - 1);
+}
+function drawTimeline() {
+  if (!tlBase) return;
+  tctx.setTransform(1, 0, 0, 1, 0, 0);
+  tctx.clearRect(0, 0, tl.width, tl.height);
+  tctx.drawImage(tlBase, 0, 0);
+  tctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  const x = tx(T);
+  tctx.fillStyle = "rgba(240,160,48,.18)"; tctx.fillRect(6, 0, x - 6, TH);
+  tctx.fillStyle = "#f0a030"; tctx.fillRect(x - 1, 0, 2, TH);
+}
+let scrubbing = false;
+tl.addEventListener("pointerdown", e => { scrubbing = true; tl.setPointerCapture(e.pointerId); seek(tAt(e.offsetX)); });
+tl.addEventListener("pointermove", e => {
+  if (scrubbing) { seek(tAt(e.offsetX)); return; }
+  const t = tAt(e.offsetX), tol = (t1 - t0) / TW * 4;
+  let best = null;
+  for (let i = Math.max(0, bisect(EVENT_T, t - tol)); i < EVENTS.length && EVENTS[i].t <= t + tol; i++)
+    if (!best || Math.abs(EVENTS[i].t - t) < Math.abs(best.t - t)) best = EVENTS[i];
+  const tip = $("tip");
+  tip.style.display = "block"; tip.style.left = Math.min(e.clientX + 12, innerWidth - 430) + "px"; tip.style.top = (e.clientY - 60) + "px";
+  tip.innerHTML = `<span class="mono">${clock(t)}</span>` + (best ? `<br>${esc(best.text)}` : "");
+});
+tl.addEventListener("pointerup", () => { scrubbing = false; });
+tl.addEventListener("pointerleave", () => { $("tip").style.display = "none"; });
+
+// ---------- transport ----------
+$("speed").innerHTML = SPEEDS.map(s => `<option value="${s}">${s < 60 ? s + "×" : s / 60 + " min/s"}</option>`).join("");
+$("speed").value = String(speed);
+$("speed").addEventListener("change", e => { speed = Number(e.target.value); });
+$("play").addEventListener("click", () => setPlaying(!playing));
+function setPlaying(p) { playing = p; $("play").textContent = p ? "❚❚" : "▶"; if (p && T >= t1) T = t0; }
+function seek(t) { T = Math.max(t0, Math.min(t1, Math.round(t))); refresh(true); }
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT") return;
+  if (e.code === "Space") { e.preventDefault(); setPlaying(!playing); }
+  else if (e.code === "ArrowRight") seek(T + (e.shiftKey ? 600 : 60) * TPS / 6);
+  else if (e.code === "ArrowLeft") seek(T - (e.shiftKey ? 600 : 60) * TPS / 6);
+  else if (e.code === "Home") seek(t0);
+  else if (e.code === "End") seek(t1);
+  else if (e.code === "Escape") closeBig();
+});
+let last = performance.now(), lastPanel = 0;
+function frame(now) {
+  const dt = Math.min(0.25, (now - last) / 1000); last = now;
+  if (playing) { T += dt * speed * TPS; if (T >= t1) { T = t1; setPlaying(false); } }
+  refresh(now - lastPanel > 250 && (lastPanel = now, true));
+  requestAnimationFrame(frame);
+}
+function refresh(panels) {
+  draw(); drawTimeline(); syncVideos();
+  $("clock").textContent = `${clock(T)} game · ${since(T)}`;
+  if (panels) updatePanel();
+}
+
+// ---------- side panel ----------
+const TABS = Object.assign({run: "Run", engineers: "Engineers"}, VIDEO.length ? {video: "Video"} : {},
+  {events: "Events", llm: "LLM & cost", settings: "Settings", log: "Log"});
+let tab = "run";
+$("tabs").innerHTML = Object.entries(TABS).map(([k, v]) => `<button data-tab="${k}">${v}</button>`).join("");
+$("tabs").querySelectorAll("button").forEach(b => b.addEventListener("click", () => { tab = b.dataset.tab; renderPanel(); }));
+
+function kvTable(obj, skip) {
+  const rows = Object.entries(obj || {}).filter(([k]) => !(skip || []).includes(k));
+  if (!rows.length) return '<p class="muted">—</p>';
+  return '<table class="kv">' + rows.map(([k, v]) => `<tr><td>${esc(k)}</td><td>${fmtValue(v)}</td></tr>`).join("") + "</table>";
+}
+function fmtValue(v) {
+  if (v === true) return '<span class="chip good">on</span>';
+  if (v === false) return '<span class="chip off">off</span>';
+  if (v == null || v === "") return '<span class="muted">—</span>';
+  if (typeof v === "object") return `<span class="mono">${esc(JSON.stringify(v))}</span>`;
+  return esc(v);
+}
+
+function renderRun() {
+  const o = M.outcome || {};
+  const g = M.git || {};
+  const wall = M.wall_s, game = (t1 - t0) / TPS;
+  let html = `<h2>What this test was for</h2><p class="big">${esc(M.purpose || "—")}</p>
+    <p class="muted">${esc(M.runner || "")}${M.started ? " · " + esc(M.started) : ""}${M.ended ? " → " + esc(M.ended) : ""}</p>`;
+  html += `<h2>How it went</h2>`;
+  if (o.passed != null) html += `<p class="big ${o.passed ? "pass" : "fail"}">${o.passed ? "Passed" : "Failed"}${o.reason ? " — " + esc(o.reason) : ""}</p>`;
+  html += '<table class="kv">' +
+    `<tr><td>Game time recorded</td><td>${seconds(game)} (ticks ${num(t0)}–${num(t1)})</td></tr>` +
+    `<tr><td>Wall-clock time</td><td>${seconds(wall)}${wall ? ` · ${(game / wall).toFixed(1)}× real time` : ""}</td></tr>` +
+    `<tr><td>Engineers</td><td>${NPCS.map(n => `<span class="chip"><span class="dot" style="background:${rgb(n.color)}"></span>${esc(n.name)}</span>`).join(" ") || "—"}</td></tr>` +
+    (M.video ? `<tr><td>Video (real graphics)</td><td>${VIDEO.length ? `${VIDEO.length} videos, ${num(M.video.frames_saved)} frames — see the Video tab`
+      : M.video.later ? `${num(M.video.frames_saved)} frames saved, not drawn yet${M.video.error ? ` (${esc(M.video.error)})` : ""}:<div class="mono">${esc(M.video.later)}</div>`
+      : "no frames"}</td></tr>` : "") +
+    "</table>";
+  if (o.checks && Object.keys(o.checks).length) {
+    html += "<h2>Checks</h2><table>" + Object.entries(o.checks).map(([k, c]) =>
+      `<tr><td class="${c.passed ? "pass" : "fail"}">${c.passed ? "✔" : "✘"}</td><td>${esc(k)}${c.detail != null ? `<div class="muted mono">${esc(JSON.stringify(c.detail)).slice(0, 300)}</div>` : ""}</td></tr>`).join("") + "</table>";
+  }
+  if (o.summary && Object.keys(o.summary).length) html += "<h2>Result details</h2>" + kvTable(o.summary);
+  html += "<h2>Systems in this run</h2>" + kvTable(M.systems);
+  html += `<h2>Code</h2><table class="kv"><tr><td>Mod version</td><td>${esc(M.mod_version || (D.header.mods || {})["npc-factions"] || "—")}</td></tr>
+    <tr><td>Commit</td><td><span class="mono">${esc(g.commit || "—")}</span> ${esc(g.branch || "")}<div class="muted">${esc(g.subject || "")}</div></td></tr>
+    <tr><td>Uncommitted changes</td><td>${(g.changed || []).length ? `<details><summary>${g.changed.length} files</summary><div class="mono">${g.changed.map(esc).join("<br>")}</div></details>` : "none"}</td></tr></table>`;
+  if (M.command) html += `<h2>Command</h2><div class="mono">${esc(M.command.join(" "))}</div>`;
+  if (M.run_dir) html += `<h2>Run folder</h2><div class="mono">${esc(M.run_dir)}</div>`;
+  return html;
+}
+
+const METRICS = [["iron-plate", "Iron plates"], ["copper-plate", "Copper plates"], ["automation-science-pack", "Red science"],
+  ["logistic-science-pack", "Green science"], ["chemical-science-pack", "Blue science"], ["electronic-circuit", "Circuits"],
+  ["steel-plate", "Steel"], ["techs", "Technologies researched"], ["buildings", "Buildings"], ["biters", "Biters killed"],
+  ["nests", "Nests destroyed"]];
+let metric = "iron-plate";
+function metricValue(row, m) {
+  if (m === "techs" || m === "buildings") return row[m] || 0;
+  if (m === "biters" || m === "nests") return (row.kills && row.kills[m]) || 0;
+  return (row.made && row.made[m]) || 0;
+}
+function renderEngineers() {
+  let html = `<h2>Progress</h2><select id="metric">${METRICS.map(([k, v]) => `<option value="${k}"${k === metric ? " selected" : ""}>${v}</option>`).join("")}</select>
+    <canvas class="chart" id="pchart"></canvas><div id="cards" style="margin-top:12px"></div>`;
+  return html;
+}
+function engineerCards() {
+  const st = statsAt(T);
+  return NPCS.map(n => {
+    const a = actorAt(n.id, T), s = stateAt(n.id, T);
+    const row = st ? (st[1] || []).find(r => r.id === n.id) : null;
+    const made = row ? Object.entries(row.made || {}).map(([k, v]) => `${k.replace(/-plate$/, "").replace(/-science-pack$/, " sci")} ${num(v)}`).join(" · ") : "";
+    const hp = a && !a.stale ? Math.round(a.hp * 100) : 0;
+    return `<div class="card"><div class="head"><span class="dot" style="background:${rgb(n.color)}"></span><b>${esc(n.name)}</b>
+      ${n.warlord ? '<span class="chip bad">warlord</span>' : ""}${a && a.stale ? '<span class="chip bad">gone</span>' : ""}
+      <button class="btn" data-follow="${n.id}">Follow</button></div>
+      ${n.traits && n.traits.length ? `<div class="muted" style="margin-bottom:6px">${esc(n.traits.join(", "))}</div>` : ""}
+      <div class="bar" title="health ${hp}%"><div style="width:${hp}%;background:${hp > 50 ? "var(--good)" : hp > 25 ? "var(--accent)" : "var(--bad)"}"></div></div>
+      <table class="kv" style="margin-top:6px">
+        <tr><td>Doing</td><td>${esc(s && s.phase || "—")}${a && a.v ? ` <span class="chip">in ${esc(a.v)}</span>` : ""}</td></tr>
+        <tr><td>Strategist task</td><td>${esc(s && s.doing || "—")}</td></tr>
+        <tr><td>Plan</td><td>${esc(s && s.plan || "—")}</td></tr>
+        <tr><td>Foe</td><td>${s && s.foe ? `<span class="fail">${esc(s.foe)}</span>` : "—"}</td></tr>
+        ${row ? `<tr><td>Made so far</td><td>${made || "—"}</td></tr>
+        <tr><td>Research</td><td>${row.techs} done${row.research ? ` · now ${esc(row.research)} ${Math.round((row.progress || 0) * 100)}%` : ""}</td></tr>
+        <tr><td>Buildings · kills</td><td>${num(row.buildings)} · ${num((row.kills || {}).biters || 0)} biters, ${num((row.kills || {}).nests || 0)} nests</td></tr>` : ""}
+        <tr><td>Position</td><td class="mono">${a ? `${Math.round(a.x)}, ${Math.round(a.y)}` : "—"}</td></tr>
+      </table></div>`;
+  }).join("") || '<p class="muted">No engineers in this recording.</p>';
+}
+
+function chart(canvas, series, opts) {
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  canvas.width = w * DPR; canvas.height = h * DPR;
+  const c = canvas.getContext("2d"); c.setTransform(DPR, 0, 0, DPR, 0, 0);
+  const pad = {l: 44, r: 8, t: 8, b: 18};
+  let vmax = 0;
+  for (const s of series) for (const p of s.pts) vmax = Math.max(vmax, p[1]);
+  vmax = vmax || 1;
+  const X = t => pad.l + (t - t0) / (t1 - t0) * (w - pad.l - pad.r);
+  const Y = v => h - pad.b - v / vmax * (h - pad.t - pad.b);
+  const style = getComputedStyle(document.documentElement);
+  c.strokeStyle = style.getPropertyValue("--line"); c.lineWidth = 1;
+  c.fillStyle = style.getPropertyValue("--muted"); c.font = "10px system-ui"; c.textAlign = "right";
+  for (let k = 0; k <= 2; k++) {
+    const v = vmax * k / 2, y = Y(v);
+    c.beginPath(); c.moveTo(pad.l, y); c.lineTo(w - pad.r, y); c.stroke();
+    c.fillText(opts && opts.money ? money(v, 2) : v >= 1000 ? (v / 1000).toFixed(1) + "k" : Math.round(v), pad.l - 4, y + 3);
+  }
+  c.textAlign = "left"; c.fillText(clock(t0), pad.l, h - 4); c.textAlign = "right"; c.fillText(clock(t1), w - pad.r, h - 4);
+  for (const s of series) {
+    if (!s.pts.length) continue;
+    c.strokeStyle = s.color; c.lineWidth = 2; c.beginPath();
+    s.pts.forEach((p, i) => { const x = X(p[0]), y = Y(p[1]); if (i) c.lineTo(x, y); else c.moveTo(x, y); });
+    if (opts && opts.extend) c.lineTo(X(t1), Y(s.pts[s.pts.length - 1][1]));
+    c.stroke();
+  }
+  c.fillStyle = "#f0a030"; c.fillRect(X(T) - 0.5, pad.t, 1.5, h - pad.t - pad.b);
+}
+function drawProgress() {
+  const cv = $("pchart"); if (!cv) return;
+  const series = NPCS.map(n => ({color: rgb(n.color), pts: STATS.map(([t, rows]) => {
+    const row = (rows || []).find(r => r.id === n.id); return row ? [t, metricValue(row, metric)] : null; }).filter(Boolean)}));
+  chart(cv, series);
+}
+
+function eventItems() {
+  const q = ($("evq") || {}).value || "";
+  const needle = q.toLowerCase();
+  const now = bisect(EVENT_T, T);
+  const out = [];
+  EVENTS.forEach((e, i) => {
+    if (!shownCats[catOf[e.k]]) return;
+    if (needle && !e.text.toLowerCase().includes(needle)) return;
+    out.push(`<li data-i="${i}" class="${e.tone || ""}${i > now ? " future" : ""}${i === now ? " now" : ""}" style="border-left-color:${CATS[catOf[e.k]].color}"><span class="t">${clock(e.t)}</span>${esc(e.text)}</li>`);
+  });
+  return out.length ? out.join("") : '<li class="muted">No events match.</li>';
+}
+function renderEvents() {
+  return `<div class="filters">${Object.entries(CATS).map(([k, v]) => `<button class="btn${shownCats[k] ? " on" : ""}" data-cat="${k}"><span class="dot" style="background:${v.color}"></span>${v.label}</button>`).join("")}</div>
+    <input type="search" id="evq" placeholder="Search events" style="width:100%;margin-bottom:8px">
+    <ul class="events" id="evlist">${eventItems()}</ul>`;
+}
+
+function renderLLM() {
+  const L = M.llm || {}, total = L.total || {}, systems = L.systems || {};
+  const gameH = (t1 - t0) / TPS / 3600, wallH = (M.wall_s || 0) / 3600;
+  let html = "<h2>Spend</h2>";
+  if (!total.calls) html += '<p class="big">No paid LLM calls in this run.</p>';
+  else {
+    const perGame = gameH > 0 ? total.cost / gameH : null, perWall = wallH > 0 ? total.cost / wallH : null;
+    html += `<p class="big">${money(total.cost)} for ${num(total.calls)} calls${total.unpriced ? ` <span class="muted">(${total.unpriced} with unknown price)</span>` : ""}</p>
+      <table class="kv"><tr><td>Per game hour</td><td>${money(perGame)} <span class="muted">(budget $1.00 per hour of play)</span>
+      <div class="bar" style="margin-top:4px"><div style="width:${Math.min(100, (perGame || 0) * 100)}%;background:${(perGame || 0) > 1 ? "var(--bad)" : "var(--good)"}"></div></div></td></tr>
+      <tr><td>Per wall-clock hour</td><td>${money(perWall)}</td></tr>
+      <tr><td>Tokens in / out</td><td>${num(total.input)} / ${num(total.output)}${total.cached ? ` (${num(total.cached)} cached)` : ""}</td></tr>
+      ${total.failed ? `<tr><td>Failed calls</td><td class="fail">${total.failed}</td></tr>` : ""}</table>`;
+  }
+  html += "<h2>By system</h2>";
+  const names = Object.keys(systems);
+  html += names.length ? `<table><tr><th>System</th><th class="num">Calls</th><th class="num">In</th><th class="num">Out</th><th class="num">Cost</th><th class="num">Latency</th></tr>` +
+    names.map(n => { const s = systems[n]; return `<tr><td>${esc(n)}<div class="muted">${esc((s.models || []).join(", "))}</div></td><td class="num">${num(s.calls)}${s.failed ? ` <span class="fail">(${s.failed}✘)</span>` : ""}</td><td class="num">${num(s.input)}</td><td class="num">${num(s.output)}</td><td class="num">${money(s.cost)}</td><td class="num">${s.median_latency_ms != null ? num(s.median_latency_ms) + " ms" : "—"}</td></tr>`; }).join("") + "</table>"
+    : '<p class="muted">None.</p>';
+  const llmSystems = Object.fromEntries(Object.entries(M.systems || {}).filter(([k]) => /llm|system one|strategist|designer/i.test(k)));
+  if (Object.keys(llmSystems).length) html += "<h2>Switched on for this run</h2>" + kvTable(llmSystems);
+  if (LLM.length) {
+    html += `<h2>Cumulative cost over game time</h2><canvas class="chart" id="cchart"></canvas>`;
+    html += `<h2>Calls</h2><details><summary>${LLM.length} calls</summary><table><tr><th>Time</th><th>System</th><th>For</th><th class="num">Tokens</th><th class="num">Cost</th></tr>` +
+      LLM.map(c => `<tr class="${c.ok === false ? "fail" : ""}"><td class="mono">${clock(c.t)}</td><td>${esc(c.system)}</td><td>${esc(c.purpose || "")}${c.npc != null && npcById[c.npc] ? ` <span class="muted">(${esc(npcById[c.npc].name)})</span>` : ""}</td><td class="num">${num(c.input)}/${num(c.output)}</td><td class="num">${money(c.cost, 4)}</td></tr>`).join("") + "</table></details>";
+  }
+  if (M.prices) html += `<h2>Prices used (USD per 1M tokens)</h2><div class="mono">${esc(JSON.stringify(M.prices))}</div>`;
+  return html;
+}
+function drawCost() {
+  const cv = $("cchart"); if (!cv) return;
+  const bySystem = {};
+  const colorsSys = ["#c58cff", "#6fb7ff", "#f0a030", "#5cc06a", "#e0c060"];
+  let acc = 0; const total = [[t0, 0]];
+  for (const c of LLM) {
+    acc += c.cost || 0; total.push([c.t, acc]);
+    const s = bySystem[c.system] = bySystem[c.system] || {acc: 0, pts: [[t0, 0]]};
+    s.acc += c.cost || 0; s.pts.push([c.t, s.acc]);
+  }
+  const series = [{color: "#e4e6ea", pts: total}].concat(Object.values(bySystem).map((s, i) => ({color: colorsSys[i % colorsSys.length], pts: s.pts})));
+  chart(cv, series, {money: true, extend: true});
+}
+
+function renderSettings() {
+  const h = D.header || {}, f = D.footer || {};
+  let html = "<h2>Runner options</h2>" + kvTable(M.args);
+  html += "<h2>Mod settings (map)</h2>" + kvTable((h.settings || {}).global);
+  html += "<h2>Mod settings (startup)</h2>" + kvTable((h.settings || {}).startup);
+  const changed = Object.entries(((f.settings || {}).global) || {}).filter(([k, v]) => JSON.stringify(v) !== JSON.stringify(((h.settings || {}).global || {})[k]));
+  if (changed.length) html += "<h2>Changed during the run</h2>" + kvTable(Object.fromEntries(changed.map(([k, v]) => [k, `${JSON.stringify(((h.settings || {}).global || {})[k])} → ${JSON.stringify(v)}`])));
+  html += "<h2>World</h2>" + kvTable({...(h.world || {}), "game speed at start": h.speed, multiplayer: h.multiplayer, "test fixture": h.test});
+  html += "<h2>Mods</h2>" + kvTable(h.mods);
+  html += `<h2>Recorder</h2>` + kvTable({"position samples every": (h.every || 60) + " ticks", "building scan every": (h.scan || 600) + " ticks"});
+  return html;
+}
+
+function logItems() {
+  const q = (($("logq") || {}).value || "").toLowerCase();
+  const now = bisect(LOG_T, T);
+  return LOG.map(([t, text], i) => (q && !text.toLowerCase().includes(q)) ? "" :
+    `<div data-t="${t}" class="${i > now ? "future" : ""}${i === now ? " now" : ""}"><span class="muted">${clock(t)}</span> ${esc(text)}</div>`).join("") || '<p class="muted">No runner log in this run.</p>';
+}
+function renderLog() {
+  return `<input type="search" id="logq" placeholder="Search the runner's log" style="width:100%;margin-bottom:8px"><div class="log" id="loglist">${logItems()}</div>`;
+}
+
+// ---------- real graphics ----------
+// Each video stays paused on the last frame drawn at or before the replay's time.
+function renderVideo() {
+  const every = D.video.every_minutes;
+  let html = `<p class="muted">Real game graphics: a frame every ${every != null ? every + " game minutes" : "few game minutes"},
+    kept in step with the timeline. Click a picture to see it large.</p>`;
+  for (const id of [...new Set(VIDEO.map(v => v.id))]) {
+    const n = npcById[id] || {name: VIDEO.find(v => v.id === id).name, color: null};
+    html += `<div class="card"><div class="head"><span class="dot" style="background:${rgb(n.color)}"></span><b>${esc(n.name)}</b>
+      <button class="btn" data-follow="${id}">Follow</button></div>`;
+    VIDEO.forEach((v, i) => {
+      if (v.id !== id) return;
+      html += `<div class="vid" data-vbox><video data-v="${i}" muted playsinline preload="auto" src="${esc(v.src)}"></video>
+        <div class="cap"><span>${esc(VIEW_LABEL[v.kind] || v.kind)} · <span class="when"></span></span>
+        <a href="${esc(v.src)}" target="_blank" title="The MP4 on its own">MP4</a></div></div>`;
+    });
+    html += "</div>";
+  }
+  return html;
+}
+function syncVideos() {
+  if (!VIDEO.length) return;
+  document.querySelectorAll("video[data-v]").forEach(el => {
+    const v = VIDEO[+el.dataset.v]; if (!v) return;
+    const i = bisect(v.ticks, T), k = Math.max(0, i);
+    if (el._k !== k) {
+      el._k = k;
+      let at = (k + 0.5) / VFPS;
+      if (el.duration > 0) at = Math.min(at, el.duration - 0.001);
+      el.currentTime = at;
+    }
+    const box = el.closest("[data-vbox]"); if (!box) return;
+    if (el._early !== (i < 0)) { el._early = i < 0; box.classList.toggle("early", i < 0); }
+    const when = box.querySelector(".when");
+    const text = el._error ? "video file not found" : i < 0 ? `first frame at ${clock(v.ticks[0])}` :
+      `frame ${k + 1}/${v.ticks.length} at ${clock(v.ticks[k])}`;
+    if (when && when.textContent !== text) when.textContent = text;
+  });
+}
+document.addEventListener("loadedmetadata", e => { if (e.target.tagName === "VIDEO") e.target._k = undefined; }, true);
+document.addEventListener("error", e => { if (e.target.tagName === "VIDEO") e.target._error = true; }, true);
+function openBig(i) {
+  const v = VIDEO[i], box = $("bigvideo"), el = box.querySelector("video");
+  el.dataset.v = String(i); el._k = undefined; el._early = undefined; el._error = false;
+  if (el.getAttribute("src") !== v.src) el.src = v.src;
+  $("bigname").textContent = `${(npcById[v.id] || v).name} · ${VIEW_LABEL[v.kind] || v.kind} ·`;
+  box.style.display = "block";
+  syncVideos();
+}
+function closeBig() {
+  const box = $("bigvideo"); if (box.style.display !== "block") return;
+  box.style.display = "none"; delete box.querySelector("video").dataset.v;
+}
+$("bigclose").addEventListener("click", closeBig);
+$("bigvideo").querySelector("video").addEventListener("click", closeBig);
+if ($("videochip")) $("videochip").addEventListener("click", () => { tab = "video"; renderPanel(); });
+
+function renderPanel() {
+  $("tabs").querySelectorAll("button").forEach(b => b.classList.toggle("on", b.dataset.tab === tab));
+  const p = $("panel");
+  p.innerHTML = {run: renderRun, engineers: renderEngineers, video: renderVideo, events: renderEvents, llm: renderLLM, settings: renderSettings, log: renderLog}[tab]();
+  if (tab === "engineers") {
+    $("metric").addEventListener("change", e => { metric = e.target.value; drawProgress(); });
+    $("cards").innerHTML = engineerCards(); drawProgress();
+  }
+  if (tab === "events") {
+    p.querySelectorAll("[data-cat]").forEach(b => b.addEventListener("click", () => {
+      shownCats[b.dataset.cat] = !shownCats[b.dataset.cat]; b.classList.toggle("on", shownCats[b.dataset.cat]);
+      $("evlist").innerHTML = eventItems(); draw();
+    }));
+    $("evq").addEventListener("input", () => { $("evlist").innerHTML = eventItems(); });
+    scrollToNow("evlist", ".now");
+  }
+  if (tab === "llm") drawCost();
+  if (tab === "log") { $("logq").addEventListener("input", () => { $("loglist").innerHTML = logItems(); }); scrollToNow("loglist", ".now"); }
+}
+function scrollToNow(listId, sel) {
+  const el = $(listId) && $(listId).querySelector(sel);
+  if (el) el.scrollIntoView({block: "center"});
+}
+let lastEventIndex = -2, lastLogIndex = -2;
+function updatePanel() {
+  if (tab === "engineers") { const c = $("cards"); if (c && !c.matches(":hover")) c.innerHTML = engineerCards(); drawProgress(); }
+  if (tab === "llm") drawCost();
+  if (tab === "events") {
+    const now = bisect(EVENT_T, T);
+    if (now !== lastEventIndex) {
+      lastEventIndex = now;
+      const list = $("evlist");
+      list.querySelectorAll("li[data-i]").forEach(li => { const i = +li.dataset.i; li.classList.toggle("future", i > now); li.classList.toggle("now", i === now); });
+      if (playing) scrollToNow("evlist", ".now");
+    }
+  }
+  if (tab === "log") {
+    const now = bisect(LOG_T, T);
+    if (now !== lastLogIndex) {
+      lastLogIndex = now;
+      let latest = null;
+      $("loglist").querySelectorAll("div[data-t]").forEach(d => {
+        const future = +d.dataset.t > T; d.classList.toggle("future", future); d.classList.remove("now");
+        if (!future) latest = d;
+      });
+      if (latest) latest.classList.add("now");
+      if (playing) scrollToNow("loglist", ".now");
+    }
+  }
+}
+$("panel").addEventListener("click", e => {
+  const vd = e.target.closest("video[data-v]");
+  if (vd) { openBig(+vd.dataset.v); return; }
+  const li = e.target.closest("li[data-i]");
+  if (li) {
+    const ev = EVENTS[+li.dataset.i];
+    seek(ev.t);
+    if (ev.id != null && npcById[ev.id]) setFollow(ev.id);
+    else if (ev.x != null) { setFollow("free"); view.cx = ev.x; view.cy = ev.y; view.scale = Math.max(view.scale, 3); draw(); }
+    return;
+  }
+  const f = e.target.closest("[data-follow]");
+  if (f) { setFollow(Number(f.dataset.follow)); if (view.scale < 3) view.scale = 4; draw(); }
+  const lg = e.target.closest("div[data-t]");
+  if (lg) seek(+lg.dataset.t);
+});
+
+window.addEventListener("resize", resize);
+renderPanel();
+resize();
+fit(T);
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>

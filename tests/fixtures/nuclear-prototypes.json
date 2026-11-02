@@ -1,0 +1,187 @@
+{
+ "nuclear-reactor": {
+  "type": "reactor",
+  "w": 5,
+  "h": 5,
+  "heat": [
+   [
+    -2,
+    -2,
+    0
+   ],
+   [
+    0,
+    -2,
+    0
+   ],
+   [
+    2,
+    -2,
+    0
+   ],
+   [
+    2,
+    -2,
+    4
+   ],
+   [
+    2,
+    0,
+    4
+   ],
+   [
+    2,
+    2,
+    4
+   ],
+   [
+    2,
+    2,
+    8
+   ],
+   [
+    0,
+    2,
+    8
+   ],
+   [
+    -2,
+    2,
+    8
+   ],
+   [
+    -2,
+    2,
+    12
+   ],
+   [
+    -2,
+    0,
+    12
+   ],
+   [
+    -2,
+    -2,
+    12
+   ]
+  ],
+  "max_t": 1000,
+  "fluid": {},
+  "consumption": 40000000,
+  "bonus": 1
+ },
+ "heat-pipe": {
+  "type": "heat-pipe",
+  "w": 1,
+  "h": 1,
+  "heat": [
+   [
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    4
+   ],
+   [
+    0,
+    0,
+    8
+   ],
+   [
+    0,
+    0,
+    12
+   ]
+  ],
+  "max_t": 1000,
+  "fluid": {},
+  "consumption": 0
+ },
+ "heat-exchanger": {
+  "type": "boiler",
+  "w": 3,
+  "h": 2,
+  "heat": [
+   [
+    0,
+    0.5,
+    8
+   ]
+  ],
+  "max_t": 1000,
+  "heat_src": [
+   [
+    0,
+    0.5,
+    8
+   ]
+  ],
+  "fluid": [
+   {
+    "prod": "input",
+    "filter": "water",
+    "c": [
+     [
+      -1,
+      0.5,
+      12,
+      "input-output",
+      "normal"
+     ],
+     [
+      1,
+      0.5,
+      4,
+      "input-output",
+      "normal"
+     ]
+    ]
+   },
+   {
+    "prod": "output",
+    "filter": "steam",
+    "c": [
+     [
+      0,
+      -0.5,
+      0,
+      "output",
+      "normal"
+     ]
+    ]
+   }
+  ],
+  "consumption": 10000000
+ },
+ "steam-turbine": {
+  "type": "generator",
+  "w": 3,
+  "h": 5,
+  "fluid": [
+   {
+    "prod": "input",
+    "filter": "steam",
+    "c": [
+     [
+      0,
+      2,
+      8,
+      "input-output",
+      "normal"
+     ],
+     [
+      0,
+      -2,
+      0,
+      "input-output",
+      "normal"
+     ]
+    ]
+   }
+  ],
+  "consumption": 0
+ }
+}

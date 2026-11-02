@@ -1,0 +1,1004 @@
+{
+  "schema": "designer-context-v1",
+  "identity": {
+    "world_id": "fixture-world",
+    "force_id": "fixture-force",
+    "surface_id": "nauvis",
+    "actor_id": "fixture-npc",
+    "life_id": "fixture-life-1",
+    "session_epoch": 3,
+    "game_version": "2.0.77",
+    "source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "prototype_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "observed_tick": 12000,
+    "revision": 7
+  },
+  "evidence_mode": "fixture",
+  "geometry_snapshot": {
+    "schema": "designer-snapshot-v1",
+    "game_version": "2.0.77",
+    "source_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "world_id": "fixture-world",
+    "force_id": "fixture-force",
+    "observed_tick": 12000,
+    "quality": "normal",
+    "researched_technologies": [],
+    "unlocked_recipes": [
+      "iron-plate",
+      "stone-furnace",
+      "burner-mining-drill"
+    ],
+    "items": [
+      "burner-mining-drill",
+      "stone-furnace",
+      "coal",
+      "iron-ore",
+      "iron-plate",
+      "stone",
+      "iron-gear-wheel"
+    ],
+    "prototypes": {
+      "burner-mining-drill": {
+        "placement_item": "burner-mining-drill",
+        "width": 2,
+        "height": 2,
+        "type": "mining-drill",
+        "energy_source": "burner",
+        "fuel_categories": [
+          "chemical"
+        ],
+        "resource_categories": [
+          "basic-solid"
+        ],
+        "mining_area_radius": 0.99,
+        "drop_vector": [
+          -0.5,
+          -1.3
+        ]
+      },
+      "stone-furnace": {
+        "placement_item": "stone-furnace",
+        "width": 2,
+        "height": 2,
+        "type": "furnace",
+        "energy_source": "burner",
+        "fuel_categories": [
+          "chemical"
+        ],
+        "crafting_categories": [
+          "smelting"
+        ]
+      }
+    },
+    "survey_bounds": [
+      0,
+      0,
+      60,
+      30
+    ],
+    "occupied_boxes": [
+      [
+        1,
+        1,
+        3,
+        3
+      ]
+    ]
+  },
+  "geometry_snapshot_sha256": "e6e70e8fd72eacbc68011670359dc7858c93c4b2d543940f04c80b5f709d3be2",
+  "facts": {
+    "built_machines": {
+      "knowledge": "known",
+      "value": [
+        {
+          "entity_id": "entity-old-furnace-1001",
+          "native_unit_number": 1001,
+          "prototype": "stone-furnace",
+          "owner_force_id": "fixture-force",
+          "surface_id": "nauvis",
+          "position": {
+            "x": 2,
+            "y": 2
+          },
+          "direction": 0,
+          "recipe": {
+            "knowledge": "known",
+            "value": "iron-plate",
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:machine-1001:recipe"
+            }
+          },
+          "status": {
+            "knowledge": "known",
+            "value": "working",
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:machine-1001:status"
+            }
+          },
+          "input_inventory": {
+            "knowledge": "known",
+            "value": {
+              "iron-ore": 12
+            },
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:machine-1001:input"
+            }
+          },
+          "fuel_inventory": {
+            "knowledge": "known",
+            "value": {
+              "coal": 4
+            },
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:machine-1001:fuel"
+            }
+          },
+          "output_inventory": {
+            "knowledge": "known",
+            "value": {
+              "iron-plate": 20
+            },
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:machine-1001:output"
+            }
+          },
+          "processing_progress": {
+            "knowledge": "known",
+            "value": 0.25,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:machine-1001:progress"
+            }
+          },
+          "recent_product_delta": {
+            "knowledge": "known",
+            "value": {
+              "item": "iron-plate",
+              "amount": 15,
+              "window_ticks": 3600,
+              "start_tick": 8400,
+              "end_tick": 12000
+            },
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:machine-1001:product-window"
+            }
+          },
+          "coordinates_evidence": "synthetic; not native verified"
+        }
+      ],
+      "observed_tick": 12000,
+      "revision": 7,
+      "provenance": {
+        "kind": "fixture",
+        "source_id": "fixture:local-machines"
+      }
+    },
+    "blocks": {
+      "knowledge": "known",
+      "value": [
+        {
+          "block_id": "block-iron-local",
+          "entity_ids": [
+            "entity-old-furnace-1001"
+          ],
+          "inputs": {
+            "knowledge": "known",
+            "value": [
+              {
+                "item": "iron-ore",
+                "amount": 15,
+                "window_ticks": 3600
+              },
+              {
+                "item": "coal",
+                "amount": 1,
+                "window_ticks": 3600
+              }
+            ],
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:block-local:input-window"
+            }
+          },
+          "outputs": {
+            "knowledge": "known",
+            "value": [
+              {
+                "item": "iron-plate",
+                "amount": 15,
+                "window_ticks": 3600,
+                "rate_items_per_second": 0.25
+              }
+            ],
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:block-local:output-window"
+            }
+          },
+          "replenishment_mode": {
+            "knowledge": "known",
+            "value": "manual-carried-startup",
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:block-local:replenishment"
+            }
+          },
+          "sustained_flow_qualification": {
+            "knowledge": "unknown",
+            "value": null,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:block-local:native-flow-unmeasured"
+            }
+          }
+        },
+        {
+          "block_id": "block-force-other-producers",
+          "entity_ids": [],
+          "inputs": {
+            "knowledge": "unknown",
+            "value": null,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:force-other:input-unobserved"
+            }
+          },
+          "outputs": {
+            "knowledge": "unknown",
+            "value": null,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:force-other:output-unobserved"
+            }
+          },
+          "coverage": {
+            "knowledge": "known",
+            "value": "outside local survey; force-wide production counters are known but producer inventory and geometry are unknown",
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:force-other:coverage"
+            }
+          }
+        },
+        {
+          "block_id": "metric-scope",
+          "entity_ids": [],
+          "scope": {
+            "knowledge": "known",
+            "value": "iron-plate item_metrics are force-wide counters and aggregate observed owned stock; block-local output is a smaller measured subset",
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:metrics:scope"
+            }
+          },
+          "inputs": {
+            "knowledge": "unknown",
+            "value": null,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:metrics:not-input-block"
+            }
+          },
+          "outputs": {
+            "knowledge": "unknown",
+            "value": null,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:metrics:not-output-block"
+            }
+          }
+        }
+      ],
+      "observed_tick": 12000,
+      "revision": 7,
+      "provenance": {
+        "kind": "fixture",
+        "source_id": "fixture:blocks"
+      }
+    },
+    "connections": {
+      "knowledge": "known",
+      "value": {
+        "belts": [
+          {
+            "connection_id": "belt-observed-11",
+            "direction": 4,
+            "from": {
+              "x": 5,
+              "y": 3
+            },
+            "to": {
+              "x": 6,
+              "y": 3
+            },
+            "items": {
+              "knowledge": "known",
+              "value": [],
+              "observed_tick": 12000,
+              "revision": 7,
+              "provenance": {
+                "kind": "fixture",
+                "source_id": "fixture:belt-11:items"
+              }
+            },
+            "capacity_items_per_second": {
+              "knowledge": "unknown",
+              "value": null,
+              "observed_tick": 12000,
+              "revision": 7,
+              "provenance": {
+                "kind": "fixture",
+                "source_id": "fixture:belt-11:capacity-unmeasured"
+              }
+            }
+          }
+        ],
+        "inserters": [
+          {
+            "connection_id": "inserter-observed-21",
+            "pickup": {
+              "x": 3.5,
+              "y": 2
+            },
+            "drop": {
+              "x": 5.5,
+              "y": 2
+            },
+            "source_entity_id": "entity-old-furnace-1001",
+            "target_connection_id": "belt-observed-11",
+            "active": {
+              "knowledge": "known",
+              "value": false,
+              "observed_tick": 12000,
+              "revision": 7,
+              "provenance": {
+                "kind": "fixture",
+                "source_id": "fixture:inserter-21:status"
+              }
+            },
+            "output_transport_qualification": {
+              "knowledge": "unknown",
+              "value": null,
+              "observed_tick": 12000,
+              "revision": 7,
+              "provenance": {
+                "kind": "fixture",
+                "source_id": "fixture:inserter-21:native-unverified"
+              }
+            }
+          }
+        ],
+        "pipes": [
+          {
+            "connection_id": "pipe-network-31",
+            "endpoints": {
+              "knowledge": "known",
+              "value": [
+                {
+                  "x": 40,
+                  "y": 20
+                },
+                {
+                  "x": 41,
+                  "y": 20
+                }
+              ],
+              "observed_tick": 12000,
+              "revision": 7,
+              "provenance": {
+                "kind": "fixture",
+                "source_id": "fixture:pipe-31:endpoints"
+              }
+            },
+            "fluid": {
+              "knowledge": "unknown",
+              "value": null,
+              "observed_tick": 12000,
+              "revision": 7,
+              "provenance": {
+                "kind": "fixture",
+                "source_id": "fixture:pipe-31:fluid-unobserved"
+              }
+            },
+            "flow_per_second": {
+              "knowledge": "unknown",
+              "value": null,
+              "observed_tick": 12000,
+              "revision": 7,
+              "provenance": {
+                "kind": "fixture",
+                "source_id": "fixture:pipe-31:flow-unmeasured"
+              }
+            }
+          }
+        ],
+        "power": [
+          {
+            "grid_id": "electric-grid-41",
+            "pole_links": {
+              "knowledge": "known",
+              "value": [
+                {
+                  "from": "pole-42",
+                  "to": "pole-43"
+                }
+              ],
+              "observed_tick": 12000,
+              "revision": 7,
+              "provenance": {
+                "kind": "fixture",
+                "source_id": "fixture:grid-41:links"
+              }
+            },
+            "powered_entity_ids": {
+              "knowledge": "known",
+              "value": [],
+              "observed_tick": 12000,
+              "revision": 7,
+              "provenance": {
+                "kind": "fixture",
+                "source_id": "fixture:grid-41:consumers"
+              }
+            },
+            "satisfaction": {
+              "knowledge": "unknown",
+              "value": null,
+              "observed_tick": 12000,
+              "revision": 7,
+              "provenance": {
+                "kind": "fixture",
+                "source_id": "fixture:grid-41:satisfaction-unmeasured"
+              }
+            },
+            "capacity_watts": {
+              "knowledge": "unknown",
+              "value": null,
+              "observed_tick": 12000,
+              "revision": 7,
+              "provenance": {
+                "kind": "fixture",
+                "source_id": "fixture:grid-41:capacity-unmeasured"
+              }
+            }
+          }
+        ],
+        "surveyed_occupancy_coverage": {
+          "knowledge": "unknown",
+          "value": null,
+          "observed_tick": 12000,
+          "revision": 7,
+          "provenance": {
+            "kind": "fixture",
+            "source_id": "fixture:connections:footprints-not-in-geometry"
+          }
+        },
+        "coordinates_evidence": "synthetic; connection records are context examples, not blueprint compatibility proof"
+      },
+      "observed_tick": 12000,
+      "revision": 7,
+      "provenance": {
+        "kind": "fixture",
+        "source_id": "fixture:connections"
+      }
+    },
+    "recipes": {
+      "knowledge": "known",
+      "value": [
+        {
+          "name": "iron-plate",
+          "category": "smelting",
+          "ingredients": [
+            {
+              "item": "iron-ore",
+              "amount": 1
+            }
+          ],
+          "results": [
+            {
+              "item": "iron-plate",
+              "amount": 1
+            }
+          ],
+          "energy_seconds": 3.2,
+          "unlocked": {
+            "knowledge": "known",
+            "value": true,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:recipe:iron-plate:unlock"
+            }
+          },
+          "research_prerequisites": [],
+          "entity_crafting_compatibility": {
+            "knowledge": "unknown",
+            "value": null,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:recipe:iron-plate:native-category-unverified"
+            }
+          }
+        },
+        {
+          "name": "stone-furnace",
+          "category": "crafting",
+          "ingredients": [
+            {
+              "item": "stone",
+              "amount": 5
+            }
+          ],
+          "results": [
+            {
+              "item": "stone-furnace",
+              "amount": 1
+            }
+          ],
+          "unlocked": {
+            "knowledge": "known",
+            "value": true,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:recipe:stone-furnace:unlock"
+            }
+          },
+          "research_prerequisites": [],
+          "recipe_evidence": "synthetic fixture recipe; not installed prototype qualification"
+        },
+        {
+          "name": "burner-mining-drill",
+          "category": "crafting",
+          "ingredients": [
+            {
+              "item": "iron-plate",
+              "amount": 3
+            },
+            {
+              "item": "iron-gear-wheel",
+              "amount": 5
+            },
+            {
+              "item": "stone-furnace",
+              "amount": 1
+            }
+          ],
+          "results": [
+            {
+              "item": "burner-mining-drill",
+              "amount": 1
+            }
+          ],
+          "unlocked": {
+            "knowledge": "known",
+            "value": true,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:recipe:burner-drill:unlock"
+            }
+          },
+          "research_prerequisites": [],
+          "recipe_evidence": "synthetic fixture recipe; not installed prototype qualification"
+        }
+      ],
+      "observed_tick": 12000,
+      "revision": 7,
+      "provenance": {
+        "kind": "fixture",
+        "source_id": "fixture:recipes"
+      }
+    },
+    "inventories": {
+      "knowledge": "known",
+      "value": [
+        {
+          "inventory_id": "actor-main",
+          "owner_force_id": "fixture-force",
+          "owner_actor_id": "fixture-npc",
+          "accessible": {
+            "knowledge": "known",
+            "value": true,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:inventory:actor:access"
+            }
+          },
+          "contents": {
+            "knowledge": "known",
+            "value": {
+              "burner-mining-drill": 1,
+              "stone-furnace": 1,
+              "coal": 30,
+              "iron-ore": 50,
+              "iron-plate": 40
+            },
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:inventory:actor:contents"
+            }
+          },
+          "access_reason": "owned-carried"
+        },
+        {
+          "inventory_id": "owned-store",
+          "owner_force_id": "fixture-force",
+          "owner_actor_id": null,
+          "accessible": {
+            "knowledge": "known",
+            "value": true,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:inventory:store:access"
+            }
+          },
+          "contents": {
+            "knowledge": "known",
+            "value": {
+              "iron-plate": 60,
+              "stone": 10
+            },
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:inventory:store:contents"
+            }
+          },
+          "access_reason": "owned-and-observed-reachable"
+        },
+        {
+          "inventory_id": "furnace-1001-output",
+          "owner_force_id": "fixture-force",
+          "owner_actor_id": null,
+          "accessible": {
+            "knowledge": "known",
+            "value": true,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:inventory:furnace-output:access"
+            }
+          },
+          "contents": {
+            "knowledge": "known",
+            "value": {
+              "iron-plate": 20
+            },
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:inventory:furnace-output:contents"
+            }
+          },
+          "access_reason": "owned-and-observed-reachable"
+        },
+        {
+          "inventory_id": "unscanned-store",
+          "owner_force_id": null,
+          "owner_actor_id": null,
+          "accessible": {
+            "knowledge": "unknown",
+            "value": null,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:inventory:unscanned:access"
+            }
+          },
+          "contents": {
+            "knowledge": "unknown",
+            "value": null,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:inventory:unscanned:contents"
+            }
+          },
+          "access_reason": "ownership-and-reach-unobserved"
+        }
+      ],
+      "observed_tick": 12000,
+      "revision": 7,
+      "provenance": {
+        "kind": "fixture",
+        "source_id": "fixture:inventories"
+      }
+    },
+    "demand": {
+      "knowledge": "known",
+      "value": [
+        {
+          "item": "iron-plate",
+          "metric": "rate_items_per_second",
+          "amount": 4.0,
+          "window_ticks": 3600,
+          "purpose": "useful iron expansion",
+          "priority": 1
+        },
+        {
+          "item": "iron-plate",
+          "metric": "stock",
+          "amount": 200,
+          "window_ticks": null,
+          "purpose": "next owned construction bill",
+          "priority": 2
+        }
+      ],
+      "observed_tick": 12000,
+      "revision": 7,
+      "provenance": {
+        "kind": "fixture",
+        "source_id": "fixture:demand"
+      }
+    },
+    "item_metrics": {
+      "knowledge": "known",
+      "value": {
+        "iron-plate": {
+          "cumulative_produced": {
+            "knowledge": "known",
+            "value": 20000,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:metrics:iron:cumulative-counter"
+            }
+          },
+          "stock": {
+            "knowledge": "known",
+            "value": 120,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:metrics:iron:owned-stock"
+            }
+          },
+          "rate_items_per_second": {
+            "knowledge": "known",
+            "value": 2.5,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:metrics:iron:measured-rate"
+            }
+          },
+          "measured_window_ticks": {
+            "knowledge": "known",
+            "value": 3600,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:metrics:iron:measured-window"
+            }
+          },
+          "utilization": {
+            "knowledge": "known",
+            "value": 0.5,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:metrics:iron:utilization"
+            }
+          },
+          "spare_capacity_items_per_second": {
+            "knowledge": "unknown",
+            "value": null,
+            "observed_tick": 12000,
+            "revision": 7,
+            "provenance": {
+              "kind": "fixture",
+              "source_id": "fixture:metrics:iron:spare-capacity-unmeasured"
+            }
+          }
+        }
+      },
+      "observed_tick": 12000,
+      "revision": 7,
+      "provenance": {
+        "kind": "fixture",
+        "source_id": "fixture:item-metrics"
+      }
+    },
+    "terrain": {
+      "knowledge": "known",
+      "value": {
+        "survey_bounds": [
+          0,
+          0,
+          60,
+          30
+        ],
+        "occupied_declared_boxes": [
+          [
+            1,
+            1,
+            3,
+            3
+          ]
+        ],
+        "resource_patches": {
+          "knowledge": "known",
+          "value": [
+            {
+              "patch_id": "synthetic-iron-a",
+              "resource": "iron-ore",
+              "bounds": [
+                8,
+                8,
+                28,
+                13
+              ],
+              "remaining_amount": 9000
+            }
+          ],
+          "observed_tick": 12000,
+          "revision": 7,
+          "provenance": {
+            "kind": "fixture",
+            "source_id": "fixture:terrain:iron-patch"
+          }
+        },
+        "water": {
+          "knowledge": "unknown",
+          "value": null,
+          "observed_tick": 12000,
+          "revision": 7,
+          "provenance": {
+            "kind": "fixture",
+            "source_id": "fixture:terrain:water-unscanned"
+          }
+        },
+        "obstructions": {
+          "knowledge": "known",
+          "value": [
+            {
+              "entity_id": "entity-old-furnace-1001",
+              "box": [
+                1,
+                1,
+                3,
+                3
+              ]
+            }
+          ],
+          "observed_tick": 12000,
+          "revision": 7,
+          "provenance": {
+            "kind": "fixture",
+            "source_id": "fixture:terrain:declared-obstructions"
+          }
+        },
+        "complete_occupancy": {
+          "knowledge": "unknown",
+          "value": null,
+          "observed_tick": 12000,
+          "revision": 7,
+          "provenance": {
+            "kind": "fixture",
+            "source_id": "fixture:terrain:occupancy-incomplete"
+          }
+        },
+        "reachability": {
+          "knowledge": "unknown",
+          "value": null,
+          "observed_tick": 12000,
+          "revision": 7,
+          "provenance": {
+            "kind": "fixture",
+            "source_id": "fixture:terrain:reach-unqualified"
+          }
+        },
+        "native_placement": {
+          "knowledge": "unknown",
+          "value": null,
+          "observed_tick": 12000,
+          "revision": 7,
+          "provenance": {
+            "kind": "fixture",
+            "source_id": "fixture:terrain:native-placement-unqualified"
+          }
+        },
+        "coordinates_evidence": "synthetic; no engine observation or verified working pair"
+      },
+      "observed_tick": 12000,
+      "revision": 7,
+      "provenance": {
+        "kind": "fixture",
+        "source_id": "fixture:terrain"
+      }
+    },
+    "pending_work": {
+      "knowledge": "known",
+      "value": {
+        "active_job": null,
+        "accepted_plans": [],
+        "executed_construction_receipts": [],
+        "native_confirmed_construction_events": [],
+        "last_productive_event": {
+          "knowledge": "known",
+          "value": {
+            "entity_id": "entity-old-furnace-1001",
+            "item": "iron-plate",
+            "delta": 1,
+            "tick": 11990
+          },
+          "observed_tick": 11990,
+          "revision": 6,
+          "provenance": {
+            "kind": "fixture",
+            "source_id": "fixture:pending:last-production"
+          }
+        },
+        "available_construction_material_scope": "one pair is carried; the second pair has not been funded",
+        "chat_claims_are_authoritative": false
+      },
+      "observed_tick": 12000,
+      "revision": 7,
+      "provenance": {
+        "kind": "fixture",
+        "source_id": "fixture:pending-work"
+      }
+    }
+  }
+}

@@ -1,0 +1,2098 @@
+{
+ "sulfuric_acid": {
+  "entities": [
+   {
+    "direction": 4,
+    "id": "bp-1",
+    "mirror": true,
+    "position": {
+     "x": 4.5,
+     "y": 4.5
+    },
+    "prototype": "chemical-plant",
+    "recipe": "sulfuric-acid"
+   },
+   {
+    "direction": 4,
+    "id": "bp-2",
+    "position": {
+     "x": 1.5,
+     "y": 2.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 8,
+    "id": "bp-3",
+    "position": {
+     "x": 2.5,
+     "y": 2.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 12,
+    "id": "bp-4",
+    "position": {
+     "x": 2.5,
+     "y": 3.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 8,
+    "id": "bp-5",
+    "position": {
+     "x": 1.5,
+     "y": 3.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 8,
+    "id": "bp-6",
+    "position": {
+     "x": 1.5,
+     "y": 4.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 12,
+    "id": "bp-7",
+    "position": {
+     "x": 2.5,
+     "y": 4.5
+    },
+    "prototype": "fast-inserter"
+   },
+   {
+    "direction": 4,
+    "id": "bp-8",
+    "position": {
+     "x": 1.5,
+     "y": 1.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-9",
+    "position": {
+     "x": 2.5,
+     "y": 1.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-10",
+    "position": {
+     "x": 3.5,
+     "y": 1.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-11",
+    "position": {
+     "x": 4.5,
+     "y": 1.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-12",
+    "position": {
+     "x": 5.5,
+     "y": 1.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 8,
+    "id": "bp-13",
+    "position": {
+     "x": 6.5,
+     "y": 1.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-14",
+    "position": {
+     "x": 6.5,
+     "y": 2.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 8,
+    "id": "bp-15",
+    "position": {
+     "x": 7.5,
+     "y": 2.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 8,
+    "id": "bp-16",
+    "position": {
+     "x": 7.5,
+     "y": 3.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 0,
+    "id": "bp-17",
+    "position": {
+     "x": 3.5,
+     "y": 2.5
+    },
+    "prototype": "fast-inserter"
+   },
+   {
+    "direction": 0,
+    "id": "bp-18",
+    "position": {
+     "x": 4.5,
+     "y": 2.5
+    },
+    "prototype": "fast-inserter"
+   },
+   {
+    "direction": 0,
+    "id": "bp-19",
+    "position": {
+     "x": 5.5,
+     "y": 2.5
+    },
+    "prototype": "fast-inserter"
+   },
+   {
+    "direction": 4,
+    "id": "bp-20",
+    "position": {
+     "x": 6.5,
+     "y": 3.5
+    },
+    "prototype": "fast-inserter"
+   },
+   {
+    "direction": 0,
+    "id": "bp-21",
+    "position": {
+     "x": 2.5,
+     "y": 5.5
+    },
+    "prototype": "pipe"
+   },
+   {
+    "direction": 0,
+    "id": "bp-22",
+    "position": {
+     "x": 2.5,
+     "y": 6.5
+    },
+    "prototype": "pipe"
+   },
+   {
+    "direction": 0,
+    "id": "bp-23",
+    "position": {
+     "x": 2.5,
+     "y": 7.5
+    },
+    "prototype": "pipe"
+   },
+   {
+    "direction": 0,
+    "id": "bp-24",
+    "position": {
+     "x": 3.5,
+     "y": 7.5
+    },
+    "prototype": "pipe"
+   },
+   {
+    "direction": 0,
+    "id": "bp-25",
+    "position": {
+     "x": 4.5,
+     "y": 7.5
+    },
+    "prototype": "pipe"
+   },
+   {
+    "direction": 0,
+    "id": "bp-26",
+    "position": {
+     "x": 5.5,
+     "y": 7.5
+    },
+    "prototype": "pipe"
+   },
+   {
+    "direction": 0,
+    "id": "bp-27",
+    "position": {
+     "x": 6.5,
+     "y": 7.5
+    },
+    "prototype": "pipe"
+   },
+   {
+    "direction": 0,
+    "id": "bp-28",
+    "position": {
+     "x": 7.5,
+     "y": 7.5
+    },
+    "prototype": "pipe"
+   },
+   {
+    "direction": 0,
+    "id": "bp-29",
+    "position": {
+     "x": 7.5,
+     "y": 5.5
+    },
+    "prototype": "pipe"
+   },
+   {
+    "direction": 0,
+    "id": "bp-30",
+    "position": {
+     "x": 6.5,
+     "y": 5.5
+    },
+    "prototype": "pipe"
+   },
+   {
+    "direction": 0,
+    "id": "bp-31",
+    "position": {
+     "x": 7.5,
+     "y": 1.5
+    },
+    "prototype": "pipe-to-ground"
+   },
+   {
+    "direction": 8,
+    "id": "bp-32",
+    "position": {
+     "x": 7.5,
+     "y": 4.5
+    },
+    "prototype": "pipe-to-ground"
+   },
+   {
+    "direction": 4,
+    "id": "bp-33",
+    "position": {
+     "x": 0.5,
+     "y": 2.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-34",
+    "position": {
+     "x": 0.5,
+     "y": 1.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 0,
+    "id": "bp-35",
+    "position": {
+     "x": 8.5,
+     "y": 7.5
+    },
+    "prototype": "pipe"
+   },
+   {
+    "direction": 0,
+    "id": "bp-36",
+    "position": {
+     "x": 3.5,
+     "y": 0.5
+    },
+    "prototype": "medium-electric-pole"
+   },
+   {
+    "direction": 0,
+    "id": "bp-37",
+    "position": {
+     "x": 0.5,
+     "y": 3.5
+    },
+    "prototype": "medium-electric-pole"
+   }
+  ],
+  "footprint": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    6,
+    1
+   ],
+   [
+    6,
+    2
+   ],
+   [
+    6,
+    3
+   ],
+   [
+    6,
+    5
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    7,
+    1
+   ],
+   [
+    7,
+    2
+   ],
+   [
+    7,
+    3
+   ],
+   [
+    7,
+    4
+   ],
+   [
+    7,
+    5
+   ],
+   [
+    7,
+    7
+   ],
+   [
+    8,
+    7
+   ]
+  ],
+  "id": "4dfd4ac77b6d84fa",
+  "import": {
+   "annotated_by": "rules",
+   "books": [],
+   "box": {
+    "h": 7,
+    "w": 7
+   },
+   "design": "factorio optimizer 7x7",
+   "file": "optimizer blocks.txt",
+   "label": "factorio-optimizer 7x7",
+   "ports": [
+    {
+     "edge": "west",
+     "item": "iron-plate",
+     "kind": "belt",
+     "outside": [
+      0,
+      2
+     ],
+     "rate": 1.0,
+     "way": "in",
+     "x": 1.5,
+     "y": 2.5
+    },
+    {
+     "edge": "west",
+     "item": "sulfur",
+     "kind": "belt",
+     "outside": [
+      0,
+      1
+     ],
+     "rate": 5.0,
+     "way": "in",
+     "x": 1.5,
+     "y": 1.5
+    },
+    {
+     "edge": "east",
+     "item": "water",
+     "kind": "fluid",
+     "outside": [
+      7,
+      1
+     ],
+     "rate": 100.0,
+     "way": "in",
+     "x": 7.5,
+     "y": 1.5
+    },
+    {
+     "edge": "east",
+     "item": "sulfuric-acid",
+     "kind": "fluid",
+     "outside": [
+      8,
+      7
+     ],
+     "rate": 50.0,
+     "way": "out",
+     "x": 7.5,
+     "y": 7.5
+    }
+   ],
+   "ports_from": "sidecar",
+   "products": [
+    "sulfuric-acid"
+   ],
+   "skipped": [],
+   "tier": 0
+  },
+  "job": {
+   "draws_kw": 513.5,
+   "kind": "intermediate",
+   "makes": {},
+   "outputs": [],
+   "parts": {
+    "chemical-plant": 1,
+    "fast-inserter": 5,
+    "medium-electric-pole": 2,
+    "pipe": 11,
+    "pipe-to-ground": 2,
+    "transport-belt": 16
+   },
+   "purpose": "import:sulfuric-acid",
+   "resources": [],
+   "size": [
+    9,
+    8
+   ],
+   "takes": {},
+   "tiles": 45
+  },
+  "label": "factorio-optimizer 7x7",
+  "outputs": [],
+  "prototypes": {
+   "chemical-plant": {
+    "height": 3,
+    "placement_item": "chemical-plant",
+    "type": "assembling-machine",
+    "width": 3
+   },
+   "fast-inserter": {
+    "height": 1,
+    "placement_item": "fast-inserter",
+    "type": "inserter",
+    "width": 1
+   },
+   "medium-electric-pole": {
+    "height": 1,
+    "placement_item": "medium-electric-pole",
+    "type": "electric-pole",
+    "width": 1
+   },
+   "pipe": {
+    "height": 1,
+    "placement_item": "pipe",
+    "type": "pipe",
+    "width": 1
+   },
+   "pipe-to-ground": {
+    "height": 1,
+    "placement_item": "pipe-to-ground",
+    "type": "pipe-to-ground",
+    "width": 1
+   },
+   "transport-belt": {
+    "height": 1,
+    "placement_item": "transport-belt",
+    "type": "transport-belt",
+    "width": 1
+   }
+  },
+  "purpose": "import:sulfuric-acid",
+  "recipes_needed": [
+   "sulfuric-acid"
+  ],
+  "resource_requirements": [],
+  "schema": "npc-blueprint-v1",
+  "size": [
+   9,
+   8
+  ],
+  "source": "import:optimizer blocks@20/factorio-optimizer 7x7",
+  "stage_bills": [
+   {
+    "chemical-plant": 1,
+    "fast-inserter": 5,
+    "medium-electric-pole": 2,
+    "pipe": 11,
+    "pipe-to-ground": 2,
+    "transport-belt": 16
+   }
+  ],
+  "stages": [
+   {
+    "depends_on": [],
+    "entity_ids": [
+     "bp-1",
+     "bp-2",
+     "bp-3",
+     "bp-4",
+     "bp-5",
+     "bp-6",
+     "bp-7",
+     "bp-8",
+     "bp-9",
+     "bp-10",
+     "bp-11",
+     "bp-12",
+     "bp-13",
+     "bp-14",
+     "bp-15",
+     "bp-16",
+     "bp-17",
+     "bp-18",
+     "bp-19",
+     "bp-20",
+     "bp-21",
+     "bp-22",
+     "bp-23",
+     "bp-24",
+     "bp-25",
+     "bp-26",
+     "bp-27",
+     "bp-28",
+     "bp-29",
+     "bp-30",
+     "bp-31",
+     "bp-32",
+     "bp-33",
+     "bp-34",
+     "bp-35",
+     "bp-36",
+     "bp-37"
+    ],
+    "id": "imported",
+    "manual_supplies": [],
+    "witnesses": [
+     {
+      "entity_id": "bp-1",
+      "kind": "entity_built"
+     }
+    ]
+   }
+  ],
+  "stats": {
+   "complete_ticks": [],
+   "failures": 0,
+   "first_output_ticks": [],
+   "last_failure": null,
+   "successes": 0,
+   "uses": 0
+  }
+ },
+ "fuel_cells": {
+  "entities": [
+   {
+    "direction": 0,
+    "id": "bp-1",
+    "position": {
+     "x": 4.5,
+     "y": 9.5
+    },
+    "prototype": "assembling-machine-2",
+    "recipe": "uranium-fuel-cell"
+   },
+   {
+    "direction": 0,
+    "id": "bp-2",
+    "position": {
+     "x": 10.5,
+     "y": 8.5
+    },
+    "prototype": "centrifuge",
+    "recipe": "uranium-processing"
+   },
+   {
+    "direction": 0,
+    "id": "bp-3",
+    "position": {
+     "x": 5.5,
+     "y": 3.5
+    },
+    "prototype": "centrifuge",
+    "recipe": "uranium-processing"
+   },
+   {
+    "direction": 0,
+    "id": "bp-4",
+    "position": {
+     "x": 2.5,
+     "y": 3.5
+    },
+    "prototype": "centrifuge",
+    "recipe": "uranium-processing"
+   },
+   {
+    "direction": 0,
+    "id": "bp-5",
+    "position": {
+     "x": 10.5,
+     "y": 2.5
+    },
+    "prototype": "centrifuge",
+    "recipe": "uranium-processing"
+   },
+   {
+    "direction": 4,
+    "filters": [
+     {
+      "index": 1,
+      "name": "uranium-238"
+     }
+    ],
+    "id": "bp-6",
+    "position": {
+     "x": 7.5,
+     "y": 8.5
+    },
+    "prototype": "long-handed-inserter",
+    "use_filters": true
+   },
+   {
+    "direction": 4,
+    "filters": [
+     {
+      "index": 1,
+      "name": "uranium-235"
+     }
+    ],
+    "id": "bp-7",
+    "position": {
+     "x": 7.5,
+     "y": 9.5
+    },
+    "prototype": "long-handed-inserter",
+    "use_filters": true
+   },
+   {
+    "direction": 0,
+    "filters": [
+     {
+      "index": 1,
+      "name": "uranium-235"
+     }
+    ],
+    "id": "bp-8",
+    "position": {
+     "x": 4.5,
+     "y": 6.5
+    },
+    "prototype": "long-handed-inserter",
+    "use_filters": true
+   },
+   {
+    "direction": 0,
+    "filters": [
+     {
+      "index": 1,
+      "name": "uranium-235"
+     }
+    ],
+    "id": "bp-9",
+    "position": {
+     "x": 3.5,
+     "y": 6.5
+    },
+    "prototype": "long-handed-inserter",
+    "use_filters": true
+   },
+   {
+    "direction": 4,
+    "id": "bp-10",
+    "position": {
+     "x": 8.5,
+     "y": 10.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-11",
+    "position": {
+     "x": 9.5,
+     "y": 10.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-12",
+    "position": {
+     "x": 10.5,
+     "y": 10.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-13",
+    "position": {
+     "x": 11.5,
+     "y": 10.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 12,
+    "id": "bp-14",
+    "position": {
+     "x": 6.5,
+     "y": 10.5
+    },
+    "prototype": "long-handed-inserter"
+   },
+   {
+    "direction": 12,
+    "id": "bp-15",
+    "position": {
+     "x": 11.5,
+     "y": 6.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 12,
+    "id": "bp-16",
+    "position": {
+     "x": 5.5,
+     "y": 6.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "belt_to_ground_type": "input",
+    "direction": 12,
+    "id": "bp-17",
+    "position": {
+     "x": 10.5,
+     "y": 6.5
+    },
+    "prototype": "underground-belt"
+   },
+   {
+    "belt_to_ground_type": "output",
+    "direction": 12,
+    "id": "bp-18",
+    "position": {
+     "x": 6.5,
+     "y": 6.5
+    },
+    "prototype": "underground-belt"
+   },
+   {
+    "direction": 0,
+    "filters": [
+     {
+      "index": 1,
+      "name": "uranium-235"
+     }
+    ],
+    "id": "bp-19",
+    "position": {
+     "x": 11.5,
+     "y": 4.5
+    },
+    "prototype": "long-handed-inserter",
+    "use_filters": true
+   },
+   {
+    "direction": 0,
+    "id": "bp-20",
+    "position": {
+     "x": 5.5,
+     "y": 7.5
+    },
+    "prototype": "inserter"
+   },
+   {
+    "direction": 12,
+    "id": "bp-21",
+    "position": {
+     "x": 4.5,
+     "y": 7.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 12,
+    "id": "bp-22",
+    "position": {
+     "x": 3.5,
+     "y": 7.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 0,
+    "id": "bp-23",
+    "position": {
+     "x": 2.5,
+     "y": 7.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 12,
+    "id": "bp-24",
+    "position": {
+     "x": 2.5,
+     "y": 6.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 0,
+    "id": "bp-25",
+    "position": {
+     "x": 1.5,
+     "y": 6.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-26",
+    "position": {
+     "x": 1.5,
+     "y": 5.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-27",
+    "position": {
+     "x": 8.5,
+     "y": 5.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-28",
+    "position": {
+     "x": 9.5,
+     "y": 5.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-29",
+    "position": {
+     "x": 10.5,
+     "y": 5.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-30",
+    "position": {
+     "x": 11.5,
+     "y": 5.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "belt_to_ground_type": "input",
+    "direction": 4,
+    "id": "bp-31",
+    "position": {
+     "x": 2.5,
+     "y": 5.5
+    },
+    "prototype": "underground-belt"
+   },
+   {
+    "belt_to_ground_type": "output",
+    "direction": 4,
+    "id": "bp-32",
+    "position": {
+     "x": 7.5,
+     "y": 5.5
+    },
+    "prototype": "underground-belt"
+   },
+   {
+    "direction": 0,
+    "filters": [
+     {
+      "index": 1,
+      "name": "uranium-238"
+     }
+    ],
+    "id": "bp-33",
+    "position": {
+     "x": 4.5,
+     "y": 5.5
+    },
+    "prototype": "long-handed-inserter",
+    "use_filters": true
+   },
+   {
+    "direction": 0,
+    "filters": [
+     {
+      "index": 1,
+      "name": "uranium-238"
+     }
+    ],
+    "id": "bp-34",
+    "position": {
+     "x": 3.5,
+     "y": 5.5
+    },
+    "prototype": "long-handed-inserter",
+    "use_filters": true
+   },
+   {
+    "direction": 8,
+    "filters": [
+     {
+      "index": 1,
+      "name": "uranium-238"
+     }
+    ],
+    "id": "bp-35",
+    "position": {
+     "x": 9.5,
+     "y": 6.5
+    },
+    "prototype": "inserter",
+    "use_filters": true
+   },
+   {
+    "direction": 0,
+    "filters": [
+     {
+      "index": 1,
+      "name": "uranium-238"
+     }
+    ],
+    "id": "bp-36",
+    "position": {
+     "x": 9.5,
+     "y": 4.5
+    },
+    "prototype": "inserter",
+    "use_filters": true
+   },
+   {
+    "direction": 4,
+    "id": "bp-37",
+    "position": {
+     "x": 1.5,
+     "y": 10.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 0,
+    "id": "bp-38",
+    "position": {
+     "x": 2.5,
+     "y": 10.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 12,
+    "id": "bp-39",
+    "position": {
+     "x": 2.5,
+     "y": 9.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 0,
+    "id": "bp-40",
+    "position": {
+     "x": 1.5,
+     "y": 9.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 0,
+    "id": "bp-41",
+    "position": {
+     "x": 1.5,
+     "y": 8.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 12,
+    "id": "bp-42",
+    "position": {
+     "x": 2.5,
+     "y": 8.5
+    },
+    "prototype": "inserter"
+   },
+   {
+    "direction": 4,
+    "id": "bp-43",
+    "position": {
+     "x": 1.5,
+     "y": 0.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-44",
+    "position": {
+     "x": 2.5,
+     "y": 0.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-45",
+    "position": {
+     "x": 3.5,
+     "y": 0.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-46",
+    "position": {
+     "x": 4.5,
+     "y": 0.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 8,
+    "id": "bp-47",
+    "position": {
+     "x": 5.5,
+     "y": 0.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-48",
+    "position": {
+     "x": 5.5,
+     "y": 1.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-49",
+    "position": {
+     "x": 6.5,
+     "y": 1.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 8,
+    "id": "bp-50",
+    "position": {
+     "x": 7.5,
+     "y": 1.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 8,
+    "id": "bp-51",
+    "position": {
+     "x": 7.5,
+     "y": 7.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "belt_to_ground_type": "input",
+    "direction": 8,
+    "id": "bp-52",
+    "position": {
+     "x": 7.5,
+     "y": 2.5
+    },
+    "prototype": "underground-belt"
+   },
+   {
+    "belt_to_ground_type": "output",
+    "direction": 8,
+    "id": "bp-53",
+    "position": {
+     "x": 7.5,
+     "y": 6.5
+    },
+    "prototype": "underground-belt"
+   },
+   {
+    "direction": 0,
+    "id": "bp-54",
+    "position": {
+     "x": 2.5,
+     "y": 1.5
+    },
+    "prototype": "fast-inserter"
+   },
+   {
+    "direction": 0,
+    "id": "bp-55",
+    "position": {
+     "x": 4.5,
+     "y": 1.5
+    },
+    "prototype": "fast-inserter"
+   },
+   {
+    "direction": 12,
+    "id": "bp-56",
+    "position": {
+     "x": 8.5,
+     "y": 1.5
+    },
+    "prototype": "long-handed-inserter"
+   },
+   {
+    "direction": 12,
+    "id": "bp-57",
+    "position": {
+     "x": 8.5,
+     "y": 7.5
+    },
+    "prototype": "fast-inserter"
+   },
+   {
+    "direction": 4,
+    "id": "bp-58",
+    "position": {
+     "x": 0.5,
+     "y": 10.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-59",
+    "position": {
+     "x": 0.5,
+     "y": 0.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-60",
+    "position": {
+     "x": 12.5,
+     "y": 10.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 4,
+    "id": "bp-61",
+    "position": {
+     "x": 12.5,
+     "y": 5.5
+    },
+    "prototype": "transport-belt"
+   },
+   {
+    "direction": 0,
+    "id": "bp-62",
+    "position": {
+     "x": 6.5,
+     "y": 7.5
+    },
+    "prototype": "medium-electric-pole"
+   },
+   {
+    "direction": 0,
+    "id": "bp-63",
+    "position": {
+     "x": 7.5,
+     "y": 4.5
+    },
+    "prototype": "medium-electric-pole"
+   },
+   {
+    "direction": 0,
+    "id": "bp-64",
+    "position": {
+     "x": 8.5,
+     "y": 4.5
+    },
+    "prototype": "medium-electric-pole"
+   },
+   {
+    "direction": 0,
+    "id": "bp-65",
+    "position": {
+     "x": 5.5,
+     "y": 5.5
+    },
+    "prototype": "medium-electric-pole"
+   },
+   {
+    "direction": 0,
+    "id": "bp-66",
+    "position": {
+     "x": 3.5,
+     "y": 1.5
+    },
+    "prototype": "medium-electric-pole"
+   }
+  ],
+  "footprint": [
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    10
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    2,
+    6
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    2,
+    8
+   ],
+   [
+    2,
+    9
+   ],
+   [
+    2,
+    10
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    3,
+    5
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    3,
+    9
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    6
+   ],
+   [
+    4,
+    7
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    4,
+    9
+   ],
+   [
+    4,
+    10
+   ],
+   [
+    5,
+    0
+   ],
+   [
+    5,
+    1
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    5,
+    5
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    5,
+    10
+   ],
+   [
+    6,
+    1
+   ],
+   [
+    6,
+    2
+   ],
+   [
+    6,
+    3
+   ],
+   [
+    6,
+    4
+   ],
+   [
+    6,
+    6
+   ],
+   [
+    6,
+    7
+   ],
+   [
+    6,
+    10
+   ],
+   [
+    7,
+    1
+   ],
+   [
+    7,
+    2
+   ],
+   [
+    7,
+    4
+   ],
+   [
+    7,
+    5
+   ],
+   [
+    7,
+    6
+   ],
+   [
+    7,
+    7
+   ],
+   [
+    7,
+    8
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    8,
+    1
+   ],
+   [
+    8,
+    4
+   ],
+   [
+    8,
+    5
+   ],
+   [
+    8,
+    7
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    9,
+    1
+   ],
+   [
+    9,
+    2
+   ],
+   [
+    9,
+    3
+   ],
+   [
+    9,
+    4
+   ],
+   [
+    9,
+    5
+   ],
+   [
+    9,
+    6
+   ],
+   [
+    9,
+    7
+   ],
+   [
+    9,
+    8
+   ],
+   [
+    9,
+    9
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    10,
+    1
+   ],
+   [
+    10,
+    2
+   ],
+   [
+    10,
+    3
+   ],
+   [
+    10,
+    5
+   ],
+   [
+    10,
+    6
+   ],
+   [
+    10,
+    7
+   ],
+   [
+    10,
+    8
+   ],
+   [
+    10,
+    9
+   ],
+   [
+    10,
+    10
+   ],
+   [
+    11,
+    1
+   ],
+   [
+    11,
+    2
+   ],
+   [
+    11,
+    3
+   ],
+   [
+    11,
+    4
+   ],
+   [
+    11,
+    5
+   ],
+   [
+    11,
+    6
+   ],
+   [
+    11,
+    7
+   ],
+   [
+    11,
+    8
+   ],
+   [
+    11,
+    9
+   ],
+   [
+    11,
+    10
+   ],
+   [
+    12,
+    5
+   ],
+   [
+    12,
+    10
+   ]
+  ],
+  "id": "5a28d989f8c26511",
+  "import": {
+   "annotated_by": "rules",
+   "books": [],
+   "box": {
+    "h": 11,
+    "w": 11
+   },
+   "design": "factorio optimizer 11x11",
+   "file": "optimizer blocks.txt",
+   "label": "factorio-optimizer 11x11",
+   "ports": [
+    {
+     "edge": "west",
+     "item": "iron-plate",
+     "kind": "belt",
+     "outside": [
+      0,
+      10
+     ],
+     "rate": 0.02,
+     "way": "in",
+     "x": 1.5,
+     "y": 10.5
+    },
+    {
+     "edge": "west",
+     "item": "uranium-ore",
+     "kind": "belt",
+     "outside": [
+      0,
+      0
+     ],
+     "rate": 2.8571428571428568,
+     "way": "in",
+     "x": 1.5,
+     "y": 0.5
+    },
+    {
+     "edge": "east",
+     "item": "uranium-fuel-cell",
+     "kind": "belt",
+     "outside": [
+      12,
+      10
+     ],
+     "rate": 0.02,
+     "way": "out",
+     "x": 11.5,
+     "y": 10.5
+    },
+    {
+     "edge": "east",
+     "item": "uranium-238",
+     "kind": "belt",
+     "outside": [
+      12,
+      5
+     ],
+     "rate": 0.2457142857142857,
+     "way": "out",
+     "x": 11.5,
+     "y": 5.5
+    }
+   ],
+   "ports_from": "sidecar",
+   "products": [
+    "uranium-fuel-cell",
+    "uranium-238"
+   ],
+   "skipped": [],
+   "tier": 0
+  },
+  "job": {
+   "draws_kw": 2032.6,
+   "kind": "intermediate",
+   "makes": {},
+   "outputs": [],
+   "parts": {
+    "assembling-machine-2": 1,
+    "centrifuge": 4,
+    "fast-inserter": 3,
+    "inserter": 4,
+    "long-handed-inserter": 9,
+    "medium-electric-pole": 5,
+    "transport-belt": 34,
+    "underground-belt": 6
+   },
+   "purpose": "import:uranium-fuel-cell+uranium-238",
+   "resources": [],
+   "size": [
+    13,
+    11
+   ],
+   "takes": {},
+   "tiles": 106
+  },
+  "label": "factorio-optimizer 11x11",
+  "outputs": [],
+  "prototypes": {
+   "assembling-machine-2": {
+    "height": 3,
+    "placement_item": "assembling-machine-2",
+    "type": "assembling-machine",
+    "width": 3
+   },
+   "centrifuge": {
+    "height": 3,
+    "placement_item": "centrifuge",
+    "type": "assembling-machine",
+    "width": 3
+   },
+   "fast-inserter": {
+    "height": 1,
+    "placement_item": "fast-inserter",
+    "type": "inserter",
+    "width": 1
+   },
+   "inserter": {
+    "height": 1,
+    "placement_item": "inserter",
+    "type": "inserter",
+    "width": 1
+   },
+   "long-handed-inserter": {
+    "height": 1,
+    "placement_item": "long-handed-inserter",
+    "type": "inserter",
+    "width": 1
+   },
+   "medium-electric-pole": {
+    "height": 1,
+    "placement_item": "medium-electric-pole",
+    "type": "electric-pole",
+    "width": 1
+   },
+   "transport-belt": {
+    "height": 1,
+    "placement_item": "transport-belt",
+    "type": "transport-belt",
+    "width": 1
+   },
+   "underground-belt": {
+    "height": 1,
+    "placement_item": "underground-belt",
+    "type": "underground-belt",
+    "width": 1
+   }
+  },
+  "purpose": "import:uranium-fuel-cell+uranium-238",
+  "recipes_needed": [
+   "uranium-fuel-cell",
+   "uranium-processing"
+  ],
+  "resource_requirements": [],
+  "schema": "npc-blueprint-v1",
+  "size": [
+   13,
+   11
+  ],
+  "source": "import:optimizer blocks@24/factorio-optimizer 11x11",
+  "stage_bills": [
+   {
+    "assembling-machine-2": 1,
+    "centrifuge": 4,
+    "fast-inserter": 3,
+    "inserter": 4,
+    "long-handed-inserter": 9,
+    "medium-electric-pole": 5,
+    "transport-belt": 34,
+    "underground-belt": 6
+   }
+  ],
+  "stages": [
+   {
+    "depends_on": [],
+    "entity_ids": [
+     "bp-1",
+     "bp-2",
+     "bp-3",
+     "bp-4",
+     "bp-5",
+     "bp-6",
+     "bp-7",
+     "bp-8",
+     "bp-9",
+     "bp-10",
+     "bp-11",
+     "bp-12",
+     "bp-13",
+     "bp-14",
+     "bp-15",
+     "bp-16",
+     "bp-17",
+     "bp-18",
+     "bp-19",
+     "bp-20",
+     "bp-21",
+     "bp-22",
+     "bp-23",
+     "bp-24",
+     "bp-25",
+     "bp-26",
+     "bp-27",
+     "bp-28",
+     "bp-29",
+     "bp-30",
+     "bp-31",
+     "bp-32",
+     "bp-33",
+     "bp-34",
+     "bp-35",
+     "bp-36",
+     "bp-37",
+     "bp-38",
+     "bp-39",
+     "bp-40",
+     "bp-41",
+     "bp-42",
+     "bp-43",
+     "bp-44",
+     "bp-45",
+     "bp-46",
+     "bp-47",
+     "bp-48",
+     "bp-49",
+     "bp-50",
+     "bp-51",
+     "bp-52",
+     "bp-53",
+     "bp-54",
+     "bp-55",
+     "bp-56",
+     "bp-57",
+     "bp-58",
+     "bp-59",
+     "bp-60",
+     "bp-61",
+     "bp-62",
+     "bp-63",
+     "bp-64",
+     "bp-65",
+     "bp-66"
+    ],
+    "id": "imported",
+    "manual_supplies": [],
+    "witnesses": [
+     {
+      "entity_id": "bp-1",
+      "kind": "entity_built"
+     }
+    ]
+   }
+  ],
+  "stats": {
+   "complete_ticks": [],
+   "failures": 0,
+   "first_output_ticks": [],
+   "last_failure": null,
+   "successes": 0,
+   "uses": 0
+  }
+ }
+}

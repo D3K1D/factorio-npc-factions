@@ -1,0 +1,16 @@
+{
+  "seed": 24051006,
+  "no_enemies_mode": false,
+  "peaceful_mode": false,
+  "autoplace_controls": {
+    "enemy-base": {
+      "frequency": 1,
+      "size": 1,
+      "richness": 1
+    }
+  },
+  "cliff_settings": {
+    "name": "cliff",
+    "richness": 0
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Local NPC factions test",
+  "description": "Isolated private development fixture",
+  "max_players": 2,
+  "visibility": {"public": false, "lan": false},
+  "require_user_verification": false,
+  "allow_commands": "admins-only",
+  "auto_pause": false,
+  "autosave_interval": 0
+}

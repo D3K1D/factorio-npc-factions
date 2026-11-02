@@ -1,0 +1,54 @@
+{
+  "offshore-pump": {
+    "placement_item": "offshore-pump", "width": 1, "height": 1,
+    "type": "offshore-pump", "energy_source": "void", "requires_water": true,
+    "fluid_boxes": [{"index": 1, "production": "output", "filter": "water", "connections": [
+      {"position": [0, 0], "direction": 8, "type": "normal", "max_underground_distance": null}
+    ]}]
+  },
+  "boiler": {
+    "placement_item": "boiler", "width": 3, "height": 2,
+    "type": "boiler", "energy_source": "burner", "fuel_categories": ["chemical"],
+    "fluid_boxes": [
+      {"index": 1, "production": "input-output", "filter": "water", "connections": [
+        {"position": [-1, 0.5], "direction": 12, "type": "normal", "max_underground_distance": null},
+        {"position": [1, 0.5], "direction": 4, "type": "normal", "max_underground_distance": null}
+      ]},
+      {"index": 2, "production": "output", "filter": "steam", "connections": [
+        {"position": [0, -0.5], "direction": 0, "type": "normal", "max_underground_distance": null}
+      ]}
+    ]
+  },
+  "steam-engine": {
+    "placement_item": "steam-engine", "width": 3, "height": 5,
+    "type": "generator", "energy_source": "electric", "produces_power": true,
+    "fluid_boxes": [{"index": 1, "production": "input", "filter": "steam", "connections": [
+      {"position": [0, 2], "direction": 8, "type": "normal", "max_underground_distance": null},
+      {"position": [0, -2], "direction": 0, "type": "normal", "max_underground_distance": null}
+    ]}]
+  },
+  "pipe": {
+    "placement_item": "pipe", "width": 1, "height": 1, "type": "pipe", "energy_source": "none",
+    "fluid_boxes": [{"index": 1, "production": "input-output", "filter": null, "connections": [
+      {"position": [0, 0], "direction": 0, "type": "normal", "max_underground_distance": null},
+      {"position": [0, 0], "direction": 4, "type": "normal", "max_underground_distance": null},
+      {"position": [0, 0], "direction": 8, "type": "normal", "max_underground_distance": null},
+      {"position": [0, 0], "direction": 12, "type": "normal", "max_underground_distance": null}
+    ]}]
+  },
+  "pipe-to-ground": {
+    "placement_item": "pipe-to-ground", "width": 1, "height": 1,
+    "type": "pipe-to-ground", "energy_source": "none",
+    "fluid_boxes": [{"index": 1, "production": "input-output", "filter": null, "connections": [
+      {"position": [0, 0], "direction": 0, "type": "normal", "max_underground_distance": null},
+      {"position": [0, 0], "direction": 8, "type": "underground", "max_underground_distance": 10}
+    ]}]
+  },
+  "lab": {
+    "placement_item": "lab", "width": 3, "height": 3, "type": "lab", "energy_source": "electric"
+  },
+  "small-electric-pole": {
+    "placement_item": "small-electric-pole", "width": 1, "height": 1,
+    "type": "electric-pole", "energy_source": "none", "supply_area_distance": 2.5, "max_wire_distance": 7.5
+  }
+}

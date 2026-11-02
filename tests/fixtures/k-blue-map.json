@@ -1,0 +1,6055 @@
+{
+  "area": [
+    -110,
+    -110,
+    110,
+    110
+  ],
+  "character": {
+    "x": 5.66796875,
+    "y": 1.4609375
+  },
+  "entities": [
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-sand-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": 99.4375,
+      "y": -104.125
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-sand-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": 100.375,
+      "y": -102.3125
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-sand-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": 108.75,
+      "y": -101.0625
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-sand-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": 107.5625,
+      "y": -97.3125
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-sand-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": 109.625,
+      "y": -96.8125
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": 38.1875,
+      "y": -71.625
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 3,
+      "n": "huge-rock",
+      "t": "simple-entity",
+      "w": 3,
+      "x": -56.8125,
+      "y": -64.125
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": -60.0625,
+      "y": -64
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 3,
+      "n": "huge-rock",
+      "t": "simple-entity",
+      "w": 3,
+      "x": -40.375,
+      "y": -62.875
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": -63.8125,
+      "y": -61.625
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 3,
+      "n": "huge-rock",
+      "t": "simple-entity",
+      "w": 3,
+      "x": -57.4375,
+      "y": -61.6875
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": -41.5625,
+      "y": -60.3125
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 3,
+      "n": "huge-rock",
+      "t": "simple-entity",
+      "w": 3,
+      "x": -59.8125,
+      "y": -59.25
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": -53.75,
+      "y": -59.625
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": -49.6875,
+      "y": -57.4375
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": -54.625,
+      "y": -55.25
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 3,
+      "n": "huge-rock",
+      "t": "simple-entity",
+      "w": 3,
+      "x": -109.8125,
+      "y": -21.5
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": -80.75,
+      "y": -21.75
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 3,
+      "n": "huge-rock",
+      "t": "simple-entity",
+      "w": 3,
+      "x": -111,
+      "y": -18.125
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 3,
+      "n": "huge-rock",
+      "t": "simple-entity",
+      "w": 3,
+      "x": -89.8125,
+      "y": -18.75
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": -82.125,
+      "y": -19.6875
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 15.5,
+      "y": -16.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 16.5,
+      "y": -16.5
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "offshore-pump",
+      "t": "offshore-pump",
+      "w": 1,
+      "x": 17.5,
+      "y": -16.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 83.5,
+      "y": -16.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "offshore-pump",
+      "t": "offshore-pump",
+      "w": 1,
+      "x": 83.5,
+      "y": -17.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 85.5,
+      "y": -16.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 84.5,
+      "y": -16.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 87.5,
+      "y": -16.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 86.5,
+      "y": -16.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 89.5,
+      "y": -16.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 88.5,
+      "y": -16.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 91.5,
+      "y": -16.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 90.5,
+      "y": -16.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 93.5,
+      "y": -16.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 92.5,
+      "y": -16.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 15.5,
+      "y": -14.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 15.5,
+      "y": -15.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 93.5,
+      "y": -14.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 93.5,
+      "y": -15.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 17.5,
+      "y": -12.5
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 2,
+      "n": "boiler",
+      "t": "boiler",
+      "w": 3,
+      "x": 16,
+      "y": -12.5
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 5,
+      "n": "steam-engine",
+      "t": "generator",
+      "w": 3,
+      "x": 20.5,
+      "y": -12.5
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 5,
+      "n": "steam-engine",
+      "t": "generator",
+      "w": 3,
+      "x": 25.5,
+      "y": -12.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 93.5,
+      "y": -12.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 93.5,
+      "y": -13.5
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": -109.875,
+      "y": -10.3125
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 7.5,
+      "y": -10.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 3,
+      "n": "assembling-machine-1",
+      "p": 20,
+      "r": "engine-unit",
+      "t": "assembling-machine",
+      "w": 3,
+      "x": 9.5,
+      "y": -10.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 19.5,
+      "y": -10.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 25.5,
+      "y": -10.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 93.5,
+      "y": -10.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 93.5,
+      "y": -11.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 3,
+      "n": "assembling-machine-1",
+      "p": 0,
+      "r": "chemical-science-pack",
+      "t": "assembling-machine",
+      "w": 3,
+      "x": 20.5,
+      "y": -8.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 27.5,
+      "y": -9.5
+    },
+    {
+      "d": 8,
+      "f": "npc-faction-1",
+      "h": 3,
+      "n": "chemical-plant",
+      "p": 25,
+      "r": "sulfur",
+      "t": "assembling-machine",
+      "w": 3,
+      "x": 91.5,
+      "y": -8.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 93.5,
+      "y": -8.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 93.5,
+      "y": -9.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 13.5,
+      "y": -7.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 3,
+      "n": "lab",
+      "t": "lab",
+      "w": 3,
+      "x": 15.5,
+      "y": -7.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 21.5,
+      "y": -6.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "inserter",
+      "t": "inserter",
+      "w": 1,
+      "x": 20.5,
+      "y": -6.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 33.5,
+      "y": -6.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 40.5,
+      "y": -6.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 47.5,
+      "y": -6.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 54.5,
+      "y": -6.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 61.5,
+      "y": -6.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 68.5,
+      "y": -6.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 90.5,
+      "y": -6.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 92.5,
+      "y": -6.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 93.5,
+      "y": -6.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 93.5,
+      "y": -7.5
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "transport-belt",
+      "t": "transport-belt",
+      "w": 1,
+      "x": 7.5,
+      "y": -5.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "transport-belt",
+      "t": "transport-belt",
+      "w": 1,
+      "x": 7.5,
+      "y": -4.5
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "transport-belt",
+      "t": "transport-belt",
+      "w": 1,
+      "x": 9.5,
+      "y": -5.5
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "transport-belt",
+      "t": "transport-belt",
+      "w": 1,
+      "x": 8.5,
+      "y": -5.5
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "burner-inserter",
+      "t": "inserter",
+      "w": 1,
+      "x": 8.5,
+      "y": -4.5
+    },
+    {
+      "d": 12,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "burner-inserter",
+      "t": "inserter",
+      "w": 1,
+      "x": 10.5,
+      "y": -5.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 3,
+      "n": "assembling-machine-1",
+      "p": 148,
+      "r": "iron-gear-wheel",
+      "t": "assembling-machine",
+      "w": 3,
+      "x": 12.5,
+      "y": -4.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 14.5,
+      "y": -5.5
+    },
+    {
+      "d": 12,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "inserter",
+      "t": "inserter",
+      "w": 1,
+      "x": 14.5,
+      "y": -4.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 3,
+      "n": "assembling-machine-1",
+      "p": 145,
+      "r": "automation-science-pack",
+      "t": "assembling-machine",
+      "w": 3,
+      "x": 16.5,
+      "y": -4.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 18.5,
+      "y": -5.5
+    },
+    {
+      "d": 12,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "inserter",
+      "t": "inserter",
+      "w": 1,
+      "x": 18.5,
+      "y": -4.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 3,
+      "n": "lab",
+      "t": "lab",
+      "w": 3,
+      "x": 20.5,
+      "y": -4.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 22.5,
+      "y": -5.5
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "inserter",
+      "t": "inserter",
+      "w": 1,
+      "x": 22.5,
+      "y": -4.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 3,
+      "n": "assembling-machine-1",
+      "p": 100,
+      "r": "logistic-science-pack",
+      "t": "assembling-machine",
+      "w": 3,
+      "x": 24.5,
+      "y": -4.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 2,
+      "n": "stone-furnace",
+      "p": 362,
+      "r": "stone-brick",
+      "t": "furnace",
+      "w": 2,
+      "x": 85,
+      "y": -6
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 89.5,
+      "y": -5.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 90.5,
+      "y": -5.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 90.5,
+      "y": -4.5
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": -53.375,
+      "y": -3.6875
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 2,
+      "n": "stone-furnace",
+      "p": 2690,
+      "r": "iron-plate",
+      "t": "furnace",
+      "w": 2,
+      "x": 10,
+      "y": -4
+    },
+    {
+      "d": 8,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "burner-inserter",
+      "t": "inserter",
+      "w": 1,
+      "x": 15.5,
+      "y": -2.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 22.5,
+      "y": -3.5
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "fish",
+      "t": "fish",
+      "w": 2,
+      "x": 57.2109375,
+      "y": -2.078125
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 3,
+      "n": "chemical-plant",
+      "p": 25,
+      "r": "plastic-bar",
+      "t": "assembling-machine",
+      "w": 3,
+      "x": 88.5,
+      "y": -2.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 90.5,
+      "y": -3.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 90.5,
+      "y": -2.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "iron-chest",
+      "t": "container",
+      "w": 1,
+      "x": -1.5,
+      "y": -0.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "iron-chest",
+      "t": "container",
+      "w": 1,
+      "x": -1.5,
+      "y": -1.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 2,
+      "n": "burner-mining-drill",
+      "t": "mining-drill",
+      "w": 2,
+      "x": 11,
+      "y": -2
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "transport-belt",
+      "t": "transport-belt",
+      "w": 1,
+      "x": 13.5,
+      "y": -1.5
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "transport-belt",
+      "t": "transport-belt",
+      "w": 1,
+      "x": 12.5,
+      "y": -1.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "transport-belt",
+      "t": "transport-belt",
+      "w": 1,
+      "x": 12.5,
+      "y": -0.5
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "transport-belt",
+      "t": "transport-belt",
+      "w": 1,
+      "x": 15.5,
+      "y": -1.5
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "transport-belt",
+      "t": "transport-belt",
+      "w": 1,
+      "x": 14.5,
+      "y": -1.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 2,
+      "n": "stone-furnace",
+      "p": 1336,
+      "r": "iron-plate",
+      "t": "furnace",
+      "w": 2,
+      "x": 20,
+      "y": -2
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 2,
+      "n": "stone-furnace",
+      "p": 1053,
+      "r": "iron-plate",
+      "t": "furnace",
+      "w": 2,
+      "x": 23,
+      "y": -2
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 86.5,
+      "y": -0.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 90.5,
+      "y": -1.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "pipe",
+      "t": "pipe",
+      "w": 1,
+      "x": 90.5,
+      "y": -0.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "iron-chest",
+      "t": "container",
+      "w": 1,
+      "x": -1.5,
+      "y": 0.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 2,
+      "n": "stone-furnace",
+      "p": 348,
+      "r": "steel-plate",
+      "t": "furnace",
+      "w": 2,
+      "x": 6,
+      "y": 0
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "burner-inserter",
+      "t": "inserter",
+      "w": 1,
+      "x": 7.5,
+      "y": 0.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 2,
+      "n": "stone-furnace",
+      "p": 2988,
+      "r": "iron-plate",
+      "t": "furnace",
+      "w": 2,
+      "x": 9,
+      "y": 0
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "transport-belt",
+      "t": "transport-belt",
+      "w": 1,
+      "x": 11.5,
+      "y": 1.5
+    },
+    {
+      "d": 4,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "transport-belt",
+      "t": "transport-belt",
+      "w": 1,
+      "x": 10.5,
+      "y": 1.5
+    },
+    {
+      "d": 12,
+      "f": "npc-faction-1",
+      "h": 2,
+      "n": "burner-mining-drill",
+      "t": "mining-drill",
+      "w": 2,
+      "x": 11,
+      "y": 0
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "transport-belt",
+      "t": "transport-belt",
+      "w": 1,
+      "x": 12.5,
+      "y": 0.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "transport-belt",
+      "t": "transport-belt",
+      "w": 1,
+      "x": 12.5,
+      "y": 1.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 3,
+      "n": "electric-mining-drill",
+      "t": "mining-drill",
+      "w": 3,
+      "x": 19.5,
+      "y": 0.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 3,
+      "n": "electric-mining-drill",
+      "t": "mining-drill",
+      "w": 3,
+      "x": 22.5,
+      "y": 0.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 68.5,
+      "y": 0.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "transport-belt",
+      "t": "transport-belt",
+      "w": 1,
+      "x": 10.5,
+      "y": 2.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "transport-belt",
+      "t": "transport-belt",
+      "w": 1,
+      "x": 10.5,
+      "y": 3.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 21.5,
+      "y": 2.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 5,
+      "n": "oil-refinery",
+      "p": 48,
+      "r": "basic-oil-processing",
+      "t": "assembling-machine",
+      "w": 5,
+      "x": 88.5,
+      "y": 2.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "transport-belt",
+      "t": "transport-belt",
+      "w": 1,
+      "x": 10.5,
+      "y": 4.5
+    },
+    {
+      "d": 8,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "burner-inserter",
+      "t": "inserter",
+      "w": 1,
+      "x": 10.5,
+      "y": 5.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 72.5,
+      "y": 5.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 79.5,
+      "y": 5.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 1,
+      "n": "small-electric-pole",
+      "t": "electric-pole",
+      "w": 1,
+      "x": 86.5,
+      "y": 5.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 2,
+      "n": "stone-furnace",
+      "p": 2746,
+      "r": "copper-plate",
+      "t": "furnace",
+      "w": 2,
+      "x": 10,
+      "y": 7
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "fish",
+      "t": "fish",
+      "w": 2,
+      "x": 56.66796875,
+      "y": 6.29296875
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 3,
+      "n": "pumpjack",
+      "t": "mining-drill",
+      "w": 3,
+      "x": 88.5,
+      "y": 6.5
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 2,
+      "n": "burner-mining-drill",
+      "t": "mining-drill",
+      "w": 2,
+      "x": 11,
+      "y": 9
+    },
+    {
+      "d": 0,
+      "f": "npc-faction-1",
+      "h": 2,
+      "n": "stone-furnace",
+      "p": 2670,
+      "r": "copper-plate",
+      "t": "furnace",
+      "w": 2,
+      "x": 9,
+      "y": 11
+    },
+    {
+      "d": 12,
+      "f": "npc-faction-1",
+      "h": 2,
+      "n": "burner-mining-drill",
+      "t": "mining-drill",
+      "w": 2,
+      "x": 11,
+      "y": 11
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "fish",
+      "t": "fish",
+      "w": 2,
+      "x": 66.390625,
+      "y": 16.60546875
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "fish",
+      "t": "fish",
+      "w": 2,
+      "x": 47.3671875,
+      "y": 22.34375
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "fish",
+      "t": "fish",
+      "w": 2,
+      "x": 56.91015625,
+      "y": 23.2109375
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "fish",
+      "t": "fish",
+      "w": 2,
+      "x": 85.2109375,
+      "y": 28.890625
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "fish",
+      "t": "fish",
+      "w": 2,
+      "x": 58.859375,
+      "y": 32.7890625
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "fish",
+      "t": "fish",
+      "w": 2,
+      "x": 86.7890625,
+      "y": 35.99609375
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "fish",
+      "t": "fish",
+      "w": 2,
+      "x": 59.7890625,
+      "y": 36.01953125
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": 94.5,
+      "y": 37.6875
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": -18.0625,
+      "y": 42.375
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": -71.5625,
+      "y": 44.4375
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 3,
+      "n": "huge-rock",
+      "t": "simple-entity",
+      "w": 3,
+      "x": 83.5625,
+      "y": 47
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": -86.25,
+      "y": 49.625
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": 23.1875,
+      "y": 48.8125
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": 85.6875,
+      "y": 56.8125
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": 89.125,
+      "y": 57.0625
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 3,
+      "n": "huge-rock",
+      "t": "simple-entity",
+      "w": 3,
+      "x": -12,
+      "y": 103.3125
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": 11.0625,
+      "y": 107.6875
+    },
+    {
+      "d": 0,
+      "f": "neutral",
+      "h": 2,
+      "n": "big-rock",
+      "t": "simple-entity",
+      "w": 2,
+      "x": 110.375,
+      "y": 108.1875
+    }
+  ],
+  "force": "npc-faction-1",
+  "home": {
+    "x": 0,
+    "y": 0
+  },
+  "npc_id": 1,
+  "npc_name": "Ada",
+  "ok": true,
+  "pumps": [
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 19,
+      "wy": -16,
+      "x": 19.5,
+      "y": -14.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 20,
+      "wy": -16,
+      "x": 20.5,
+      "y": -14.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 18,
+      "wy": -19,
+      "x": 17.5,
+      "y": -18.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 21,
+      "wy": -16,
+      "x": 21.5,
+      "y": -14.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 18,
+      "wy": -20,
+      "x": 17.5,
+      "y": -19.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 22,
+      "wy": -16,
+      "x": 22.5,
+      "y": -14.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 18,
+      "wy": -21,
+      "x": 17.5,
+      "y": -20.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 23,
+      "wy": -16,
+      "x": 23.5,
+      "y": -14.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 18,
+      "wy": -22,
+      "x": 17.5,
+      "y": -21.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 24,
+      "wy": -16,
+      "x": 24.5,
+      "y": -14.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 18,
+      "wy": -23,
+      "x": 17.5,
+      "y": -22.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 25,
+      "wy": -16,
+      "x": 25.5,
+      "y": -14.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 18,
+      "wy": -24,
+      "x": 17.5,
+      "y": -23.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 26,
+      "wy": -16,
+      "x": 26.5,
+      "y": -14.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 18,
+      "wy": -25,
+      "x": 17.5,
+      "y": -24.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 27,
+      "wy": -16,
+      "x": 27.5,
+      "y": -14.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 19,
+      "wy": -26,
+      "x": 19.5,
+      "y": -26.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 28,
+      "wy": -17,
+      "x": 29.5,
+      "y": -16.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 20,
+      "wy": -26,
+      "x": 20.5,
+      "y": -26.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 28,
+      "wy": -18,
+      "x": 29.5,
+      "y": -17.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 21,
+      "wy": -26,
+      "x": 21.5,
+      "y": -26.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 28,
+      "wy": -19,
+      "x": 29.5,
+      "y": -18.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 22,
+      "wy": -26,
+      "x": 22.5,
+      "y": -26.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 28,
+      "wy": -20,
+      "x": 29.5,
+      "y": -19.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 23,
+      "wy": -26,
+      "x": 23.5,
+      "y": -26.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 28,
+      "wy": -21,
+      "x": 29.5,
+      "y": -20.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 24,
+      "wy": -26,
+      "x": 24.5,
+      "y": -26.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 28,
+      "wy": -22,
+      "x": 29.5,
+      "y": -21.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 25,
+      "wy": -26,
+      "x": 25.5,
+      "y": -26.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 28,
+      "wy": -23,
+      "x": 29.5,
+      "y": -22.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 26,
+      "wy": -26,
+      "x": 26.5,
+      "y": -26.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 28,
+      "wy": -24,
+      "x": 29.5,
+      "y": -23.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 27,
+      "wy": -26,
+      "x": 27.5,
+      "y": -26.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 28,
+      "wy": -25,
+      "x": 29.5,
+      "y": -24.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 46,
+      "wy": 19,
+      "x": 45.5,
+      "y": 19.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 50,
+      "wy": 1,
+      "x": 49.5,
+      "y": 1.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 50,
+      "wy": 2,
+      "x": 49.5,
+      "y": 2.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 46,
+      "wy": 20,
+      "x": 45.5,
+      "y": 20.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 47,
+      "wy": 18,
+      "x": 47.5,
+      "y": 17.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 46,
+      "wy": 21,
+      "x": 45.5,
+      "y": 21.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 46,
+      "wy": 22,
+      "x": 45.5,
+      "y": 22.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 51,
+      "wy": -1,
+      "x": 50.5,
+      "y": -0.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 51,
+      "wy": -2,
+      "x": 50.5,
+      "y": -1.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 52,
+      "wy": -4,
+      "x": 51.5,
+      "y": -3.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 52,
+      "wy": -5,
+      "x": 51.5,
+      "y": -4.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 52,
+      "wy": 5,
+      "x": 51.5,
+      "y": 5.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 52,
+      "wy": 6,
+      "x": 51.5,
+      "y": 6.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 52,
+      "wy": 7,
+      "x": 51.5,
+      "y": 7.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 52,
+      "wy": 8,
+      "x": 51.5,
+      "y": 8.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 47,
+      "wy": 24,
+      "x": 46.5,
+      "y": 24.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 50,
+      "wy": 18,
+      "x": 50.5,
+      "y": 17.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 53,
+      "wy": -6,
+      "x": 53.5,
+      "y": -6.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 48,
+      "wy": 26,
+      "x": 47.5,
+      "y": 26.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 48,
+      "wy": 27,
+      "x": 47.5,
+      "y": 27.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 55,
+      "wy": -5,
+      "x": 55.5,
+      "y": -5.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 52,
+      "wy": 20,
+      "x": 53.5,
+      "y": 20.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 56,
+      "wy": -5,
+      "x": 56.5,
+      "y": -5.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 49,
+      "wy": 29,
+      "x": 48.5,
+      "y": 29.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 53,
+      "wy": 21,
+      "x": 53.5,
+      "y": 20.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 57,
+      "wy": -5,
+      "x": 57.5,
+      "y": -5.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 56,
+      "wy": 13,
+      "x": 55.5,
+      "y": 13.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 56,
+      "wy": 14,
+      "x": 55.5,
+      "y": 14.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 54,
+      "wy": 21,
+      "x": 54.5,
+      "y": 20.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 56,
+      "wy": 15,
+      "x": 55.5,
+      "y": 15.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 56,
+      "wy": 16,
+      "x": 55.5,
+      "y": 16.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 56,
+      "wy": 17,
+      "x": 55.5,
+      "y": 17.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 56,
+      "wy": 18,
+      "x": 55.5,
+      "y": 18.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 55,
+      "wy": 21,
+      "x": 55.5,
+      "y": 20.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 56,
+      "wy": 19,
+      "x": 55.5,
+      "y": 19.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 59,
+      "wy": -6,
+      "x": 59.5,
+      "y": -6.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 56,
+      "wy": 20,
+      "x": 55.5,
+      "y": 20.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 60,
+      "wy": -6,
+      "x": 60.5,
+      "y": -6.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 52,
+      "wy": 33,
+      "x": 51.5,
+      "y": 33.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 52,
+      "wy": 34,
+      "x": 51.5,
+      "y": 34.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 63,
+      "wy": -8,
+      "x": 62.5,
+      "y": -7.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 54,
+      "wy": 36,
+      "x": 54.5,
+      "y": 37.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 65,
+      "wy": -11,
+      "x": 64.5,
+      "y": -10.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": -1,
+      "x": 68.5,
+      "y": -0.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 1,
+      "x": 68.5,
+      "y": 1.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 2,
+      "x": 68.5,
+      "y": 2.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": -2,
+      "x": 68.5,
+      "y": -1.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 3,
+      "x": 68.5,
+      "y": 3.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": -3,
+      "x": 68.5,
+      "y": -2.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 66,
+      "wy": -12,
+      "x": 66.5,
+      "y": -12.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 4,
+      "x": 68.5,
+      "y": 4.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": -4,
+      "x": 68.5,
+      "y": -3.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": -5,
+      "x": 68.5,
+      "y": -4.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 5,
+      "x": 68.5,
+      "y": 5.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": -6,
+      "x": 68.5,
+      "y": -5.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 6,
+      "x": 68.5,
+      "y": 6.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 7,
+      "x": 68.5,
+      "y": 7.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": -8,
+      "x": 68.5,
+      "y": -7.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 8,
+      "x": 68.5,
+      "y": 8.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 9,
+      "x": 68.5,
+      "y": 9.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": -9,
+      "x": 68.5,
+      "y": -8.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 10,
+      "x": 68.5,
+      "y": 10.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": -10,
+      "x": 68.5,
+      "y": -9.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": -11,
+      "x": 68.5,
+      "y": -10.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 11,
+      "x": 68.5,
+      "y": 11.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 12,
+      "x": 68.5,
+      "y": 12.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 13,
+      "x": 68.5,
+      "y": 13.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 14,
+      "x": 68.5,
+      "y": 14.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 57,
+      "wy": 38,
+      "x": 57.5,
+      "y": 39.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 15,
+      "x": 68.5,
+      "y": 15.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 16,
+      "x": 68.5,
+      "y": 16.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 17,
+      "x": 68.5,
+      "y": 17.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 18,
+      "x": 68.5,
+      "y": 18.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 19,
+      "x": 68.5,
+      "y": 19.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 20,
+      "x": 68.5,
+      "y": 20.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 21,
+      "x": 68.5,
+      "y": 21.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 22,
+      "x": 68.5,
+      "y": 22.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 23,
+      "x": 68.5,
+      "y": 23.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 60,
+      "wy": 38,
+      "x": 60.5,
+      "y": 39.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 24,
+      "x": 68.5,
+      "y": 24.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 67,
+      "wy": 25,
+      "x": 68.5,
+      "y": 25.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 61,
+      "wy": 38,
+      "x": 61.5,
+      "y": 39.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 62,
+      "wy": 38,
+      "x": 62.5,
+      "y": 39.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 68,
+      "wy": 26,
+      "x": 68.5,
+      "y": 25.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 63,
+      "wy": 38,
+      "x": 63.5,
+      "y": 39.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 69,
+      "wy": 26,
+      "x": 69.5,
+      "y": 25.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 64,
+      "wy": 38,
+      "x": 64.5,
+      "y": 39.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 70,
+      "wy": 26,
+      "x": 70.5,
+      "y": 25.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 66,
+      "wy": 36,
+      "x": 67.5,
+      "y": 36.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 70,
+      "wy": 28,
+      "x": 71.5,
+      "y": 28.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 71,
+      "wy": 26,
+      "x": 71.5,
+      "y": 25.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 66,
+      "wy": 37,
+      "x": 67.5,
+      "y": 37.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 70,
+      "wy": 29,
+      "x": 71.5,
+      "y": 29.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 71,
+      "wy": 27,
+      "x": 71.5,
+      "y": 28.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 68,
+      "wy": 34,
+      "x": 68.5,
+      "y": 35.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 66,
+      "wy": 38,
+      "x": 67.5,
+      "y": 38.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 70,
+      "wy": 30,
+      "x": 71.5,
+      "y": 30.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 72,
+      "wy": 26,
+      "x": 72.5,
+      "y": 25.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 70,
+      "wy": 31,
+      "x": 71.5,
+      "y": 31.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 72,
+      "wy": 27,
+      "x": 72.5,
+      "y": 28.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 70,
+      "wy": 32,
+      "x": 71.5,
+      "y": 32.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 75,
+      "wy": -19,
+      "x": 75.5,
+      "y": -17.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 73,
+      "wy": 26,
+      "x": 73.5,
+      "y": 25.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 73,
+      "wy": 27,
+      "x": 73.5,
+      "y": 28.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 76,
+      "wy": -19,
+      "x": 76.5,
+      "y": -17.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 74,
+      "wy": 26,
+      "x": 74.5,
+      "y": 25.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 77,
+      "wy": -19,
+      "x": 77.5,
+      "y": -17.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 75,
+      "wy": 26,
+      "x": 75.5,
+      "y": 25.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 77,
+      "wy": -21,
+      "x": 77.5,
+      "y": -21.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 75,
+      "wy": 28,
+      "x": 75.5,
+      "y": 29.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 78,
+      "wy": -19,
+      "x": 78.5,
+      "y": -17.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 76,
+      "wy": 26,
+      "x": 76.5,
+      "y": 25.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 79,
+      "wy": -19,
+      "x": 79.5,
+      "y": -17.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 77,
+      "wy": 26,
+      "x": 77.5,
+      "y": 25.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 79,
+      "wy": -22,
+      "x": 79.5,
+      "y": -22.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 78,
+      "wy": 26,
+      "x": 78.5,
+      "y": 25.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 80,
+      "wy": -19,
+      "x": 80.5,
+      "y": -17.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 77,
+      "wy": 29,
+      "x": 77.5,
+      "y": 30.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 80,
+      "wy": -22,
+      "x": 80.5,
+      "y": -22.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 79,
+      "wy": 26,
+      "x": 79.5,
+      "y": 25.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 81,
+      "wy": -19,
+      "x": 81.5,
+      "y": -17.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 78,
+      "wy": 30,
+      "x": 77.5,
+      "y": 30.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 81,
+      "wy": -22,
+      "x": 81.5,
+      "y": -22.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 78,
+      "wy": 31,
+      "x": 77.5,
+      "y": 31.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 80,
+      "wy": 26,
+      "x": 80.5,
+      "y": 25.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 78,
+      "wy": 32,
+      "x": 77.5,
+      "y": 32.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 78,
+      "wy": 33,
+      "x": 77.5,
+      "y": 33.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 82,
+      "wy": -22,
+      "x": 82.5,
+      "y": -22.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 81,
+      "wy": 26,
+      "x": 81.5,
+      "y": 25.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 83,
+      "wy": -22,
+      "x": 83.5,
+      "y": -22.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 82,
+      "wy": 26,
+      "x": 82.5,
+      "y": 25.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 84,
+      "wy": -20,
+      "x": 85.5,
+      "y": -19.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 84,
+      "wy": -21,
+      "x": 85.5,
+      "y": -20.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 83,
+      "wy": 26,
+      "x": 83.5,
+      "y": 25.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 80,
+      "wy": 35,
+      "x": 80.5,
+      "y": 36.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 84,
+      "wy": 26,
+      "x": 84.5,
+      "y": 25.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 85,
+      "wy": 26,
+      "x": 85.5,
+      "y": 25.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 82,
+      "wy": 36,
+      "x": 82.5,
+      "y": 37.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 86,
+      "wy": 26,
+      "x": 86.5,
+      "y": 25.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 83,
+      "wy": 36,
+      "x": 83.5,
+      "y": 37.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 87,
+      "wy": 26,
+      "x": 87.5,
+      "y": 25.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 88,
+      "wy": 26,
+      "x": 88.5,
+      "y": 25.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 85,
+      "wy": 37,
+      "x": 85.5,
+      "y": 38.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 89,
+      "wy": 26,
+      "x": 89.5,
+      "y": 25.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 90,
+      "wy": 26,
+      "x": 90.5,
+      "y": 25.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 90,
+      "wy": 30,
+      "x": 91.5,
+      "y": 30.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 91,
+      "wy": 27,
+      "x": 92.5,
+      "y": 27.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 90,
+      "wy": 31,
+      "x": 91.5,
+      "y": 31.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 91,
+      "wy": 28,
+      "x": 92.5,
+      "y": 28.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 90,
+      "wy": 32,
+      "x": 91.5,
+      "y": 32.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 89,
+      "wy": 36,
+      "x": 89.5,
+      "y": 37.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 91,
+      "wy": 34,
+      "x": 92.5,
+      "y": 34.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 98,
+      "wy": 17,
+      "x": 97.5,
+      "y": 17.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 98,
+      "wy": 18,
+      "x": 97.5,
+      "y": 18.5
+    },
+    {
+      "d": 4,
+      "turns": 1,
+      "wx": 98,
+      "wy": 19,
+      "x": 97.5,
+      "y": 19.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 99,
+      "wy": 16,
+      "x": 99.5,
+      "y": 15.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 99,
+      "wy": 20,
+      "x": 99.5,
+      "y": 21.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 100,
+      "wy": 16,
+      "x": 100.5,
+      "y": 15.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 100,
+      "wy": 20,
+      "x": 100.5,
+      "y": 21.5
+    },
+    {
+      "d": 8,
+      "turns": 2,
+      "wx": 101,
+      "wy": 16,
+      "x": 101.5,
+      "y": 15.5
+    },
+    {
+      "d": 0,
+      "turns": 0,
+      "wx": 101,
+      "wy": 20,
+      "x": 101.5,
+      "y": 21.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 102,
+      "wy": 17,
+      "x": 103.5,
+      "y": 17.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 102,
+      "wy": 18,
+      "x": 103.5,
+      "y": 18.5
+    },
+    {
+      "d": 12,
+      "turns": 3,
+      "wx": 102,
+      "wy": 19,
+      "x": 103.5,
+      "y": 19.5
+    }
+  ],
+  "resources": {
+    "coal": [
+      [
+        4,
+        -8,
+        -5
+      ],
+      [
+        5,
+        -8,
+        -5
+      ],
+      [
+        6,
+        -8,
+        -5
+      ],
+      [
+        7,
+        -8,
+        -5
+      ],
+      [
+        25,
+        -54,
+        -53
+      ],
+      [
+        26,
+        -56,
+        -51
+      ],
+      [
+        27,
+        -57,
+        -50
+      ],
+      [
+        28,
+        -57,
+        -45
+      ],
+      [
+        29,
+        -57,
+        -44
+      ],
+      [
+        30,
+        -58,
+        -43
+      ],
+      [
+        31,
+        -59,
+        -42
+      ],
+      [
+        32,
+        -59,
+        -41
+      ],
+      [
+        33,
+        -60,
+        -41
+      ],
+      [
+        34,
+        -61,
+        -41
+      ],
+      [
+        35,
+        -61,
+        -41
+      ],
+      [
+        36,
+        -61,
+        -41
+      ],
+      [
+        37,
+        -60,
+        -41
+      ],
+      [
+        38,
+        -59,
+        -41
+      ],
+      [
+        39,
+        -58,
+        -41
+      ],
+      [
+        40,
+        -58,
+        -41
+      ],
+      [
+        41,
+        -57,
+        -42
+      ],
+      [
+        42,
+        -57,
+        -43
+      ],
+      [
+        43,
+        -56,
+        -44
+      ],
+      [
+        44,
+        -56,
+        -45
+      ],
+      [
+        45,
+        -55,
+        -51
+      ],
+      [
+        45,
+        -49,
+        -46
+      ]
+    ],
+    "copper-ore": [
+      [
+        -87,
+        -43,
+        -42
+      ],
+      [
+        -87,
+        -35,
+        -34
+      ],
+      [
+        -86,
+        -43,
+        -39
+      ],
+      [
+        -86,
+        -36,
+        -33
+      ],
+      [
+        -85,
+        -43,
+        -31
+      ],
+      [
+        -84,
+        -43,
+        -30
+      ],
+      [
+        -83,
+        -43,
+        -29
+      ],
+      [
+        -82,
+        -44,
+        -29
+      ],
+      [
+        -81,
+        -45,
+        -28
+      ],
+      [
+        -80,
+        -47,
+        -28
+      ],
+      [
+        -79,
+        -48,
+        -28
+      ],
+      [
+        -78,
+        -50,
+        -25
+      ],
+      [
+        -77,
+        -51,
+        -25
+      ],
+      [
+        -76,
+        -51,
+        -26
+      ],
+      [
+        -75,
+        -51,
+        -26
+      ],
+      [
+        -74,
+        -51,
+        -27
+      ],
+      [
+        -73,
+        -50,
+        -28
+      ],
+      [
+        -72,
+        -50,
+        -29
+      ],
+      [
+        -71,
+        -50,
+        -46
+      ],
+      [
+        -71,
+        -44,
+        -30
+      ],
+      [
+        -70,
+        -49,
+        -47
+      ],
+      [
+        -70,
+        -44,
+        -32
+      ],
+      [
+        -69,
+        -49,
+        -33
+      ],
+      [
+        -68,
+        -49,
+        -36
+      ],
+      [
+        -67,
+        -48,
+        -38
+      ],
+      [
+        8,
+        10,
+        15
+      ],
+      [
+        9,
+        10,
+        15
+      ],
+      [
+        10,
+        10,
+        15
+      ],
+      [
+        11,
+        10,
+        15
+      ],
+      [
+        12,
+        10,
+        15
+      ],
+      [
+        13,
+        10,
+        15
+      ]
+    ],
+    "crude-oil": [
+      [
+        6,
+        88,
+        88
+      ]
+    ],
+    "iron-ore": [
+      [
+        -78,
+        -23,
+        -21
+      ],
+      [
+        -77,
+        -24,
+        -22
+      ],
+      [
+        -76,
+        -25,
+        -23
+      ],
+      [
+        -75,
+        -25,
+        -24
+      ],
+      [
+        -74,
+        -26,
+        -24
+      ],
+      [
+        -73,
+        -27,
+        -24
+      ],
+      [
+        -72,
+        -28,
+        -24
+      ],
+      [
+        -71,
+        -29,
+        -24
+      ],
+      [
+        -70,
+        -31,
+        -23
+      ],
+      [
+        -69,
+        -32,
+        -22
+      ],
+      [
+        -68,
+        -35,
+        -21
+      ],
+      [
+        -67,
+        -49,
+        -49
+      ],
+      [
+        -67,
+        -37,
+        -20
+      ],
+      [
+        -66,
+        -50,
+        -20
+      ],
+      [
+        -65,
+        -49,
+        -20
+      ],
+      [
+        -64,
+        -49,
+        -20
+      ],
+      [
+        -63,
+        -48,
+        -20
+      ],
+      [
+        -62,
+        -46,
+        -20
+      ],
+      [
+        -61,
+        -46,
+        -25
+      ],
+      [
+        -61,
+        -22,
+        -21
+      ],
+      [
+        -60,
+        -46,
+        -26
+      ],
+      [
+        -59,
+        -46,
+        -25
+      ],
+      [
+        -59,
+        -23,
+        -23
+      ],
+      [
+        -58,
+        -47,
+        -22
+      ],
+      [
+        -57,
+        -48,
+        -22
+      ],
+      [
+        -56,
+        -49,
+        -28
+      ],
+      [
+        -56,
+        -26,
+        -22
+      ],
+      [
+        -55,
+        -50,
+        -22
+      ],
+      [
+        -54,
+        -50,
+        -22
+      ],
+      [
+        -53,
+        -50,
+        -21
+      ],
+      [
+        -52,
+        -50,
+        -22
+      ],
+      [
+        -51,
+        -49,
+        -22
+      ],
+      [
+        -50,
+        -47,
+        -45
+      ],
+      [
+        -50,
+        -41,
+        -22
+      ],
+      [
+        -49,
+        -40,
+        -23
+      ],
+      [
+        -48,
+        -39,
+        -27
+      ],
+      [
+        -47,
+        -38,
+        -34
+      ],
+      [
+        -3,
+        10,
+        25
+      ],
+      [
+        -2,
+        10,
+        25
+      ],
+      [
+        -1,
+        10,
+        25
+      ],
+      [
+        0,
+        10,
+        25
+      ],
+      [
+        1,
+        10,
+        25
+      ],
+      [
+        2,
+        10,
+        25
+      ]
+    ],
+    "stone": [
+      [
+        -7,
+        -7,
+        -5
+      ],
+      [
+        -6,
+        -7,
+        -5
+      ],
+      [
+        -5,
+        -7,
+        -5
+      ],
+      [
+        35,
+        -66,
+        -64
+      ],
+      [
+        36,
+        -67,
+        -62
+      ],
+      [
+        37,
+        -68,
+        -62
+      ],
+      [
+        38,
+        -68,
+        -62
+      ],
+      [
+        39,
+        -69,
+        -62
+      ],
+      [
+        40,
+        -71,
+        -61
+      ],
+      [
+        41,
+        -72,
+        -61
+      ],
+      [
+        42,
+        -73,
+        -60
+      ],
+      [
+        43,
+        -74,
+        -60
+      ],
+      [
+        44,
+        -73,
+        -59
+      ],
+      [
+        45,
+        -73,
+        -59
+      ],
+      [
+        46,
+        -72,
+        -60
+      ],
+      [
+        47,
+        -72,
+        -60
+      ],
+      [
+        48,
+        -71,
+        -61
+      ],
+      [
+        49,
+        -69,
+        -63
+      ]
+    ]
+  },
+  "schema": "npc-map-v1",
+  "tick": 734114,
+  "trees": [
+    [
+      -74,
+      -109
+    ],
+    [
+      -70,
+      -110
+    ],
+    [
+      -65,
+      -109
+    ],
+    [
+      -58,
+      -110
+    ],
+    [
+      -56,
+      -110
+    ],
+    [
+      -53,
+      -110
+    ],
+    [
+      -54,
+      -109
+    ],
+    [
+      -49,
+      -109
+    ],
+    [
+      -47,
+      -109
+    ],
+    [
+      -41,
+      -109
+    ],
+    [
+      -40,
+      -110
+    ],
+    [
+      -37,
+      -109
+    ],
+    [
+      -70,
+      -108
+    ],
+    [
+      -69,
+      -107
+    ],
+    [
+      -68,
+      -108
+    ],
+    [
+      -66,
+      -108
+    ],
+    [
+      -61,
+      -107
+    ],
+    [
+      -56,
+      -108
+    ],
+    [
+      -56,
+      -107
+    ],
+    [
+      -50,
+      -107
+    ],
+    [
+      -47,
+      -107
+    ],
+    [
+      -43,
+      -108
+    ],
+    [
+      -41,
+      -107
+    ],
+    [
+      -37,
+      -108
+    ],
+    [
+      80,
+      -108
+    ],
+    [
+      -106,
+      -106
+    ],
+    [
+      -65,
+      -106
+    ],
+    [
+      -64,
+      -106
+    ],
+    [
+      -58,
+      -105
+    ],
+    [
+      -54,
+      -106
+    ],
+    [
+      -48,
+      -105
+    ],
+    [
+      -42,
+      -105
+    ],
+    [
+      -39,
+      -105
+    ],
+    [
+      -105,
+      -104
+    ],
+    [
+      -100,
+      -103
+    ],
+    [
+      -75,
+      -104
+    ],
+    [
+      -74,
+      -103
+    ],
+    [
+      -72,
+      -103
+    ],
+    [
+      -70,
+      -103
+    ],
+    [
+      -66,
+      -104
+    ],
+    [
+      -62,
+      -104
+    ],
+    [
+      -59,
+      -104
+    ],
+    [
+      -57,
+      -103
+    ],
+    [
+      -54,
+      -104
+    ],
+    [
+      -52,
+      -104
+    ],
+    [
+      -46,
+      -104
+    ],
+    [
+      -43,
+      -104
+    ],
+    [
+      -41,
+      -103
+    ],
+    [
+      -107,
+      -102
+    ],
+    [
+      -102,
+      -101
+    ],
+    [
+      -71,
+      -101
+    ],
+    [
+      -68,
+      -102
+    ],
+    [
+      -66,
+      -102
+    ],
+    [
+      -64,
+      -101
+    ],
+    [
+      -61,
+      -102
+    ],
+    [
+      -60,
+      -101
+    ],
+    [
+      -58,
+      -101
+    ],
+    [
+      -56,
+      -102
+    ],
+    [
+      -53,
+      -101
+    ],
+    [
+      -54,
+      -102
+    ],
+    [
+      -51,
+      -102
+    ],
+    [
+      -48,
+      -102
+    ],
+    [
+      -46,
+      -102
+    ],
+    [
+      -45,
+      -101
+    ],
+    [
+      80,
+      -102
+    ],
+    [
+      -100,
+      -99
+    ],
+    [
+      -98,
+      -100
+    ],
+    [
+      -95,
+      -100
+    ],
+    [
+      -74,
+      -100
+    ],
+    [
+      -69,
+      -99
+    ],
+    [
+      -67,
+      -99
+    ],
+    [
+      -68,
+      -100
+    ],
+    [
+      -66,
+      -99
+    ],
+    [
+      -61,
+      -99
+    ],
+    [
+      -57,
+      -100
+    ],
+    [
+      -55,
+      -100
+    ],
+    [
+      -53,
+      -99
+    ],
+    [
+      -52,
+      -100
+    ],
+    [
+      -48,
+      -99
+    ],
+    [
+      -44,
+      -100
+    ],
+    [
+      -43,
+      -99
+    ],
+    [
+      -108,
+      -97
+    ],
+    [
+      -106,
+      -98
+    ],
+    [
+      -104,
+      -98
+    ],
+    [
+      -96,
+      -97
+    ],
+    [
+      -73,
+      -97
+    ],
+    [
+      -71,
+      -98
+    ],
+    [
+      -71,
+      -97
+    ],
+    [
+      -61,
+      -98
+    ],
+    [
+      -62,
+      -97
+    ],
+    [
+      -59,
+      -98
+    ],
+    [
+      -59,
+      -97
+    ],
+    [
+      -58,
+      -97
+    ],
+    [
+      -56,
+      -98
+    ],
+    [
+      -56,
+      -97
+    ],
+    [
+      -54,
+      -98
+    ],
+    [
+      -45,
+      -97
+    ],
+    [
+      -103,
+      -95
+    ],
+    [
+      -100,
+      -96
+    ],
+    [
+      -97,
+      -96
+    ],
+    [
+      -93,
+      -95
+    ],
+    [
+      -72,
+      -95
+    ],
+    [
+      -70,
+      -95
+    ],
+    [
+      -67,
+      -96
+    ],
+    [
+      -68,
+      -95
+    ],
+    [
+      -66,
+      -95
+    ],
+    [
+      -64,
+      -96
+    ],
+    [
+      -48,
+      -96
+    ],
+    [
+      -108,
+      -94
+    ],
+    [
+      -106,
+      -93
+    ],
+    [
+      -104,
+      -93
+    ],
+    [
+      -101,
+      -93
+    ],
+    [
+      -94,
+      -93
+    ],
+    [
+      -74,
+      -94
+    ],
+    [
+      -74,
+      -93
+    ],
+    [
+      -70,
+      -93
+    ],
+    [
+      -61,
+      -93
+    ],
+    [
+      -106,
+      -92
+    ],
+    [
+      -104,
+      -91
+    ],
+    [
+      -102,
+      -91
+    ],
+    [
+      -100,
+      -92
+    ],
+    [
+      -98,
+      -92
+    ],
+    [
+      -68,
+      -92
+    ],
+    [
+      -61,
+      -92
+    ],
+    [
+      -108,
+      -89
+    ],
+    [
+      -103,
+      -89
+    ],
+    [
+      -96,
+      -90
+    ],
+    [
+      -106,
+      -88
+    ],
+    [
+      -104,
+      -88
+    ],
+    [
+      -101,
+      -88
+    ],
+    [
+      -99,
+      -88
+    ],
+    [
+      -103,
+      -86
+    ],
+    [
+      -98,
+      -86
+    ],
+    [
+      -104,
+      -84
+    ],
+    [
+      45,
+      -78
+    ],
+    [
+      48,
+      -78
+    ],
+    [
+      14,
+      -71
+    ],
+    [
+      64,
+      -71
+    ],
+    [
+      17,
+      -70
+    ],
+    [
+      65,
+      -69
+    ],
+    [
+      34,
+      -68
+    ],
+    [
+      39,
+      -68
+    ],
+    [
+      63,
+      -68
+    ],
+    [
+      66,
+      -67
+    ],
+    [
+      68,
+      -67
+    ],
+    [
+      99,
+      -68
+    ],
+    [
+      102,
+      -68
+    ],
+    [
+      19,
+      -65
+    ],
+    [
+      64,
+      -66
+    ],
+    [
+      104,
+      -66
+    ],
+    [
+      31,
+      -64
+    ],
+    [
+      100,
+      -64
+    ],
+    [
+      103,
+      -64
+    ],
+    [
+      108,
+      -63
+    ],
+    [
+      31,
+      -61
+    ],
+    [
+      59,
+      -62
+    ],
+    [
+      101,
+      -62
+    ],
+    [
+      100,
+      -61
+    ],
+    [
+      109,
+      -61
+    ],
+    [
+      49,
+      -59
+    ],
+    [
+      58,
+      -59
+    ],
+    [
+      103,
+      -59
+    ],
+    [
+      107,
+      -59
+    ],
+    [
+      109,
+      -59
+    ],
+    [
+      48,
+      -58
+    ],
+    [
+      51,
+      -58
+    ],
+    [
+      105,
+      -58
+    ],
+    [
+      41,
+      -55
+    ],
+    [
+      43,
+      -56
+    ],
+    [
+      45,
+      -55
+    ],
+    [
+      50,
+      -55
+    ],
+    [
+      54,
+      -56
+    ],
+    [
+      97,
+      -56
+    ],
+    [
+      104,
+      -55
+    ],
+    [
+      107,
+      -56
+    ],
+    [
+      45,
+      -53
+    ],
+    [
+      46,
+      -54
+    ],
+    [
+      49,
+      -53
+    ],
+    [
+      99,
+      -54
+    ],
+    [
+      101,
+      -54
+    ],
+    [
+      101,
+      -53
+    ],
+    [
+      103,
+      -53
+    ],
+    [
+      104,
+      -53
+    ],
+    [
+      108,
+      -54
+    ],
+    [
+      103,
+      -51
+    ],
+    [
+      107,
+      -51
+    ],
+    [
+      109,
+      -52
+    ],
+    [
+      44,
+      -50
+    ],
+    [
+      104,
+      -49
+    ],
+    [
+      106,
+      -50
+    ],
+    [
+      109,
+      -49
+    ],
+    [
+      102,
+      -48
+    ],
+    [
+      104,
+      -47
+    ],
+    [
+      107,
+      -48
+    ],
+    [
+      108,
+      -47
+    ],
+    [
+      110,
+      -48
+    ],
+    [
+      63,
+      -45
+    ],
+    [
+      100,
+      -46
+    ],
+    [
+      101,
+      -46
+    ],
+    [
+      103,
+      -45
+    ],
+    [
+      105,
+      -45
+    ],
+    [
+      106,
+      -45
+    ],
+    [
+      109,
+      -45
+    ],
+    [
+      110,
+      -46
+    ],
+    [
+      64,
+      -43
+    ],
+    [
+      103,
+      -44
+    ],
+    [
+      106,
+      -43
+    ],
+    [
+      108,
+      -44
+    ],
+    [
+      110,
+      -43
+    ],
+    [
+      76,
+      -42
+    ],
+    [
+      102,
+      -42
+    ],
+    [
+      103,
+      -42
+    ],
+    [
+      105,
+      -41
+    ],
+    [
+      108,
+      -42
+    ],
+    [
+      71,
+      -40
+    ],
+    [
+      76,
+      -39
+    ],
+    [
+      99,
+      -40
+    ],
+    [
+      100,
+      -39
+    ],
+    [
+      102,
+      -39
+    ],
+    [
+      104,
+      -39
+    ],
+    [
+      108,
+      -40
+    ],
+    [
+      72,
+      -37
+    ],
+    [
+      74,
+      -38
+    ],
+    [
+      74,
+      -37
+    ],
+    [
+      76,
+      -38
+    ],
+    [
+      93,
+      -38
+    ],
+    [
+      97,
+      -38
+    ],
+    [
+      99,
+      -37
+    ],
+    [
+      101,
+      -37
+    ],
+    [
+      102,
+      -38
+    ],
+    [
+      107,
+      -37
+    ],
+    [
+      106,
+      -38
+    ],
+    [
+      107,
+      -38
+    ],
+    [
+      109,
+      -38
+    ],
+    [
+      109,
+      -37
+    ],
+    [
+      70,
+      -36
+    ],
+    [
+      73,
+      -35
+    ],
+    [
+      86,
+      -35
+    ],
+    [
+      89,
+      -35
+    ],
+    [
+      91,
+      -35
+    ],
+    [
+      95,
+      -36
+    ],
+    [
+      94,
+      -35
+    ],
+    [
+      97,
+      -36
+    ],
+    [
+      100,
+      -35
+    ],
+    [
+      102,
+      -36
+    ],
+    [
+      103,
+      -36
+    ],
+    [
+      107,
+      -35
+    ],
+    [
+      109,
+      -35
+    ],
+    [
+      -60,
+      -33
+    ],
+    [
+      65,
+      -33
+    ],
+    [
+      67,
+      -34
+    ],
+    [
+      75,
+      -34
+    ],
+    [
+      84,
+      -33
+    ],
+    [
+      87,
+      -33
+    ],
+    [
+      90,
+      -33
+    ],
+    [
+      96,
+      -34
+    ],
+    [
+      98,
+      -34
+    ],
+    [
+      98,
+      -33
+    ],
+    [
+      100,
+      -34
+    ],
+    [
+      102,
+      -34
+    ],
+    [
+      102,
+      -33
+    ],
+    [
+      104,
+      -34
+    ],
+    [
+      108,
+      -33
+    ],
+    [
+      -64,
+      -31
+    ],
+    [
+      51,
+      -32
+    ],
+    [
+      59,
+      -31
+    ],
+    [
+      60,
+      -31
+    ],
+    [
+      71,
+      -32
+    ],
+    [
+      71,
+      -31
+    ],
+    [
+      76,
+      -31
+    ],
+    [
+      78,
+      -31
+    ],
+    [
+      79,
+      -32
+    ],
+    [
+      88,
+      -31
+    ],
+    [
+      90,
+      -31
+    ],
+    [
+      93,
+      -32
+    ],
+    [
+      97,
+      -31
+    ],
+    [
+      98,
+      -32
+    ],
+    [
+      100,
+      -32
+    ],
+    [
+      102,
+      -32
+    ],
+    [
+      105,
+      -32
+    ],
+    [
+      108,
+      -32
+    ],
+    [
+      54,
+      -29
+    ],
+    [
+      64,
+      -30
+    ],
+    [
+      65,
+      -29
+    ],
+    [
+      66,
+      -30
+    ],
+    [
+      69,
+      -30
+    ],
+    [
+      71,
+      -29
+    ],
+    [
+      72,
+      -29
+    ],
+    [
+      74,
+      -29
+    ],
+    [
+      77,
+      -30
+    ],
+    [
+      76,
+      -29
+    ],
+    [
+      82,
+      -30
+    ],
+    [
+      92,
+      -30
+    ],
+    [
+      94,
+      -29
+    ],
+    [
+      97,
+      -30
+    ],
+    [
+      98,
+      -30
+    ],
+    [
+      100,
+      -30
+    ],
+    [
+      103,
+      -30
+    ],
+    [
+      102,
+      -29
+    ],
+    [
+      104,
+      -30
+    ],
+    [
+      107,
+      -29
+    ],
+    [
+      109,
+      -29
+    ],
+    [
+      -67,
+      -28
+    ],
+    [
+      -62,
+      -28
+    ],
+    [
+      58,
+      -28
+    ],
+    [
+      61,
+      -28
+    ],
+    [
+      67,
+      -28
+    ],
+    [
+      68,
+      -27
+    ],
+    [
+      73,
+      -27
+    ],
+    [
+      74,
+      -27
+    ],
+    [
+      87,
+      -28
+    ],
+    [
+      89,
+      -28
+    ],
+    [
+      91,
+      -28
+    ],
+    [
+      97,
+      -27
+    ],
+    [
+      102,
+      -27
+    ],
+    [
+      106,
+      -27
+    ],
+    [
+      109,
+      -28
+    ],
+    [
+      56,
+      -26
+    ],
+    [
+      59,
+      -26
+    ],
+    [
+      65,
+      -26
+    ],
+    [
+      69,
+      -26
+    ],
+    [
+      71,
+      -26
+    ],
+    [
+      93,
+      -26
+    ],
+    [
+      95,
+      -26
+    ],
+    [
+      99,
+      -26
+    ],
+    [
+      104,
+      -25
+    ],
+    [
+      106,
+      -25
+    ],
+    [
+      107,
+      -25
+    ],
+    [
+      -58,
+      -24
+    ],
+    [
+      58,
+      -23
+    ],
+    [
+      63,
+      -23
+    ],
+    [
+      62,
+      -24
+    ],
+    [
+      64,
+      -24
+    ],
+    [
+      69,
+      -24
+    ],
+    [
+      68,
+      -23
+    ],
+    [
+      73,
+      -24
+    ],
+    [
+      75,
+      -24
+    ],
+    [
+      75,
+      -23
+    ],
+    [
+      77,
+      -24
+    ],
+    [
+      92,
+      -24
+    ],
+    [
+      96,
+      -23
+    ],
+    [
+      105,
+      -23
+    ],
+    [
+      110,
+      -24
+    ],
+    [
+      -57,
+      -21
+    ],
+    [
+      61,
+      -22
+    ],
+    [
+      66,
+      -22
+    ],
+    [
+      69,
+      -21
+    ],
+    [
+      -64,
+      -20
+    ],
+    [
+      -61,
+      -19
+    ],
+    [
+      -57,
+      -20
+    ],
+    [
+      68,
+      -20
+    ],
+    [
+      -58,
+      -17
+    ],
+    [
+      -14,
+      -17
+    ],
+    [
+      -12,
+      -17
+    ],
+    [
+      -10,
+      -17
+    ],
+    [
+      -8,
+      -17
+    ],
+    [
+      -58,
+      -15
+    ],
+    [
+      -14,
+      -14
+    ],
+    [
+      -12,
+      -14
+    ],
+    [
+      -10,
+      -14
+    ],
+    [
+      -8,
+      -14
+    ],
+    [
+      104,
+      31
+    ],
+    [
+      106,
+      31
+    ],
+    [
+      109,
+      31
+    ],
+    [
+      104,
+      32
+    ],
+    [
+      108,
+      33
+    ],
+    [
+      109,
+      33
+    ],
+    [
+      101,
+      35
+    ],
+    [
+      102,
+      36
+    ],
+    [
+      106,
+      37
+    ],
+    [
+      108,
+      36
+    ],
+    [
+      110,
+      36
+    ],
+    [
+      -58,
+      39
+    ],
+    [
+      104,
+      38
+    ],
+    [
+      107,
+      39
+    ],
+    [
+      108,
+      38
+    ],
+    [
+      -58,
+      41
+    ],
+    [
+      110,
+      40
+    ],
+    [
+      -58,
+      43
+    ],
+    [
+      -57,
+      43
+    ],
+    [
+      105,
+      43
+    ],
+    [
+      110,
+      45
+    ],
+    [
+      -10,
+      59
+    ],
+    [
+      -31,
+      61
+    ],
+    [
+      5,
+      63
+    ],
+    [
+      7,
+      62
+    ],
+    [
+      -31,
+      65
+    ],
+    [
+      7,
+      64
+    ],
+    [
+      -34,
+      67
+    ],
+    [
+      -36,
+      71
+    ],
+    [
+      -35,
+      75
+    ],
+    [
+      -75,
+      77
+    ],
+    [
+      -49,
+      77
+    ],
+    [
+      -47,
+      77
+    ],
+    [
+      -80,
+      78
+    ],
+    [
+      -78,
+      79
+    ],
+    [
+      -74,
+      79
+    ],
+    [
+      -48,
+      78
+    ],
+    [
+      -40,
+      79
+    ],
+    [
+      -77,
+      81
+    ],
+    [
+      -58,
+      81
+    ],
+    [
+      -46,
+      81
+    ],
+    [
+      -37,
+      81
+    ],
+    [
+      -82,
+      82
+    ],
+    [
+      -79,
+      82
+    ],
+    [
+      -46,
+      83
+    ],
+    [
+      -32,
+      83
+    ],
+    [
+      -82,
+      85
+    ],
+    [
+      -54,
+      84
+    ],
+    [
+      -53,
+      84
+    ],
+    [
+      -36,
+      85
+    ],
+    [
+      -35,
+      84
+    ],
+    [
+      -84,
+      86
+    ],
+    [
+      -80,
+      87
+    ],
+    [
+      -75,
+      87
+    ],
+    [
+      -54,
+      86
+    ],
+    [
+      -46,
+      86
+    ],
+    [
+      -42,
+      87
+    ],
+    [
+      -39,
+      86
+    ],
+    [
+      -35,
+      86
+    ],
+    [
+      -33,
+      86
+    ],
+    [
+      -31,
+      86
+    ],
+    [
+      -78,
+      88
+    ],
+    [
+      -73,
+      88
+    ],
+    [
+      -43,
+      88
+    ],
+    [
+      -41,
+      89
+    ],
+    [
+      -82,
+      90
+    ],
+    [
+      -52,
+      90
+    ],
+    [
+      -35,
+      93
+    ],
+    [
+      -34,
+      92
+    ],
+    [
+      -32,
+      94
+    ],
+    [
+      -31,
+      95
+    ],
+    [
+      -12,
+      94
+    ],
+    [
+      -33,
+      96
+    ],
+    [
+      -15,
+      96
+    ],
+    [
+      -40,
+      99
+    ],
+    [
+      -18,
+      99
+    ],
+    [
+      -37,
+      100
+    ],
+    [
+      -31,
+      101
+    ],
+    [
+      -16,
+      100
+    ],
+    [
+      -31,
+      107
+    ],
+    [
+      -35,
+      109
+    ],
+    [
+      24,
+      108
+    ]
+  ],
+  "water": [
+    [
+      -26,
+      18,
+      28
+    ],
+    [
+      -25,
+      18,
+      28
+    ],
+    [
+      -24,
+      18,
+      28
+    ],
+    [
+      -23,
+      18,
+      28
+    ],
+    [
+      -22,
+      18,
+      28
+    ],
+    [
+      -22,
+      78,
+      84
+    ],
+    [
+      -21,
+      18,
+      28
+    ],
+    [
+      -21,
+      75,
+      84
+    ],
+    [
+      -20,
+      18,
+      28
+    ],
+    [
+      -20,
+      74,
+      84
+    ],
+    [
+      -19,
+      18,
+      28
+    ],
+    [
+      -19,
+      73,
+      85
+    ],
+    [
+      -18,
+      18,
+      28
+    ],
+    [
+      -17,
+      18,
+      28
+    ],
+    [
+      -16,
+      18,
+      28
+    ],
+    [
+      -13,
+      67,
+      67
+    ],
+    [
+      -12,
+      65,
+      67
+    ],
+    [
+      -11,
+      65,
+      67
+    ],
+    [
+      -10,
+      64,
+      67
+    ],
+    [
+      -9,
+      63,
+      67
+    ],
+    [
+      -8,
+      63,
+      67
+    ],
+    [
+      -7,
+      62,
+      67
+    ],
+    [
+      -6,
+      52,
+      54
+    ],
+    [
+      -6,
+      58,
+      67
+    ],
+    [
+      -5,
+      52,
+      67
+    ],
+    [
+      -4,
+      52,
+      67
+    ],
+    [
+      -3,
+      51,
+      67
+    ],
+    [
+      -2,
+      51,
+      67
+    ],
+    [
+      -1,
+      51,
+      67
+    ],
+    [
+      0,
+      50,
+      67
+    ],
+    [
+      1,
+      50,
+      67
+    ],
+    [
+      2,
+      50,
+      67
+    ],
+    [
+      3,
+      50,
+      67
+    ],
+    [
+      4,
+      51,
+      67
+    ],
+    [
+      5,
+      52,
+      67
+    ],
+    [
+      6,
+      52,
+      67
+    ],
+    [
+      7,
+      52,
+      67
+    ],
+    [
+      8,
+      52,
+      67
+    ],
+    [
+      9,
+      52,
+      67
+    ],
+    [
+      10,
+      53,
+      67
+    ],
+    [
+      11,
+      54,
+      67
+    ],
+    [
+      12,
+      55,
+      67
+    ],
+    [
+      13,
+      56,
+      67
+    ],
+    [
+      14,
+      56,
+      67
+    ],
+    [
+      15,
+      56,
+      67
+    ],
+    [
+      16,
+      56,
+      67
+    ],
+    [
+      16,
+      98,
+      102
+    ],
+    [
+      17,
+      48,
+      49
+    ],
+    [
+      17,
+      56,
+      67
+    ],
+    [
+      17,
+      98,
+      102
+    ],
+    [
+      18,
+      46,
+      51
+    ],
+    [
+      18,
+      56,
+      67
+    ],
+    [
+      18,
+      98,
+      102
+    ],
+    [
+      19,
+      46,
+      52
+    ],
+    [
+      19,
+      56,
+      67
+    ],
+    [
+      19,
+      98,
+      102
+    ],
+    [
+      20,
+      46,
+      52
+    ],
+    [
+      20,
+      56,
+      67
+    ],
+    [
+      20,
+      98,
+      102
+    ],
+    [
+      21,
+      46,
+      67
+    ],
+    [
+      22,
+      46,
+      67
+    ],
+    [
+      23,
+      46,
+      67
+    ],
+    [
+      24,
+      47,
+      67
+    ],
+    [
+      25,
+      47,
+      67
+    ],
+    [
+      26,
+      48,
+      91
+    ],
+    [
+      27,
+      48,
+      91
+    ],
+    [
+      28,
+      48,
+      70
+    ],
+    [
+      28,
+      74,
+      91
+    ],
+    [
+      29,
+      49,
+      70
+    ],
+    [
+      29,
+      76,
+      91
+    ],
+    [
+      30,
+      49,
+      70
+    ],
+    [
+      30,
+      78,
+      90
+    ],
+    [
+      31,
+      50,
+      70
+    ],
+    [
+      31,
+      78,
+      90
+    ],
+    [
+      32,
+      51,
+      70
+    ],
+    [
+      32,
+      78,
+      90
+    ],
+    [
+      33,
+      52,
+      70
+    ],
+    [
+      33,
+      78,
+      91
+    ],
+    [
+      34,
+      52,
+      69
+    ],
+    [
+      34,
+      78,
+      91
+    ],
+    [
+      35,
+      52,
+      67
+    ],
+    [
+      35,
+      79,
+      91
+    ],
+    [
+      36,
+      53,
+      66
+    ],
+    [
+      36,
+      81,
+      90
+    ],
+    [
+      37,
+      55,
+      66
+    ],
+    [
+      37,
+      84,
+      88
+    ],
+    [
+      38,
+      56,
+      66
+    ],
+    [
+      38,
+      86,
+      87
+    ],
+    [
+      39,
+      58,
+      59
+    ],
+    [
+      39,
+      65,
+      66
+    ]
+  ]
+}
